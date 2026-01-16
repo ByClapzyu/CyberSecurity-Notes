@@ -32,4 +32,6 @@ Angulo de Seguridad
 - **Buff/cache**: Linux odia la memoria desperdiciada. Si tenemos RAM libre, Linux la usara para guardar archivos que se usaron recientemente en caso de que lo volvamos ocupar.
 - **Available**: Esta es la cifra real. Es la suma de free + lo que se puede borrar rapido de buff/cache. SI este numero es bajo. hay que preocuparse.
 
-La logica de uno normalmente es que si hay un espacio en el cual debe de almacenar solo archivos que se abrieron recientemente (buff/cache) y es
+La logica de uno normalmente es que si hay un espacio en el cual debe de almacenar solo archivos que se abrieron recientemente **(buff/cache)** y esta el espacio libre  que no esta siendo utilizado **(free)**. Para algunos de nosostros seria normal pensar que **free** deberia de tener un numero grande mientas que **buff/chache** debe ser un numer mas pequeño.
+
+La realidad es que entendi que la filosofia del kernel es **"RAM vacia es Ram desperdiciada"** es por esto que a Linux le gusta tener la menor cantidad de ram disponible y es por esto que buff/cache puede ocupar mucho GB para poder abirar archivos en 0.1 segundos en lugar de 5 segundos.
