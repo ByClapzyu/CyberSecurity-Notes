@@ -2,4 +2,7 @@
 
 La **RAM física es el hardware real** (los módulos verdes que se conectana a la placa madre). Es ultra rápida pero volátil (se borra al apagar). Hay que recordar  que el **kernel no deja que los programas toquen la RAM física directamente** (por el user space). En su lugar, el kernel usa **Memoria Virtual**.
 
-- El kenel hace una ilusión: Donde el kenel le dice a chrome 
+- El **kenel hace una ilusión**: Donde el kenel le dice a chrome "toma, aqui esta estos 4 GB de memoria continuos para que ocupes tú"
+- La **realidad**:  En la física, esos 4GB están fragmentados: un pedazo está en la RAM, otro pedazo está en el **Disco Duro (**Swap**), y otro pedazo ni siquiera existe todavía.
+- **Paginación** (Paging): El kernel divide la memoria en pequeños bloques llamados paginas (usualmente de 4KB).
+- MMU (Memory Managment Unit): Es un chip en la CPU que traduce en tiempo real las direcciones virtuales (lo que ve el programa) a direcciones fisicas (donde esta realmente el dato en el chip de RAM).
