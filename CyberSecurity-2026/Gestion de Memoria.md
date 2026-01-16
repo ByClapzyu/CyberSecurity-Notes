@@ -21,4 +21,12 @@ Angulo de Seguridad
 - Segmentation Fault (Violacion de Segmento):  SI el Chef A intenta agarrar un tomate que esta en el cuadro del Chef B, el jefe de cocina lo ve inmediatamente, le da un golpe y lo expulsa de la cocina. El programa se cierra de golpe (**segfault**). Esto protege los datos de un programa contra otro.
 - **Buffer Oberflow*** (Desbordamiento de Búfer):  Imagina que el chef tiene un tazón pequeño (un espacio de memoria reservado) para echar agua. Un atacante malicioso vierte 5 lt de agua cuando el tazón solo soporta 1 lt. El agua desborda y moja la receta del chef de al lado (sobrescribe intrucciones de momoria adyacente). Si el atacante es listo, no derrama agua sino **instrucciones maliciosas**. Asi cuando el Chef (CPU) vaya a leer la receta mojada, leera las instrucciones del hacker. ( Muy usado)
 - **Memory Leak** (Fuga de memoria): Un Chef usa un plato, termina de usarlo, pero no lo lava y lo devuelve. Saca otro, lo usa y no lo devuelve. Con el tiempo la cocina se queda sin platos (RAM llena) y el sistema colapsa, aunque no este haciendo nada pesado. Es un error de programacion común.
-- 
+
+##Ejemplo
+- free -h 
+![[Pasted image 20260116170550.png]]
+- **Total**: El tamaño de tu mesa.
+- **Used**: Lo que los chefs tienen en sus manos ahora mismo
+- **Free**: Espacio vacio en la mesa.
+- **Buff/cache**: Linux odia la memoria desperdiciada. Si tenemos RAM libre, Linux la usara para guardar archivos que se usaron recientemente en caso de que lo volvamos ocupar.
+- **Available**: Esta es la cifra real. Es la suma de free + lo que se puede borrar rapido de buff/cache. SI este numero es bajo. hay que preocuparse.
