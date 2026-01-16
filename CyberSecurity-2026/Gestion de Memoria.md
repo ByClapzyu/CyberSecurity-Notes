@@ -14,3 +14,8 @@ Analogía (Mesa de Trabajo del Chef)
 - **Mesa de trabajo**: Es la RAM. Es pequeña, pero esta justo frente al Chef, tiene lo necesario a la mano.
 - **Jefe de Cocina** : Es el Kenel
 Hay 3 chefs (3 programas) compartiendo la misma mesa, el jefe de cocina dibuja lineas con cinta para dividir la mesa y asignar un cuadro a cada chef.
+- **Swap** (intercambio): Si la mesa se llena y un Chef necesita poner una olla nueva, el jefe de cocina agarra algo que no este usando, la quita de la mesa y la lleva a la despensa. Esto libera espacio en la mesa (RAM).
+- **Thrashing** (muerte por lentitud): Si tenemos poca RAM, el jefe de cocina pasa mas tiempo corriendo a la bodega y volviendo (moviendo datos entre RAM y Disco) que cocinando. Esto pone la PC lentisima.
+
+Angulo de Seguridad
+- Segmentation Fault (Violacion de Segmento):  SI el Chef A intenta agarrar un tomate que esta en el cuadro del Chef B, el jefe de cocina lo ve inmediatamente, le da un golpe y lo expulsa de la coc
