@@ -22,6 +22,7 @@ Angulo de Seguridad
 - **Buffer Oberflow*** (Desbordamiento de Búfer):  Imagina que el chef tiene un tazón pequeño (un espacio de memoria reservado) para echar agua. Un atacante malicioso vierte 5 lt de agua cuando el tazón solo soporta 1 lt. El agua desborda y moja la receta del chef de al lado (sobrescribe intrucciones de momoria adyacente). Si el atacante es listo, no derrama agua sino **instrucciones maliciosas**. Asi cuando el Chef (CPU) vaya a leer la receta mojada, leera las instrucciones del hacker. ( Muy usado)
 - **Memory Leak** (Fuga de memoria): Un Chef usa un plato, termina de usarlo, pero no lo lava y lo devuelve. Saca otro, lo usa y no lo devuelve. Con el tiempo la cocina se queda sin platos (RAM llena) y el sistema colapsa, aunque no este haciendo nada pesado. Es un error de programacion común.
 
+# Comando Free
 ##Ejemplo
 - free -h 
 ![[Pasted image 20260116170550.png]]
@@ -30,3 +31,5 @@ Angulo de Seguridad
 - **Free**: Espacio vacio en la mesa.
 - **Buff/cache**: Linux odia la memoria desperdiciada. Si tenemos RAM libre, Linux la usara para guardar archivos que se usaron recientemente en caso de que lo volvamos ocupar.
 - **Available**: Esta es la cifra real. Es la suma de free + lo que se puede borrar rapido de buff/cache. SI este numero es bajo. hay que preocuparse.
+
+La logica de uno normalmente es que si hay un espacio en el cual debe de almacenar solo archivos que se abrieron recientemente (buff/cache) y es
