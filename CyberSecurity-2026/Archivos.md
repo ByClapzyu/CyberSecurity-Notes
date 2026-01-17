@@ -31,3 +31,13 @@ Angulo de Seguridad
 - **El Bit SUID** (Set User ID): a veces se puede ver una "s" en lugar de una "x". Cuando se ejecuta se programa uno se puede convertir temporalmente en el dueño (usualmente root)
 # Vulnerabilidad de SUID
 
+El sistema octal de Linux, los permisos en realidad tienen 4 digitos, no 3. El primero se conoce como **permisos especiales**
+
+| **Valor** | **Nombre**              | **Bit**        | **¿Qué hace?**                                             |     |
+| --------- | ----------------------- | -------------- | ---------------------------------------------------------- | --- |
+| **4**     | **SUID** (Set User ID)  | `s` (en user)  | Ejecuta como el **Dueño** (Root).                          |     |
+| **2**     | **SGID** (Set Group ID) | `s` (en group) | Ejecuta como el **Grupo**.                                 |     |
+| **1**     | **Sticky Bit**          | `t` (en otros) | "Solo el dueño puede borrar su archivo" (usado en `/tmp`). |     |
+1 Entendiendo eso, Primero tenemos que hacer una busqueda de los archivos que tengan el bit especial activdado.
+- find / -perm -4000
+##aqui se busca el Bit 4 (SUID)
