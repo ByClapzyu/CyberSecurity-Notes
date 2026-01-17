@@ -41,32 +41,15 @@ Podemos hacer uso de esto si algunas vez tenemos problemas si el kernel no detec
 **Etapa 1: BIOS Virtual (El Chip de Mentira)**
 - Un programa de software fingiendo ser un chip. (Se puede ver  el logo de VirtualBox o VMware al arrancar, no el de Dell o HP).
 - Ejecuta un POST falso y  Checa el hardware virtual que configuraste. "¿Tengo 4GB de RAM virtual? Sí".
- - Salida: Busca el disco duro virtual (un archivo .vdi en tu carpeta de documentos) y lee el primer sector.
+ - Salida: Busca el disco duro virtual (un archivo .vdi en la carpeta de documentos) y lee el primer sector.
 
-Etapa 2: El Bootloader (GRUB):
+**Etapa 2: El Bootloader (GRUB)**
+- El software GRUB que vive dentro del archivo .vdi. Nos muestra el menú azul.
 
-Quién: El mismo software GRUB, pero vive dentro del archivo .vdi.
+**Etapa 3: El Kernel (El Cerebro Engañado)**
+- Se carga en la RAM virtual y escanea el hardware, pero no puede ver nuestra  NVIDIA, ve un "Adaptador Gráfico Virtual SVGA". Tampoco puede ver nuestra  WiFi Intel, ve una "Tarjeta de Red Ethernet Virtualizada" (conectada por cable simulado). y no puede ver nuestro Disco Duro "VBOX HARDDISK".
+- Carga drivers genéricos o especiales para virtualización (Guest Additions / VMware Tools).
 
-Qué hace: Exactamente lo mismo. Te muestra el menú azul.
-
-Etapa 3: El Kernel (El Cerebro Engañado):
-
-Acción: Se carga en la RAM virtual.
-
-Detección: Escanea el hardware y... ¡Sorpresa!
-
-La Diferencia Clave:
-
-No ve tu NVIDIA, ve un "Adaptador Gráfico Virtual SVGA".
-
-No ve tu WiFi Intel, ve una "Tarjeta de Red Ethernet Virtualizada" (conectada por cable simulado).
-
-No ve tu Disco Duro Samsung, ve un "VBOX HARDDISK".
-
-Drivers: Carga drivers genéricos o especiales para virtualización (Guest Additions / VMware Tools).
-
-Etapa 4: Init / Systemd (El Gerente):
-
-Acción: Inicia los servicios igual que en la física.
-
-Resultado: Ves la misma pantalla de login.
+**Etapa 4: Init / Systemd (El Gerente)**
+- Acción: Inicia los servicios igual que en la física.
+- Final nos muestra la misma pantalla de login.
