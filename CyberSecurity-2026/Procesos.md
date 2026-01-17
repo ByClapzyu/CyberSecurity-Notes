@@ -58,4 +58,7 @@ En la imagen puedo ver que en mi terminal cuelga bash y de bash cuelga el comand
 	matare con kill 3792
 # Commando de practica
 
-ps aux | awk '{print $8}' | cut -c1 | sort | uniq -c
+- ps aux | awk '{print $8}' | cut -c1 | sort | uniq -c
+	**awk '{print $8}'**: Para poder tomar la columna 8 que es STAT.
+	**cut -c1**: Para poder tomar las primera letra
+	**uniq -c**: Para poder ver contar y saber cuantos hay de cada una
