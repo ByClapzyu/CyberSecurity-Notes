@@ -37,7 +37,17 @@ En la imagen puedo ver que en mi terminal cuelga bash y de bash cuelga el comand
 
 **Satus de ps aux**
 - **R (Running)**: El proceso esta usando la CPU ahora mismo o esta en la fila.
-- S (Sleeping): 
+- **S (Sleeping**): Esperando una llamada/evento
+- **D (Disk Sleep)**: Esperando una operacion (I/O) de hardware como disco duro o red que no se puede interrumpir.
+- **Z (Zombie)**: Termino, pero el padre no ha recogido su codigo de salida.
+- **T (Stopped)**: Proceso pausado manualmente con ctrl + z o esta siendo auditado por un depurador
+
+**Simbolos**
+- **< (High Priority): El VIP
+- **N (Low Priority)**: humilde
+- **s (sesion Leader)**: Jefe de la sesión
+- **l (Multi-threaded)**: Multitask
+- **+ (Foreground)**: EL prota
 
 **Funcionamiento de la creación y muerte  de un proceso**
 
@@ -46,3 +56,6 @@ En la imagen puedo ver que en mi terminal cuelga bash y de bash cuelga el comand
 	Este me dio un PID que es el [1] 3792
 	buscare el proces son ps aux | grep nano y lo
 	matare con kill 3792
+# Commando de practica
+
+ps aux | awk '{print $8}' | cut -c1 | sort | uniq -c
