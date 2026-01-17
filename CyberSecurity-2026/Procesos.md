@@ -31,3 +31,10 @@ Angulo de Seguridad
 - **Privilegios (SUID)**:  A veces, un usuario normal necesita hacer cosas de administrador (como cambiar su contraseña). Los programas son bit SUID permiten que un plebeyo ejecute un proceso con poderes de Rey temporalmente.
 
 # Commando ps auxf
+![[Pasted image 20260116183953.png]]
+Ideal para ver los hijos
+En la imagen puedo ver que en mi terminal cuelga bash y de bash cuelga el comando ejecutado de ps auxf.
+**Funcionamiento de la creación y muerte  de un proceso**
+
+	## Voy a crear un proceso y lo mandare a segundo plano (background) con **&** 
+	- nano test_proceso.txt & 
