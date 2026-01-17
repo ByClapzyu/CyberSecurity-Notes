@@ -20,7 +20,11 @@ Podemos ver que se divide en 4 partes T | UUU | GGG | OOO
 	 **GGG** (Group):  Los siguientes 3 son de los miembros de grupo
 	 **OOO** (Others): Los ultimos 3 cualquier otra persona
 
-Simbolos       file                                                         directorio
-- r (Read): Abrir contenido
-- w (Write): Modificar o borrar el contenido
-- x (Execute): Ejecutar como programa
+Simbolos       file                                                         directorio                                        valor 
+- r (Read): Abrir contenido                                       ls dentro                                              4
+- w (Write): Modificar o borrar el contenido            crear o borrar archivos dentro            2
+- x (Execute): Ejecutar como programa                    entrar en la carpeta                             1
+
+Angulo de Seguridad
+
+- **Error de novato**: SI alguien llega a poner chmod -R 777 carpeta/
