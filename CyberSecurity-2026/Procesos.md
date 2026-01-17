@@ -34,7 +34,15 @@ Angulo de Seguridad
 ![[Pasted image 20260116183953.png]]
 Ideal para ver los hijos
 En la imagen puedo ver que en mi terminal cuelga bash y de bash cuelga el comando ejecutado de ps auxf.
+
+**Satus de ps aux**
+- **R (Running)**: El proceso esta usando la CPU ahora mismo o esta en la fila.
+- S (Sleeping): 
+
 **Funcionamiento de la creación y muerte  de un proceso**
 
 	## Voy a crear un proceso y lo mandare a segundo plano (background) con **&** 
 	- nano test_proceso.txt & 
+	Este me dio un PID que es el [1] 3792
+	buscare el proces son ps aux | grep nano y lo
+	matare con kill 3792
