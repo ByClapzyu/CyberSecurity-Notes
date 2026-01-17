@@ -28,5 +28,6 @@ Simbolos       file                                                         dire
 Angulo de Seguridad
 
 - **Error de novato**: SI alguien llega a poner chmod -R 777 carpeta/ . Esto habilita que cualquier persona que pueda entar pueda borrar, modificar o inyectar.
-- El Bit SUID (Set User ID): a veces se puede ver una "s" en lugar de una "x". Cuando se ejecuta se programa uno se puede convertir temporalmente en el dueño (usualmente root)
-- 
+- **El Bit SUID** (Set User ID): a veces se puede ver una "s" en lugar de una "x". Cuando se ejecuta se programa uno se puede convertir temporalmente en el dueño (usualmente root)
+# Vulnerabilidad de SUID
+
