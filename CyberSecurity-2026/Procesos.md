@@ -6,4 +6,13 @@
 Cada proceso tiene un DNI único llamado PID (Process ID).
 
 Analogia "La receta vs El cocinero"
-- Programa
+- **Programa**: Es la receta escrita, está ahí, quieta, no alimenta a nadie.
+- **Proceso**: Es el cocinero ejecutando ese receta.
+
+**La Familia de Procesos** (El arbol Genealógico): En Linux, los procesos no apareen de la nada (excepto uno).
+- **PID 1**(systemd/init): Es el Adan o la Eva de todos los procesos. Es el primer proceso que arranca el kernel
+- **Fork** (Clonación): Cuando **abres una terminal**, el proceso ventana se clona a si mismo (fork) para crear un hijo llamado Bash.
+- Todos los procesos tienen un **Padre**  (PPID- Parent Process ID).
+# commando top
+- **PID** (Process ID): El número de identificación. (Si se requiere matar un proceso hay que apuntar a este numero)
+- **USER**: El dueño de proceso (si se ve un proceso raro corriendo ocmo root es alarmante)
