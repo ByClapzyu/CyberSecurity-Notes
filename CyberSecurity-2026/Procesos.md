@@ -14,6 +14,7 @@ Analogia "La receta vs El cocinero"
 - **Fork** (Clonación): Cuando **abres una terminal**, el proceso ventana se clona a si mismo (fork) para crear un hijo llamado Bash.
 - Todos los procesos tienen un **Padre**  (PPID- Parent Process ID).
 # commando top
+##(No sirve muy bien para ver quien es hijo de quien)
 - **PID** (Process ID): El número de identificación. (Si se requiere matar un proceso hay que apuntar a este numero)
 - **USER**: El dueño de proceso (si se ve un proceso raro corriendo ocmo root es alarmante).
 - **PR (Priority)** y **NI (Nice)**: "Analogia fila VIP"
@@ -23,4 +24,10 @@ Analogia "La receta vs El cocinero"
 	- **R (Running)**: Esta corriendo ahora mismo
 	- **S (Sleeping)**: Esta esperando input del teclado o datos del disco.
 	- **Z (Zombie)**: Esta muerto, no consume RAM ni CPU, pero ocupa número de PID en la tabla.
-		##el proc
+		##el proceso ya murio, pero el padre no ha leído su certificado de defuncion (exit code).
+
+Angulo de Seguridad
+- **Aislamiento**: Un proceso no debe poder leer la memoria de otro.
+- **Privilegios (SUID)**:  A veces, un usuario normal necesita hacer cosas de administrador (como cambiar su contraseña). Los programas son bit SUID permiten que un plebeyo ejecute un proceso con poderes de Rey temporalmente.
+
+# Commando ps auxf
