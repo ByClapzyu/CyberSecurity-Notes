@@ -55,7 +55,8 @@ En la imagen puedo ver que en mi terminal cuelga bash y de bash cuelga el comand
 	- nano test_proceso.txt & 
 	Este me dio un PID que es el [1] 3792
 	buscare el proces son ps aux | grep nano y lo
-	matare con kill 3792
+	matare con kill -9 3792 (kill no mata , 
+	peor kill -9 si )
 # Commando de practica
 
 - ps aux | awk '{print $8}' | cut -c1 | sort | uniq -c
