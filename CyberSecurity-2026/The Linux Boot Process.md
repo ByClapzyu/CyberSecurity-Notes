@@ -21,3 +21,52 @@ En el arranque de Linux Hay 4 Etapas.
 
 **¡Peligro !**
 Ataques al Bootloader ("Evil Maid"): Si un hacker tiene acceso físico a tu PC por 2 minutos, puede editar el GRUB (Etapa 2) para decirle al Kernel: "Oye, arranca, pero no me pidas contraseña y dame una terminal de Root" (se hace añadiendo init=/bin/bash al final de la línea de arranque).
+
+# Comando
+
+Para ver lo que paso durante esos segundo de arrango podemos usar el comando 
+- dmesg | head -n 20
+Lo que veremos: Es el diario del Kernel desde el segundo 0.0000. Verás cosas como:
+- [0.000000] Linux version... (El Kernel presentándose).
+- [0.000000] Command line: BOOT_IMAGE=... (Lo que el Bootloader le dijo al Kernel).
+- [0.xxx] Memory: ... (El Kernel contando la RAM).
+Podemos hacer uso de esto si algunas vez tenemos problemas si el kernel no detecto algo al inicio o si dio error.
+
+# Versión VM
+
+**Etapa 0: El Botón de Encendido (Click del Mouse)**
+- Aquí no hay electricidad solo es dar al boton de "Start" en el virtualizador
+- El software reserva un pedazo de la RAM real y le dice a la VM: "Toma, esta es tu memoria".
+
+**Etapa 1: BIOS Virtual (El Chip de Mentira)**
+- Un programa de software fingiendo ser un chip. (Se puede ver  el logo de VirtualBox o VMware al arrancar, no el de Dell o HP).
+- Ejecuta un POST falso y  Checa el hardware virtual que configuraste. "¿Tengo 4GB de RAM virtual? Sí".
+ - Salida: Busca el disco duro virtual (un archivo .vdi en tu carpeta de documentos) y lee el primer sector.
+
+Etapa 2: El Bootloader (GRUB):
+
+Quién: El mismo software GRUB, pero vive dentro del archivo .vdi.
+
+Qué hace: Exactamente lo mismo. Te muestra el menú azul.
+
+Etapa 3: El Kernel (El Cerebro Engañado):
+
+Acción: Se carga en la RAM virtual.
+
+Detección: Escanea el hardware y... ¡Sorpresa!
+
+La Diferencia Clave:
+
+No ve tu NVIDIA, ve un "Adaptador Gráfico Virtual SVGA".
+
+No ve tu WiFi Intel, ve una "Tarjeta de Red Ethernet Virtualizada" (conectada por cable simulado).
+
+No ve tu Disco Duro Samsung, ve un "VBOX HARDDISK".
+
+Drivers: Carga drivers genéricos o especiales para virtualización (Guest Additions / VMware Tools).
+
+Etapa 4: Init / Systemd (El Gerente):
+
+Acción: Inicia los servicios igual que en la física.
+
+Resultado: Ves la misma pantalla de login.
