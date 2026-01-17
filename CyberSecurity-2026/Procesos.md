@@ -15,4 +15,12 @@ Analogia "La receta vs El cocinero"
 - Todos los procesos tienen un **Padre**  (PPID- Parent Process ID).
 # commando top
 - **PID** (Process ID): El número de identificación. (Si se requiere matar un proceso hay que apuntar a este numero)
-- **USER**: El dueño de proceso (si se ve un proceso raro corriendo ocmo root es alarmante)
+- **USER**: El dueño de proceso (si se ve un proceso raro corriendo ocmo root es alarmante).
+- **PR (Priority)** y **NI (Nice)**: "Analogia fila VIP"
+	Imagina una fila para entrar al antro (CPU). eL Kernel decide quien entra primero.
+- **NI** (Niceness): Es que tan amable es un proceso. Un numero alto + significa soy muy amable, dejen pasar a los demas primero (baja prioridad). Un numeor negativo  significa soy egoita y urgente, ¡muevanse! (altaprioridad).
+- **S (State/Estado)**:
+	- **R (Running)**: Esta corriendo ahora mismo
+	- **S (Sleeping)**: Esta esperando input del teclado o datos del disco.
+	- **Z (Zombie)**: Esta muerto, no consume RAM ni CPU, pero ocupa número de PID en la tabla.
+		##el proc
