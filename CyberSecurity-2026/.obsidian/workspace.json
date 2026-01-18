@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_SO/01_Protection Rings.md",
+                "file": "00_SO/04_Archivos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_Protection Rings"
+              "title": "04_Archivos"
             }
           }
         ]
@@ -186,11 +186,11 @@
   },
   "active": "21568b27a6e8946d",
   "lastOpenFiles": [
-    "00_SO/05_The Linux Boot Process.md",
-    "00_SO/04_Archivos.md",
     "00_SO/03_Procesos.md",
     "00_SO/02_Gestion de Memoria.md",
     "00_SO/01_Protection Rings.md",
+    "00_SO/05_The Linux Boot Process.md",
+    "00_SO/04_Archivos.md",
     "00_SO/Pasted image 20260116170550.png",
     "00_SO/Pasted image 20260116183953.png",
     "Untitled.canvas",
