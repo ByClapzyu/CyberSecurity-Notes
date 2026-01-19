@@ -1,4 +1,13 @@
 
+# Dirección de retorno
+
+Es una dirección de memoria hexadecimal almacenada en el Stack. Su función es decirle a la CPU exactamente a que línea de código debe regresar una vez que termine de ejecutar una función.
+
+**Flujo de ejecución**
+
+Los programas se ejecutan línea por línea y la CPU usa un registro especial llamado **Instruction Pointer** (**EIP / RIP**) que siempre apunta la intrucción que se está ejecutando en el momento.
+
+- 1 La llamada: Cuando un programa principal llama a una función la CPU deb
 # Stack vs Heap
 
 # Stack (Pila)
@@ -11,4 +20,6 @@
 
 # Heap (Montón)
 
-**
+**Que es**:  Es la memoria dinamica y desordenada para datos grandes o de larga duración. Esta es gestionada de manera manual ya que el programador debe reservar y liberar espacio.
+
+**Riesgo**: Fuga de memoria (Memory Leaks) si no se limpia.
