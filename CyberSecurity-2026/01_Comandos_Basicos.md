@@ -15,6 +15,11 @@ En linux hay muchos comnados, pero es necesario aprender los mas basicos que nos
 
 - **clear** Limpiar la terminal
 
+- **which** Sirve para rastrear la ruta absoluta de archivos ejecutables si solo si esta dentro del $Path (variables de entorno). Si es un Alias o una Buiolt-ins no podra darnos lo que queremos.
+
+- **type** Sirve para poder identificar que clase de archivo es si es un builtin, alias u otro.
+
+
 # Manipulación de Files
 
 En linux cuando un programa se ejecuta , el SO le asigna 3 canales de datos numericos, estos son llamados **File Descriptors (FD)
@@ -33,4 +38,5 @@ Al entender esto es cuando uno se da cuenta el porque del comando **2>/dev/null*
 - **mv** Sirve para poder **renombrar files/directorios** (resultado 1 file)
 
 - **rm**: Su función es **eliminar files**
-	- **rm -rf** MU
+	- **rm -rf** Muy usado para **borrar todo el contenido de una carpeta** sin preguntar nada
+	- 
