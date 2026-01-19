@@ -19,6 +19,7 @@ En linux hay muchos comnados, pero es necesario aprender los mas basicos que nos
 
 - **type** Sirve para poder identificar que clase de archivo es si es un builtin, alias u otro.
 
+- **adduser name**: agregar nuevo user 
 
 # Manipulación de Files
 
