@@ -12,6 +12,14 @@ En linux hay muchos comnados, pero es necesario aprender los mas basicos que nos
 - **cd ..**  Poder **regresar** al directorio anterior (flecha de retorno) (si repetimos varias veces esto podemos llegar a **/** que es la ruta raiz el final/principio de todo).
 
 - **clear** Limpiar la terminal
+
+# Help
+
+- **man comando**: Abre manual detallado de un comando
+
+- **--help | -h**: Es un switch que se añada al final de un comando para ver una ayuda de forma mas resumida.
+
+- **apropos palabra clave**: Es util cuando uno no recuerda el nombre de un comando, se **realiza una busqueda de la palabra y sugiere comandos**
 # Información_sesión
 
 - **adduser name**: agregar nuevo user 
@@ -46,3 +54,16 @@ Al entender esto es cuando uno se da cuenta el porque del comando **2>/dev/null*
  - **which** Sirve para **rastrear la ruta absoluta de archivos ejecutables** si solo si esta dentro del $Path (variables de entorno). Si es un Alias o una Buiolt-ins no podra darnos lo que queremos.
 
 - **type** Sirve para **poder identificar que clase de archivo** es si es un builtin, alias u otro.
+
+# Sistema
+
+- **env**: Lista las **variables de entorno**
+- **lsblk**: Lista los **dispositivos de bloque**, como los discos duros.
+- **lsusb**: Muestra los **dispositivos USB** conectados
+- **lsof**: Lista todos los **archivos abiertos** en el sistema
+
+# Red
+
+- **ifconfig / ip**:  Se utiliza **para ver y configurar la información de la red** y direcciones ip
+
+- **netstat / ss**: Muestra el **estado de la red y las sesiones activas**

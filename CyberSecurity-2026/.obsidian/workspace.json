@@ -35,8 +35,7 @@
               "title": "01_Comandos_Basicos"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,10 +198,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "86988b4c91d47778",
+  "active": "67c9802a7c419c48",
   "lastOpenFiles": [
-    "02_Linux_File_System.md",
     "01_Comandos_Basicos.md",
+    "02_Linux_File_System.md",
     "00_Conceptos_Clave_Linux.md",
     "00_SO/04_Archivos.md",
     "00_SO/02_1_Gestión de Memoria.md",
