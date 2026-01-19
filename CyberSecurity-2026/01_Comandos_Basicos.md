@@ -13,4 +13,9 @@ En linux hay muchos comnados, pero es necesario aprender los mas basicos que nos
 
 - **whoami** Nos **muestra el usuario actual**
 
-- 
+- **clear** Limpiar la terminal
+
+# Manipulación de Files
+
+- **cat**: Cat (concatenar) es usado para leer datos de un file (stdin) y los escribe ne la salida 
+
