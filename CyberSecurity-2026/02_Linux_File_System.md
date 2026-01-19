@@ -10,11 +10,12 @@ Hay muchos tipos de files estan los:
 
 - **/temp**: Se encuentran **archivos temporales** requeridos por programsa en ejecución. Cuando se reinicia el SO los  files temporales desaparecen ya que es volatil. En esta carpeta **cualquier user puede escribir sin permisos** , pero no puede borrar los archivos de lo de mas (por el Sticky Bit)
 
-- **/lib**: Contiene **librerias copartidas** esenciales que necesitan los binarios que están en /bin y /sbin. Tambien contine
+- **/lib**: Contiene **librerias copartidas** esenciales que necesitan los binarios que están en /bin y /sbin. Tambien contine los modulos de kernel (**drivers**). Es como System32
 
-- **dev**:
+- **/dev**: Contiene **archivos de dispositivo**, son interfaces para comunicarse con el **driver del hardware**, aquí es donde uno ve que todo en Linux es un archivo
 
-- **etc**
+- **/etc** Contiene los **archivos de configuración globales del sistema y de las aplicaciones**, aqui **no hay ejecutables** solo texto que dictan como se comporta los progrmas
 
-- **var**
+- **/var**: Contiene los **Archivos de variable**, contiene archivos cuyo contenido se espera que cambie a medida del funcionaiento del sistema, el unico que es estatico es **/usr**. Aqui se puede **ver colas de impresión, base de datos, archivos temporales, correos y sitios web**
+
 

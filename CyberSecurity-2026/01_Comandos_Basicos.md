@@ -40,4 +40,4 @@ Al entender esto es cuando uno se da cuenta el porque del comando **2>/dev/null*
 
 - **rm**: Su función es **eliminar files**
 	- **rm -rf** Muy usado para **borrar todo el contenido de una carpeta** sin preguntar nada
-	- 
+	
