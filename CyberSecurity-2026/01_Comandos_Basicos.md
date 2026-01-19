@@ -19,14 +19,18 @@ En linux hay muchos comnados, pero es necesario aprender los mas basicos que nos
 
 En linux cuando un programa se ejecuta , el SO le asigna 3 canales de datos numericos, estos son llamados **File Descriptors (FD)
 
-|**FD**|**Nombre**|**Abreviatura**|**Por defecto conectado a...**|
-|---|---|---|---|
-|**0**|Standard Input|`stdin`|Tu teclado|
-|**1**|Standard Output|`stdout`|**Tu pantalla (terminal)**|
-|**2**|Standard Error|`stderr`|**Tu pantalla (terminal)**|
-Al entender esto es cuando uno se da cuenta el porque del comando **2>/dev/null** puede redireccionar la salida de los errores 
+| **FD** | **Nombre**      | **Abreviatura** | **Por defecto conectado a...** |
+| ------ | --------------- | --------------- | ------------------------------ |
+| **0**  | Standard Input  | `stdin`         | El teclado                     |
+| **1**  | Standard Output | `stdout`        | **La pantalla (terminal)**     |
+| **2**  | Standard Error  | `stderr`        | **La pantalla (terminal)**     |
+Al entender esto es cuando uno se da cuenta el porque del comando **2>/dev/null** puede redireccionar la salida (**>**) de los errores 
 
 - **cat**: Cat (concatenar) es usado para **leer datos de un file** (stdin) y los escribe en la salida estándar (stdout)
 
-- 
+- **cp**: Sirve para **copiar/duplicar** manteniendo el file original intacto (resultado 2 files)
 
+- **mv** Sirve para poder **renombrar files/directorios** (resultado 1 file)
+
+- **rm**: Su función es **eliminar files**
+	- **rm -rf** MU
