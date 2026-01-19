@@ -17,5 +17,16 @@ En linux hay muchos comnados, pero es necesario aprender los mas basicos que nos
 
 # Manipulación de Files
 
-- **cat**: Cat (concatenar) es usado para leer datos de un file (stdin) y los escribe ne la salida 
+En linux cuando un programa se ejecuta , el SO le asigna 3 canales de datos numericos, estos son llamados **File Descriptors (FD)
+
+|**FD**|**Nombre**|**Abreviatura**|**Por defecto conectado a...**|
+|---|---|---|---|
+|**0**|Standard Input|`stdin`|Tu teclado|
+|**1**|Standard Output|`stdout`|**Tu pantalla (terminal)**|
+|**2**|Standard Error|`stderr`|**Tu pantalla (terminal)**|
+Al entender esto es cuando uno se da cuenta el porque del comando **2>/dev/null** puede redireccionar la salida de los errores 
+
+- **cat**: Cat (concatenar) es usado para **leer datos de un file** (stdin) y los escribe en la salida estándar (stdout)
+
+- 
 
