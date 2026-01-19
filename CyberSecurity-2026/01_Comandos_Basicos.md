@@ -22,7 +22,7 @@ En linux hay muchos comnados, pero es necesario aprender los mas basicos que nos
 - **apropos palabra clave**: Es util cuando uno no recuerda el nombre de un comando, se **realiza una busqueda de la palabra y sugiere comandos**
 # Información_sesión
 
-- **adduser name**: agregar nuevo user 
+- **useradd name**: agregar nuevo user 
 
 - **whoami** Nos **muestra el usuario actual**
 
