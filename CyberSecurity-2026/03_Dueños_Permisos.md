@@ -5,6 +5,10 @@ Vamos a verlo de una manera muy informal para poder entender la diferencia de un
 - **User**: Este es un usuario normal simple y corriente en el cual puede desarollar las tareas normales que no necesiten de permismos elevados.
 - **Root**: Es aquel que literal puede hacer cualquier cosa en el sistema tiene el poder absoluto y puede destruir el sistema de forma intecional o no.
 
+# Comando agregar user
+
+- **adduser**: Este es un comando que podemos verlo como el mas util, interactivo e intuitivo, ya que al ejecutarlo el sistema nos guia a traves de una serie de preguntas para configurar el usuario, nos pide establecer contraseña, informacion adicional, crea el directorio personal y asignal la shell predeterminada
+- **useradd**: 
 Nosotros podemos añadir un usuario con el comando **adduser name** pero si lo intentamos nos dira que solo el root puede agregar un usuario o grupo al sistema. En esos caso se tiene que usar el comando **sudo** antes del comando para poder hacer que funcione.
 ![[adduser.png]]
 
