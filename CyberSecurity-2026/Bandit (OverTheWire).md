@@ -26,4 +26,4 @@ Password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 
 # Bandit 4
 
-Al entrar a bandit 4 la pista que nos dan es que esta en el directorio inhere/ , pero solo los humanos pueden leer  refiriendose a que esta en ASCII. Si accedemos a inhere/ nos daremos cuenta que hay muchas carpetas
+Al entrar a bandit 4 la pista que nos dan es que esta en el directorio inhere/ , pero solo los humanos pueden leer  refiriendose a que esta en ASCII. Si accedemos a inhere/ nos daremos cuenta que hay muchas archivos si hacemos un **file ./-file00** nos daremos cuenta que nos dice que es data, pero no podemos estar buscando de uno en uno para saber cual es el ASCII, Asi que usaremos **find** 
