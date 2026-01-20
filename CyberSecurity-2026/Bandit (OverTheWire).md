@@ -22,7 +22,8 @@ Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 Al entrar en Bandit 3 y al saber que las intrucciones dicen que el file esta en la carpeta inhere, procedo a hacer un listado con **ls** y al ver que esta ahi procedo a acceder haciendo uso del comando **cd inhere/** , una vez adentro si hacemos un **ls** no podremos ver nada asi que se necesita usar la opcion de all que es **ls -a** . Esto para mostrar todo lo que se encuentra en esa carpeta aunque este oculto. Una vez que veamos el file **...Hiding-From-You** procedemos a ver su contenido con **cat**
 
-Password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3N
+Password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 
 # Bandit 4
 
+Al entrar a bandit 4 la pista que nos dan es que esta en el directorio inhere/ , pero solo los humanos pueden leer  refiriendose a que esta en ASCII. Si accedemos a inhere/ nos daremos cuenta que hay muchas carpetas
