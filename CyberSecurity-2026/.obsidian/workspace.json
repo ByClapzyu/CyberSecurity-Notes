@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b926bfa90fa9db70",
+        "id": "e51851b3b891fa32",
         "type": "tabs",
         "children": [
           {
-            "id": "0c5d6c2cce8c3b0d",
+            "id": "026d45e6c8de5bb5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -184,15 +184,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0c5d6c2cce8c3b0d",
+  "active": "026d45e6c8de5bb5",
   "lastOpenFiles": [
-    "00_SO/02_1_Gestión de Memoria.md",
+    "adduser.png",
+    "passwd.png",
     "03_Dueños_Permisos.md",
+    "00_SO/02_1_Gestión de Memoria.md",
     "02_Linux_File_System.md",
     "01_Comandos_Basicos.md",
     "00_Conceptos_Clave_Linux.md",
-    "passwd.png",
-    "adduser.png",
     "00_SO/04_Archivos.md",
     "00_SO/02_Gestion de Memoria.md",
     "00_SO/05_The Linux Boot Process.md",
