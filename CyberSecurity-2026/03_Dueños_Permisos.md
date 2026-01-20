@@ -7,8 +7,11 @@ Vamos a verlo de una manera muy informal para poder entender la diferencia de un
 
 # Comando agregar user
 
-- **adduser**: Este es un comando que podemos verlo como el mas util, interactivo e intuitivo, ya que al ejecutarlo el sistema nos guia a traves de una serie de preguntas para configurar el usuario, nos pide establecer contraseña, informacion adicional, crea el directorio personal y asignal la shell predeterminada
-- **useradd**: 
+- **adduser**: Este es un comando que podemos verlo como el **mas util, interactivo e intuitivo**, ya que al ejecutarlo el sistema nos guia a traves de una serie de preguntas para configurar el usuario, nos pide establecer contraseña, informacion adicional, crea el directorio personal y asignal la shell predeterminada
+
+- **useradd**:  Es mas un comando simple que no es interactivo, solo **crea la cuenta de forma basica y termina**, no establece contraseña, ni directorio y asigna una shell mas basica como /bin/sh
+
+
 Nosotros podemos añadir un usuario con el comando **adduser name** pero si lo intentamos nos dira que solo el root puede agregar un usuario o grupo al sistema. En esos caso se tiene que usar el comando **sudo** antes del comando para poder hacer que funcione.
 ![[adduser.png]]
 
