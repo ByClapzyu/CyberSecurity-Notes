@@ -14,3 +14,6 @@ El significado de sudo es el acronimo de **Super User Do** el cual nos da el sup
 
 Hay un archivo en el cual podemos ver a todos los usuarios que hay en el sistema tanto personas como de servicios, ese archivo se llama /etc/**passwd**
 ![[passwd.png]]
+- **x** = password --> /etc/shadow : Cuando se puede apreciar una X depues del nombre indica que la contraseña se encuentra en **/etc/shadow**
+- **100X: 100X**  : Esto suele indicar el primer numero es el **User Id (UID)** y el segundo el **Group ID (GID)**
+- 
