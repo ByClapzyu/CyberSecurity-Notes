@@ -17,5 +17,12 @@ Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 
 En este es similar a los anteriores, pero en este caso el file contiene espacios, por situaciones similares en windows, se que este tipo de files para acceder a ellos se necesita el uso de **""** comillas dobles. Este se resuelve usando el metodo de bandit 1, pero usando "".
 
-Password:
+Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+# Bandit 3 
+
+Al entrar en Bandit 3 y al saber que las intrucciones dicen que el file esta en la carpeta inhere, procedo a hacer un listado con **ls** y al ver que esta ahi procedo a acceder haciendo uso del comando **cd inhere/** , una vez adentro si hacemos un **ls** no podremos ver nada asi que se necesita usar la opcion de all que es **ls -a** . Esto para mostrar todo lo que se encuentra en esa carpeta aunque este oculto. Una vez que veamos el file **...Hiding-From-You** procedemos a ver su contenido con **cat**
+
+Password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3N
+
+# Bandit 4
 
