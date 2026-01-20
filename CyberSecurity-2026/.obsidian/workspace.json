@@ -11,12 +11,14 @@
             "id": "0c5d6c2cce8c3b0d",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20260119175722.png"
+                "file": "03_Dueños_Permisos.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260119175722"
+              "icon": "lucide-file",
+              "title": "03_Dueños_Permisos"
             }
           }
         ]
@@ -182,10 +184,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3adad6a147defd8f",
+  "active": "0c5d6c2cce8c3b0d",
   "lastOpenFiles": [
+    "passwd.png",
     "03_Dueños_Permisos.md",
-    "Pasted image 20260119175722.png",
+    "adduser.png",
     "01_Comandos_Basicos.md",
     "02_Linux_File_System.md",
     "00_Conceptos_Clave_Linux.md",
