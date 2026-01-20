@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e51851b3b891fa32",
+        "id": "a98ecddcf310b912",
         "type": "tabs",
         "children": [
           {
-            "id": "026d45e6c8de5bb5",
+            "id": "705ad0e06a3f794a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Dueños_Permisos.md",
+                "file": "Bandit (OverTheWire).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03_Dueños_Permisos"
+              "title": "Bandit (OverTheWire)"
             }
           }
         ]
@@ -184,15 +184,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "026d45e6c8de5bb5",
+  "active": "705ad0e06a3f794a",
   "lastOpenFiles": [
-    "adduser.png",
-    "passwd.png",
-    "03_Dueños_Permisos.md",
+    "01_Linux/00_Conceptos_Clave_Linux.md",
+    "Bandit (OverTheWire).md",
+    "01.2__Linux_Practica",
+    "01_Linux/03_Dueños_Permisos.md",
+    "01_Linux/adduser.png",
+    "01_Linux/passwd.png",
     "00_SO/02_1_Gestión de Memoria.md",
-    "02_Linux_File_System.md",
-    "01_Comandos_Basicos.md",
-    "00_Conceptos_Clave_Linux.md",
+    "01_Linux/02_Linux_File_System.md",
+    "01_Linux/01_Comandos_Basicos.md",
     "00_SO/04_Archivos.md",
     "00_SO/02_Gestion de Memoria.md",
     "00_SO/05_The Linux Boot Process.md",
