@@ -37,4 +37,4 @@ En bandit 5 nos dice que el file se encuentra abajo de la carpeta inhere/ nos di
     human-readable
     1033 bytes in size
     not executable
-para esto tendremos que usar **find** 
+para esto tendremos que usar **find** que si buscamen en el manual de find **man find** podemos ver que tenemos la opcion de **-size** en el ejemplo que nos da podemos ver que usa la **c** si nos po
