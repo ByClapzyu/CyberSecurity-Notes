@@ -3,6 +3,8 @@
 
 La ciberseguridad es la práctica de proteger los dispositivos, las redes informaticas y la información de daños, perdidas o accesos no autorizados.
 
+La práctica de proteger las redes informáticas, los dispositivos y la información digital
+
 La ciberseguridad  protege la información digital de ciberamenazas. La protección de la información se basa en la perservación de la triada (confidencialidad, disponibilidad e integridad) en el ciberespacio. 
 
 El objetivo es protefer base de datos, end-points, servidores y redes. Detectando brechas de seguridad que puedan crear vulnerabilidades.
@@ -26,10 +28,10 @@ La protección de los sistemas de información contra el acceso no autorizado, l
 - **protegida** (confidencial, secreta, sumamente secreta)
 - 
 infosec 
-
-El control del acceso físico a un edificio o sala donde se almacena información confidencial, ya sea digital o físicamente.
+Los procesos para prevenir, detectar y corregir ataques a la información confidencial, tanto digital como física.
 **Seguridad ti**
 
+La protección de los sistemas de información contra el acceso no autorizado, la modificación, etc.
 se defice proteccion de los sistema de informacion, contra acceso no autorizado, la modificación, la destruccion o la denegaccion de acceso a ususarios autorizados,
 - dispositivo, redes informaticas y la ubicacion de los dispositvos
 - digital o fisica
@@ -42,6 +44,9 @@ Recomendacion primera linea de defensa
 ------------------------
 # Principios de ciberseguridad
 
+# antes de salvaguarda se debe hacer 
+
+Determinar qué información se debe proteger.
 # ciberseguridad
 
 **Triada (Confi, Integri y dispo) (CIA)**
