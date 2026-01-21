@@ -20,9 +20,26 @@ La seguridad de la información (infosec) es la práctica de proteger la informa
 - prevención, detección y corrección para que la información pueda tener (CID)
 - Procesos, amenzas y sistemas que afectan  la seguridad de la información
 - informacion almacenada en una PC, en un escritorio o en un servidor
+- se puede clasificar como desprotegida (no es necesario ningun control) y protegida (exige cierto nivel de proteccíon y control).
+- **protegida** (confidencial, secreta, sumamente secreta)
+- 
 
 **Seguridad ti**
 
-se puede clasificar como desprotegida (no es necesario ningun control) y protegida (exige cierto nivel de proteccíon y control).
-- **protegida** (confidencial, secreta, sumamente secreta)
+se defice proteccion de los sistema de informacion, contra acceso no autorizado, la modificación, la destruccion o la denegaccion de acceso a ususarios autorizados,
+- dispositivo, redes informaticas y la ubicacion de los dispositvos
+- digital o fisica
+conclusion: ciberseguridad es subconjunto de seguridad del sistema de infromacion que a la vez es un subconjunto de la seguridad de la infromación.
+
+Recomendacion primera linea de defensa
+- personas (mantener informados)
+- preparase desastre y recuperación (nackup)
 - 
+------------------------
+# Principios de ciberseguridad
+
+**Triada (Confi, Integri y dispo) (CIA)**
+
+- Confi: Los datos son confidenciales y privados
+- Integridad: Los datos son autentico, precisos, confiables y no estan alateraos.
+- Los datos estan du
