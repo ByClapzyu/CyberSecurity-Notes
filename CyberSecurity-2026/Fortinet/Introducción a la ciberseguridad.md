@@ -7,16 +7,30 @@ Es la práctica de proteger dispositivos, redes, aplicaciones y datos contra ata
     
 - **Alcance:** Protege bases de datos, endpoints, servidores y redes detectando brechas y vulnerabilidades.
 
-Esta se puede dividir en 5 categorias 
-- infrestructura critica
-- en aplicaciones
-- seguridad en red
-- en la nube
-- seguridad del internet de las cosas (ioT)
+**Las 5 Categorías Clave:**
 
-# Seguridad de la información vs Seguridad de los sistemas de la información.
+1. **Infraestructura Crítica:** (Energía, transporte).
+    
+2. **Seguridad de Aplicaciones:** (Software seguro desde el diseño).
+    
+3. **Seguridad de Red:** (Protección del tránsito de datos).
+    
+4. **Seguridad en la Nube:** (AWS, Azure, Private Clouds).
+    
+5. **Internet de las Cosas (IoT):** (Cámaras, sensores, dispositivos inteligentes).
 
-La seguridad de la información (infosec) es la práctica de proteger la información, esta se encarga de:
+# Seguridad de la infromación (infosec) vs Seguridad Sistema Información
+
+**Seguridad de la Informacióm (InfoSec)**
+    Se encarga de proteger la información **en cualquier formato** (físico o digital).
+    
+- **Alcance:** Archivos en papel, conversaciones verbales y datos en computadoras.
+    
+- **Clasificación de datos:**
+    
+    - _Desprotegida:_ Información pública.
+        
+    - _Protegida:_ Requiere control (Confidencial, Secreta, Top Secret).
 
 La protección de los sistemas de información contra el acceso no autorizado, la modificación, etc.
 - prevención, detección y corrección para que la información pueda tener (CID)
