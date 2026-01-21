@@ -73,7 +73,7 @@ No es eficiente leer uno por uno. Para solucionar esto usaremos el comando **fil
 - ***** (wildcard) nos permite aplicar el comando a todos los archivos que coincidan con el patrón (ej. `-file0*`).
     
 El comando nos mostrará una lista; buscaremos el que diga "ASCII text".
-Comando final: **file ./-file0***
+Comando final: **file ./-file0"*"**
 
 password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 
