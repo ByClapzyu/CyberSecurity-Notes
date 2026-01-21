@@ -3,30 +3,77 @@
 Para poder comenzar con bandit0, necesitamos acceder a traves de **SSH** usando el siguiente comando: 
 - ssh bandit0@bandit.labs.overthewire.org -p 2220
 
-Una vez adentro como se muestra en la pagina de OTW nos dice que "The password for the next level is stored in a file called readme located in the home directory."
-Para resolver esto necesitamos llegar al home directory,  así que mi primer movimiento es realizar un **pwd** para saber en donde me encuentro, al visualizar que estoy dentro de  ***/home/bandit0***  realizo un **ls** para listar el contenido de home directory. Como se puede ver que esta el file readme antes de ver el contenido del archivo con **cat** procedo a saber que tipo de archivo es con **file** el resultado de esto es "readme: ASCII text" por lo cual este archivo contiene lenguaje humano. Antes del conseguir la contraseña checo cuantos bytes ocupa para darme idea que tanto puede venir con **du -b readme**, veo que pesa 438 bytes por lo cual se puede suponer que no tiene demasiado contenido.
+En bandit 0, las instrucciones de la página de OTW nos indican que la contraseña para el siguiente nivel se encuentra almacenada en un archivo específico dentro del directorio _home_:
 
+- File name: **readme**
+    
+- Location: **Home directory**
+    
+Para solucionar esto, aplicamos una metodología de reconocimiento antes de leer el archivo. Primero nos orientamos con **pwd** para confirmar que estamos en `/home/bandit0` y listamos el contenido con **ls**.
+
+Antes de imprimir el contenido, realizamos dos verificaciones de seguridad y tipo:
+
+- **file**: Nos confirma que es "ASCII text", asegurando que es legible por humanos.
+    
+- **du -b**: Nos indica que pesa 438 bytes, confirmando que es un archivo ligero y no saturará la terminal.
+    
+Una vez verificado, procedemos a leerlo.
+Comando final: **cat readme**
 Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
 # Bandit 1
 
-Una vez que accedemos a bandit1, las intruccion nos dice lo mismo, pero ahora el file se llama - , pero si intentamos hacer un **cat -** cat pensara que debe esparar un input así que no va a suceder nada, para eso tenemos dos opciones usar la ruta relativa especificando en la carpeta que no encontramos con **.** y el file que queremos ver **./-** o tambien podemos usar doble **--** para indicar que lo que sigue despues son files y no comandos u opciones. **cat -- -** o **cat ./-**. SI hacemos otra vez lo de **du -b ./-** para saber cuanto pesa este nos marcara que pesa 44 y si lo abrimos podemo ver que solo esta la flag.
+En bandit 1 las instrucciones son similares al anterior, pero el archivo tiene una peculiaridad en su nombre:
+- filename is **-** (dash)
+    
+Si intentamos hacer un `cat -`, el comando interpretará el guion como una instrucción para esperar entrada estándar (stdin) y no sucederá nada. Para solucionar esto tenemos dos opciones: usar la ruta relativa o el terminador de opciones `--`.
 
+- **./-** especifica que el archivo está en el directorio actual.
+    
+- **du -b** nos confirma que el archivo pesa 44 bytes.
+    
+Comando final: **cat ./-**
 Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 # Bandit 2
 
-En este es similar a los anteriores, pero en este caso el file contiene espacios, por situaciones similares en windows, se que este tipo de files para acceder a ellos se necesita el uso de **""** comillas dobles. Este se resuelve usando el metodo de bandit 1, pero usando "".
+En bandit 2 el archivo se encuentra en el directorio actual pero tiene una característica que puede confundir a la shell:
+
+- filename contains **spaces**
+    
+La terminal usa el espacio como separador de argumentos. Para solucionar esto, debemos "escapar" los espacios o agrupar el nombre completo para que sea tratado como una sola cadena.
+
+- **" "** (comillas dobles) le indican a la shell que todo lo que está dentro es un único argumento.
+    
+Comando final: **cat "spaces in this filename"**
 
 Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 # Bandit 3 
 
-Al entrar en Bandit 3 y al saber que las intrucciones dicen que el file esta en la carpeta inhere, procedo a hacer un listado con **ls** y al ver que esta ahi procedo a acceder haciendo uso del comando **cd inhere/** , una vez adentro si hacemos un **ls** no podremos ver nada asi que se necesita usar la opcion de all que es **ls -a** . Esto para mostrar todo lo que se encuentra en esa carpeta aunque este oculto. Una vez que veamos el file **...Hiding-From-You** procedemos a ver su contenido con **cat**
+En bandit 3 nos indica que el archivo está dentro de la carpeta `inhere/`, pero al entrar no es visible con un listado normal.
+
+- file is **hidden**
+    
+Para solucionar esto, primero accedemos al directorio (`cd inhere/`). Consultando el manual de `ls`, vemos que los archivos que inician con un punto (.) están ocultos por defecto.
+
+- **-a** (all) es la bandera de `ls` que fuerza a mostrar todas las entradas, incluyendo las ocultas.
+    
+Una vez visible el archivo `...Hiding-From-You`, procedemos a leerlo.
+Comando final: **ls -a** y luego **cat ...Hiding-From-You**
 
 Password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 
 # Bandit 4
 
-Al entrar a bandit 4 la pista que nos dan es que esta en el directorio inhere/ , pero solo los humanos pueden leer  refiriendose a que esta en ASCII. Si accedemos a inhere/ nos daremos cuenta que hay muchas archivos si hacemos un **file ./-file00** nos daremos cuenta que nos dice que es data, pero no podemos estar buscando de uno en uno para saber cual es el ASCII, Asi que usaremos el * que nos permite buscar un patron y el ¨*" indica que hay algo mas, pero no es especifico en este caso el comando al final es **"file ./-file0*"** y ahi podremos ver como uno nos arroja ASCII text.
+En bandit 4 el archivo está en el directorio `inhere/`, donde hay múltiples archivos llamados `-file00`, `-file01`, etc. La única pista es el tipo de contenido:
+
+- **human-readable** (ASCII text)
+    
+No es eficiente leer uno por uno. Para solucionar esto usaremos el comando **file**, que determina el tipo de archivo basándose en su contenido (magic numbers) y no en su extensión.
+
+- ***** (wildcard) nos permite aplicar el comando a todos los archivos que coincidan con el patrón (ej. `-file0*`).
+    
+El comando nos mostrará una lista; buscaremos el que diga "ASCII text".
+Comando final: **file ./-file0***
 
 password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 
@@ -44,4 +91,8 @@ Para poder buscar el tamaño como indica en el manual se debe usar el sufijo c (
 
 comando final: **find . -type f -size 1033c**
 
-Password: 
+Password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+# Bandit 6
+
+´hola q
