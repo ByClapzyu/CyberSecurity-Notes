@@ -23,7 +23,7 @@ Es la práctica de proteger dispositivos, redes, aplicaciones y datos contra ata
 **Seguridad de la Informacióm (InfoSec)**
     Se encarga de proteger la información **en cualquier formato** (físico o digital). Su meta es **prevenir, detectar, corregir** para que la informacion cumpla con la triada (CIA), asi tambien se encarga de los procesos, amenazas y sistemas que afecten la seguridad de la información
     
-- **Alcance:** Archivos en papel, conversaciones verbales y datos en computadoras.
+ - **Alcance:** Archivos en papel, conversaciones verbales y datos en computadoras.
     
 - **Clasificación de datos:**
     
@@ -31,12 +31,16 @@ Es la práctica de proteger dispositivos, redes, aplicaciones y datos contra ata
         
     - _Protegida:_ Requiere control (Confidencial, Secreta, Top Secret).
   
-**Seguridad Sistema Información** 
-    Es la protección de los sistemas (hardware y software) y la información que contienen contra:
-   - Acceso no autorizado
+**Seguridad Sistema Información**
+    Es la protección de los sistemas (hardware/software) y la informacion que contienen, contra: 
+    
+   - Acceso no autorizado 
    - Modificación o Destrucción.
    - Denegación de servicio a usuarios autorizados.
-**2. ¿Qué protege exactamente? (El Alcance)** Aquí está la clave para diferenciarlo de la Ciberseguridad. Protege:
+
+
+
+ Aquí está la clave para diferenciarlo de la Ciberseguridad. Protege:
 
 - **Dispositivos:** (Servidores, Laptops, Discos Duros).
     
