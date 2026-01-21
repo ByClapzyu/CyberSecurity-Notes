@@ -38,8 +38,22 @@ Recomendacion primera linea de defensa
 ------------------------
 # Principios de ciberseguridad
 
+# ciberseguridad
+
 **Triada (Confi, Integri y dispo) (CIA)**
 
 - Confi: Los datos son confidenciales y privados
 - Integridad: Los datos son autentico, precisos, confiables y no estan alateraos.
-- Los datos estan du
+- Los datos estan disponibles para quien os necesitan
+# infosec
+
+contra
+- Divulgacion, alteración, denegacion  (DAD)
+- Divulgacion: datos confiables esta expuesto a no autorizados
+- Alteración: No se puede impedir la manipulacion de los datos ni determinar su autenticidad.
+- Denegación: Se impide que agentes autorizados acceda a los datos.
+
+(AAA)
+Autenticación: proceso para la identificación y la verificacion de una persona o cosa
+Autorización: Proceso para controlar el acceso a los recursos
+contabilidad/Registro: registro y seguimineto de las actividades de los agentes en dispositivos y redes informaticos
