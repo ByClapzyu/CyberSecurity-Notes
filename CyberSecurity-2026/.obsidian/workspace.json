@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Bandit (OverTheWire)"
             }
+          },
+          {
+            "id": "458862b38408fd65",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.5"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,7 +197,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3adad6a147defd8f",
+  "active": "458862b38408fd65",
   "lastOpenFiles": [
     "01_Linux/00_Conceptos_Clave_Linux.md",
     "01.2__Linux_Practica/Bandit (OverTheWire).md",
