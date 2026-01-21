@@ -106,4 +106,7 @@ Dato que debemos tener encuenta que el dueño es el bandit 7, pero el grupo si e
 - **-group** gname buscamos por grupo
 Entonces el comando final que con la bandera anterior de `-size` y con las nuvas.
 
-comando final: **find / -type f -user bandit7 -group bandit6
+comando final: **find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null**
+
+Password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
