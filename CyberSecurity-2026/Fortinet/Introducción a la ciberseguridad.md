@@ -17,13 +17,17 @@ Esta se puede dividir en 5 categorias
 # Seguridad de la información vs Seguridad de los sistemas de la información.
 
 La seguridad de la información (infosec) es la práctica de proteger la información, esta se encarga de:
+
+La protección de los sistemas de información contra el acceso no autorizado, la modificación, etc.
 - prevención, detección y corrección para que la información pueda tener (CID)
 - Procesos, amenzas y sistemas que afectan  la seguridad de la información
 - informacion almacenada en una PC, en un escritorio o en un servidor
 - se puede clasificar como desprotegida (no es necesario ningun control) y protegida (exige cierto nivel de proteccíon y control).
 - **protegida** (confidencial, secreta, sumamente secreta)
 - 
+infosec 
 
+El control del acceso físico a un edificio o sala donde se almacena información confidencial, ya sea digital o físicamente.
 **Seguridad ti**
 
 se defice proteccion de los sistema de informacion, contra acceso no autorizado, la modificación, la destruccion o la denegaccion de acceso a ususarios autorizados,
