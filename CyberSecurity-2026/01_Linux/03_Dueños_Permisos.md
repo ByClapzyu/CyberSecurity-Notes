@@ -2,7 +2,7 @@
 # Usuarios
 
 Vamos a verlo de una manera muy informal para poder entender la diferencia de un usuario normal y el usuario root:
-- **User**: Este es un usuario normal simple y corriente en el cual puede desarollar las tareas normales que no necesiten de permismos elevados.
+- **User**: Este es un usuario normal simple y corriente en el cual puede desarollar las tareas normales que no necesiten de permismos elevados.Generalmente tienen un **UID de 1000** en adelante.
 - **Root**: Es aquel que literal puede hacer cualquier cosa en el sistema tiene el poder absoluto y puede destruir el sistema de forma intecional o no. Es importante recorda que el **UID 0** le pertenece a root.
 
 # Comando agregar usuarios
@@ -25,14 +25,15 @@ Hay un archivo en el cual podemos **ver a todos los usuarios que hay** en el sis
 - **100X: 100X**  : Esto suele indicar el primer numero es el **User Id (UID)** y el segundo el **Group ID (GID)**
 - **name , , ,**: Nombre del usuario y datos adicionales
 - **/home/name**: el Home directory del user
-- **/bin/bash; La shell** establecida para el usuario
+- **/bin/bash; La shell** establecida para el usuario, si este campo dice `/usr/sbin/nologin` o `/bin/false`, el usuario no puede iniciar sesión (útil para seguridad).
 
-# Carpetas importantes
+# Files importantes
 
 - **/etc/passwd**: Esta carpeta es vital ya que aqui se **encuentra los usuarios** y cualquier puede acceder a ella.
 
 - **/etc/shadow**: Esta carpeta es super importante ya que aquí se pueden encontrar las **contraseñas (son los hashes de las contraseñas)** solo el root puede acceder a ella
 
-- **/etc/group**:  Aqui se encuentra los **grupos que hay** esta esta dividida en 4 columnas donde la ultima son **los integrantes**.
+- **/etc/group**:  Aqui se encuentra los **grupos que hay** esta esta dividida en 4 columnas donde la última columna muestra a los **miembros secundarios** (los que no tienen este grupo como principal en /etc/passwd).
+
 
 -
