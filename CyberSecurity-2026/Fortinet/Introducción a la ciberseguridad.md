@@ -30,6 +30,7 @@ Es la práctica de proteger dispositivos, redes, aplicaciones y datos contra ata
     - _Desprotegida:_ Información pública.
         
     - _Protegida:_ Requiere control (Confidencial, Secreta, Top Secret).
+    
   
 **Seguridad Sistema Información**
     Es la protección de los sistemas (hardware/software) y la informacion que contienen, contra: 
@@ -38,9 +39,7 @@ Es la práctica de proteger dispositivos, redes, aplicaciones y datos contra ata
    - Modificación o Destrucción.
    - Denegación de servicio a usuarios autorizados.
 
-
-
- Aquí está la clave para diferenciarlo de la Ciberseguridad. Protege:
+**2. ¿Qué protege exactamente? (El Alcance)** Aquí está la clave para diferenciarlo de la Ciberseguridad. Protege:
 
 - **Dispositivos:** (Servidores, Laptops, Discos Duros).
     
