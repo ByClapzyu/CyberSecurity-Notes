@@ -1,13 +1,11 @@
 
 # Qué es la ciberseguridad?
 
-La ciberseguridad es la práctica de proteger los dispositivos, las redes informaticas y la información de daños, perdidas o accesos no autorizados.
+Es la práctica de proteger dispositivos, redes, aplicaciones y datos contra ataques digitales.
 
-La práctica de proteger las redes informáticas, los dispositivos y la información digital
-
-La ciberseguridad  protege la información digital de ciberamenazas. La protección de la información se basa en la perservación de la triada (confidencialidad, disponibilidad e integridad) en el ciberespacio. 
-
-El objetivo es protefer base de datos, end-points, servidores y redes. Detectando brechas de seguridad que puedan crear vulnerabilidades.
+- **Objetivo Principal:** Preservar la **Tríada CIA** (Confidencialidad, Integridad, Disponibilidad) en el ciberespacio.
+    
+- **Alcance:** Protege bases de datos, endpoints, servidores y redes detectando brechas y vulnerabilidades.
 
 Esta se puede dividir en 5 categorias 
 - infrestructura critica
