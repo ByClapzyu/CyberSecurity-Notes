@@ -18,7 +18,6 @@ Es la práctica de proteger dispositivos, redes, aplicaciones y datos contra ata
 4. **Seguridad en la Nube:** (AWS, Azure, Private Clouds).
     
 5. **Internet de las Cosas (IoT):** (Cámaras, sensores, dispositivos inteligentes).
-
 # Seguridad de la infromación (infosec) vs Seguridad Sistema Información
 
 **Seguridad de la Informacióm (InfoSec)**
@@ -33,17 +32,22 @@ Es la práctica de proteger dispositivos, redes, aplicaciones y datos contra ata
     - _Protegida:_ Requiere control (Confidencial, Secreta, Top Secret).
   
 **Seguridad Sistema Información** 
+    Es la protección de los sistemas (hardware y software) y la información que contienen contra:
+   - Acceso no autorizado
+   - Modificación o Destrucción.
+   - Denegación de servicio a usuarios autorizados.
+**2. ¿Qué protege exactamente? (El Alcance)** Aquí está la clave para diferenciarlo de la Ciberseguridad. Protege:
 
-La protección de los sistemas de información contra el acceso no autorizado, la modificación, etc.
-se defice proteccion de los sistema de informacion, contra acceso no autorizado, la modificación, la destruccion o la denegaccion de acceso a ususarios autorizados,
-- dispositivo, redes informaticas y la ubicacion de los dispositvos
-- digital o fisica
-conclusion: ciberseguridad es subconjunto de seguridad del sistema de infromacion que a la vez es un subconjunto de la seguridad de la infromación.
+- **Dispositivos:** (Servidores, Laptops, Discos Duros).
+    
+- **Redes Informáticas:** (Cables, Switches, Wi-Fi).
+    
+- **Ubicación de los dispositivos:** (El site, el cuarto de servidores, el edificio).
+    
 
-Recomendacion primera linea de defensa
-- personas (mantener informados)
-- preparase desastre y recuperación (nackup)
-- 
+**3. Naturaleza:**
+
+- Combina protección **Digital** + protección **Física**.
 ------------------------
 # Principios de ciberseguridad
 
