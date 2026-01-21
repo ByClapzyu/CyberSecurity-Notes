@@ -102,4 +102,8 @@ En bandit 6 el archivo esta en algun lugar del server y nos dan 3 pistas:
 - 33 bytes in size
 Dato que debemos tener encuenta que el dueño es el bandit 7, pero el grupo si es de bandit 6. Para solucionar esto usaremos el comando find. Consultando el manual (man find), debemos identificar  las nuevas banderas clave  en este caso son:
 
-- 
+- **-user** uname buscamos por user
+- **-group** gname buscamos por grupo
+Entonces el comando final que con la bandera anterior de `-size` y con las nuvas.
+
+comando final: **find / -type f -user bandit7 -group bandit6
