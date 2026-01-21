@@ -22,7 +22,7 @@ Es la práctica de proteger dispositivos, redes, aplicaciones y datos contra ata
 # Seguridad de la infromación (infosec) vs Seguridad Sistema Información
 
 **Seguridad de la Informacióm (InfoSec)**
-    Se encarga de proteger la información **en cualquier formato** (físico o digital).
+    Se encarga de proteger la información **en cualquier formato** (físico o digital). Su meta es **prevenir, detectar, corregir** para que la informacion cumpla con la triada (CIA), asi tambien se encarga de los procesos, amenazas y sistemas que afecten la seguridad de la información
     
 - **Alcance:** Archivos en papel, conversaciones verbales y datos en computadoras.
     
@@ -31,17 +31,8 @@ Es la práctica de proteger dispositivos, redes, aplicaciones y datos contra ata
     - _Desprotegida:_ Información pública.
         
     - _Protegida:_ Requiere control (Confidencial, Secreta, Top Secret).
-
-La protección de los sistemas de información contra el acceso no autorizado, la modificación, etc.
-- prevención, detección y corrección para que la información pueda tener (CID)
-- Procesos, amenzas y sistemas que afectan  la seguridad de la información
-- informacion almacenada en una PC, en un escritorio o en un servidor
-- se puede clasificar como desprotegida (no es necesario ningun control) y protegida (exige cierto nivel de proteccíon y control).
-- **protegida** (confidencial, secreta, sumamente secreta)
-- 
-infosec 
-Los procesos para prevenir, detectar y corregir ataques a la información confidencial, tanto digital como física.
-**Seguridad ti**
+  
+**Seguridad Sistema Información** 
 
 La protección de los sistemas de información contra el acceso no autorizado, la modificación, etc.
 se defice proteccion de los sistema de informacion, contra acceso no autorizado, la modificación, la destruccion o la denegaccion de acceso a ususarios autorizados,
