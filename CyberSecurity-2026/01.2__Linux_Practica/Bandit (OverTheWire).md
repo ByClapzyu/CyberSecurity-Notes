@@ -110,3 +110,14 @@ comando final: **find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/nu
 
 Password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 
+# Bandit 7
+
+En este bandit 7 nos dicen que el archivo es data.txt y la flag esta despues de la palabra millionth. Para este caso usaremos **grep** para buscar la palabra `millionth` dentro del archivo.
+
+Comando final: **grep millionth data.txt**
+
+Password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+# Bandit 8
+
+
