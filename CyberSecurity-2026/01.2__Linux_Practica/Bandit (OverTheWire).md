@@ -1,5 +1,5 @@
 # Bandit 0
-
+##altgr + }
 Para poder comenzar con bandit0, necesitamos acceder a traves de **SSH** usando el siguiente comando: 
 - ssh bandit0@bandit.labs.overthewire.org -p 2220
 
@@ -95,4 +95,11 @@ Password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 
 # Bandit 6
 
-´hola q
+En bandit 6 el archivo esta en algun lugar del server y nos dan 3 pistas:
+
+- owned by user bandit7
+- owned by group bandit6
+- 33 bytes in size
+Dato que debemos tener encuenta que el dueño es el bandit 7, pero el grupo si es de bandit 6. Para solucionar esto usaremos el comando find. Consultando el manual (man find), debemos identificar  las nuevas banderas clave  en este caso son:
+
+- 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bandit (OverTheWire).md",
+                "file": "01.2__Linux_Practica/Bandit (OverTheWire).md",
                 "mode": "source",
                 "source": false
               },
@@ -184,10 +184,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "705ad0e06a3f794a",
+  "active": "3adad6a147defd8f",
   "lastOpenFiles": [
     "01_Linux/00_Conceptos_Clave_Linux.md",
-    "Bandit (OverTheWire).md",
+    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "01.2__Linux_Practica",
     "01_Linux/03_Dueños_Permisos.md",
     "01_Linux/adduser.png",
