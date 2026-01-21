@@ -3,7 +3,7 @@
 
 Vamos a verlo de una manera muy informal para poder entender la diferencia de un usuario normal y el usuario root:
 - **User**: Este es un usuario normal simple y corriente en el cual puede desarollar las tareas normales que no necesiten de permismos elevados.
-- **Root**: Es aquel que literal puede hacer cualquier cosa en el sistema tiene el poder absoluto y puede destruir el sistema de forma intecional o no.
+- **Root**: Es aquel que literal puede hacer cualquier cosa en el sistema tiene el poder absoluto y puede destruir el sistema de forma intecional o no. Es importante recorda que el **UID 0** le pertenece a root.
 
 # Comando agregar usuarios
 
@@ -27,3 +27,12 @@ Hay un archivo en el cual podemos **ver a todos los usuarios que hay** en el sis
 - **/home/name**: el Home directory del user
 - **/bin/bash; La shell** establecida para el usuario
 
+# Carpetas importantes
+
+- **/etc/passwd**: Esta carpeta es vital ya que aqui se **encuentra los usuarios** y cualquier puede acceder a ella.
+
+- **/etc/shadow**: Esta carpeta es super importante ya que aquí se pueden encontrar las **contraseñas (son los hashes de las contraseñas)** solo el root puede acceder a ella
+
+- **/etc/group**:  Aqui se encuentra los **grupos que hay** esta esta dividida en 4 columnas donde la ultima son **los integrantes**.
+
+-
