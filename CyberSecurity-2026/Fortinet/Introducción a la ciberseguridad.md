@@ -13,3 +13,16 @@ Esta se puede dividir en 5 categorias
 - seguridad en red
 - en la nube
 - seguridad del internet de las cosas (ioT)
+
+# Seguridad de la información vs Seguridad de los sistemas de la información.
+
+La seguridad de la información (infosec) es la práctica de proteger la información, esta se encarga de:
+- prevención, detección y corrección para que la información pueda tener (CID)
+- Procesos, amenzas y sistemas que afectan  la seguridad de la información
+- informacion almacenada en una PC, en un escritorio o en un servidor
+
+**Seguridad ti**
+
+se puede clasificar como desprotegida (no es necesario ningun control) y protegida (exige cierto nivel de proteccíon y control).
+- **protegida** (confidencial, secreta, sumamente secreta)
+- 
