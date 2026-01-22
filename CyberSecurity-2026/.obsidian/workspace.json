@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fortinet/Modulo1_introduccion/01_Introducción a la ciberseguridad.md",
+                "file": "Fortinet/Modulo2_Panorama_de_amenazas/04_Inteligencia frente a amenaza.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_Introducción a la ciberseguridad"
+              "title": "04_Inteligencia frente a amenaza"
             }
           }
         ],
@@ -201,6 +201,9 @@
   },
   "active": "f4e74453b083e431",
   "lastOpenFiles": [
+    "Fortinet/Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
+    "Fortinet/Modulo2_Panorama_de_amenazas/02_Actores de amenazas (Threat Actors).md",
+    "Fortinet/Modulo1_introduccion/01_Introducción a la ciberseguridad.md",
     "01.2__Linux_Practica/Nuevo usuarios_practica.md",
     "01.2__Linux_Practica/Datos utiles CTF.md",
     "01.2__Linux_Practica/Bandit (OverTheWire).md",
@@ -213,10 +216,7 @@
     "Fortinet/Modulo2_Panorama_de_amenazas/06_Alertas de avisos y brotes.md",
     "Fortinet/Modulo2_Panorama_de_amenazas/05_Marcos de ataque.md",
     "Fortinet/Modulo2_Panorama_de_amenazas/04_Inteligencia frente a amenaza.md",
-    "Fortinet/Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
     "Fortinet/Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",
-    "Fortinet/Modulo2_Panorama_de_amenazas/02_Actores de amenazas (Threat Actors).md",
-    "Fortinet/Modulo1_introduccion/01_Introducción a la ciberseguridad.md",
     "01_Linux/passwd.png",
     "01_Linux/adduser.png",
     "Fortinet/Modulo2_Panorama_de_amenazas",
