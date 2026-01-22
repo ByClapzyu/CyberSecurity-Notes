@@ -28,6 +28,13 @@ Nosotros podemos añadir un usuario con el comando **adduser name** pero si lo i
 
 -  **usermod****:** Modifica una cuenta de usuario existente (por ejemplo, para cambiar la shell o el nombre).
 
+	**usermod -aG**: `sudo usermod -aG nombre_del_grupo nombre_usuario`
+
+	- **`-G` (Groups):** Dice "Quiero definir los grupos secundarios de este usuario".
+    
+	- **`-a` (Append / Adjuntar):** **¡ESTA ES LA CLAVE!** Dice "Súmale este grupo a los que ya tenga".
+    
+    -  **Peligro:** Si sse usa `-G` **sin** la `-a`, **se borra todos los grupos anteriores** a los que pertenecía el usuario y lo deja solo en el nuevo. ¡Le borras su historial! **Siempre usar `-aG` junto.**
 ### Gestión de Grupos 
 
 -  **groupadd****:** Crea un nuevo grupo en el sistema.

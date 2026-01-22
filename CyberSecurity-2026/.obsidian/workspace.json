@@ -184,9 +184,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3adad6a147defd8f",
+  "active": "434c56bbfdbf959a",
   "lastOpenFiles": [
     "01_Linux/03_Dueños_Permisos.md",
+    "01_Linux/02_Linux_File_System.md",
     "01.2__Linux_Practica/Nuevo usuarios_practica.md",
     "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "Fortinet/Modulo2_Panorama_de_amenazas/06_Alertas de avisos y brotes.md",
@@ -198,7 +199,6 @@
     "Fortinet/Modulo1_introduccion/01_Introducción a la ciberseguridad.md",
     "01_Linux/passwd.png",
     "01_Linux/adduser.png",
-    "01_Linux/02_Linux_File_System.md",
     "01_Linux/01_Comandos_Basicos.md",
     "01_Linux/00_Conceptos_Clave_Linux.md",
     "Fortinet/Modulo2_Panorama_de_amenazas",

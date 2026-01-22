@@ -27,4 +27,8 @@
 
 - comando: `sudo tail /etc/shadow` : Corriendo el comando en el usuario `felix`
 
+	Al no tener permiso sudo en le nuevo usuario creado nos arroja dos alertas: 1) `felix is not in the sudoers file`, 2) `This incident has been reported to the administrator.
 	
+	**Solución**: Desde el usuario admin debemos de agregar al usuario invitado (`felix`), la grupo sudo con el comando: **sudo usermod -aG sudo felix**
+	
+`
