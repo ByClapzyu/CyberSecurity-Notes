@@ -85,3 +85,12 @@ Lo que describiste al final son las fases oficiales. Ordénalas así para que te
 5. **Difusión:** Avisar al equipo (Alerta al Blue Team o Reporte al CISO).
     
 6. **Retroalimentación (Lecciones aprendidas):** ¿Nos sirvió esta info? ¿Qué mejoramos?
+
+### IoC vs IoA
+- **IoC (Indicador de Compromiso):** Evidencia de que **YA te hackearon**. (El crimen ya pasó).
+    
+    - _Ejemplo:_ Un archivo hash de un virus conocido, una IP de un servidor de comando y control.
+        
+- **IoA (Indicador de Ataque):** Evidencia de que **TE ESTÁN intentando hackear**. (El crimen está ocurriendo).
+    
+    - _Ejemplo:_ Múltiples intentos fallidos de login, escaneos de puertos en horarios raros.

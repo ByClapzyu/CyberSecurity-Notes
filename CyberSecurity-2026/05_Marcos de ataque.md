@@ -2,8 +2,19 @@
 - analisis de impacto
 - clasificacion problema
 - desarollo estrategias 
-** Amenaza persistentes avanzadas **(apt)
+
+### APT (Amenaza Persistente Avanzada)
+
+- **Definición:** Generalmente son **Naciones-Estado** (o grupos criminales muy financiados).
+    
+- **Clave:** Tienen **Paciencia y Dinero**. No atacan y se van; entran, se esconden y se quedan meses o años (dwell time) robando datos sin ser detectados.
+    
+- **Ejemplo:** Grupo Lazarus (Corea del Norte), APT28 (Rusia).
+
+
+
 cadena de eliminacion de ciberseguriad  (lot..) y mitr att&ck
+
 
 
 # Cadena eliminacion 2011 desarollado 7 pasoss
