@@ -8,10 +8,17 @@ Personas que intentan robar, sabotear o impedir que utilice sistemas informatico
 - metodo de ataque.
 Se pueden divir por tipos:
 
-- explorador: curiosidad (no pretender caudar daño grabes ) (suplantacion de identidad (dirigida smishing/ vishing) ) (correo atencion inmediata )
+- explorador: curiosidad (no pretender caudar daño grabes ) (suplantacion de identidad (dirigida smishing (mensaje)/ vishing(llamada)) ) (correo atencion inmediata )
 
 
-- hacktivista
-- ciber terro
-- ciber cirminal
-- ciber guereror
+- hacktivista: (crellente causa externa impulso colectivo contra un enemigo) (botnet, ddos)
+- ciber terro: (ideologia y violencia sociedad) (infrestructura, carecen de recursos) (sumplatacion dirigida planificada)
+- ciber cirminal: (dinero, sumplatacion, tarjeta, persona, ransomware).
+![[Pasted image 20260121181557.png]]
+- ciber guereror: (mas peligrosos, recursos de una nacion, espionaje, extorsion, destruir infrestructura, vulnerabilidades zero day) (mas violentos de cierta manera).
+**categoria hackers*
+
+- white hat:  etico
+- black : malicios
+- grey: no es malicioso, peor no es etico
+- blue : contratacieorn de un tercero etico
