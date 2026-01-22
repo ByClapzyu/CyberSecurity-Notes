@@ -25,5 +25,6 @@
 
 ### Dando y Quitando Poder!!
 
+- comando: `sudo tail /etc/shadow` : Corriendo el comando en el usuario `felix`
 
-
+	

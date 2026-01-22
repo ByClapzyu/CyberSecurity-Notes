@@ -61,7 +61,7 @@ Hay un archivo en el cual podemos **ver a todos los usuarios que hay** en el sis
 
 - **/etc/sudoers:  **Es el archivo de configuración que define **quién** tiene permiso para ejecutar **qué comandos** con privilegios elevados (usando `sudo`). Es la "Lista VIP" del sistema.
 
-**Regla de Oro (Vital):** NUNCA lo edites directamente con `nano` o `vim`. **Siempre usa el comando:** `sudo visudo`. _(Razón: `visudo` verifica la sintaxis antes de guardar. Si te equivocas editando a mano, rompes `sudo` y te quedas fuera del sistema)._
-
-
+	- **Regla de Oro (Vital):** NUNCA editar  directamente con `nano` o `vim`. **Siempre usa el comando:** `sudo visudo`. _(Razón: `visudo` verifica la sintaxis antes de guardar. Si te equivocas editando a mano, rompes `sudo` y nos quedemos fuera del sistema)._
+	
+	- Si vemos `NOPASSWD:` en una línea, significa que ese usuario puede ejecutar comandos como root **sin poner contraseña**.
 -
