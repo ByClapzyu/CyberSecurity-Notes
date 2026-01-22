@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06_Alertas de avisos y brotes.md",
+                "file": "05_Marcos de ataque.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06_Alertas de avisos y brotes"
+              "title": "05_Marcos de ataque"
             }
           }
         ]
@@ -184,12 +184,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3adad6a147defd8f",
+  "active": "5e04b0b85169e5c0",
   "lastOpenFiles": [
-    "06_Alertas de avisos y brotes.md",
-    "05_Marcos de ataque.md",
     "04_Inteligencia frente a amenaza.md",
     "Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
+    "Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",
+    "05_Marcos de ataque.md",
+    "06_Alertas de avisos y brotes.md",
     "Modulo2_Panorama_de_amenazas/02_Actores de amenazas (Threat Actors).md",
     "Fortinet/Modulo1_introduccion/01_Introducción a la ciberseguridad.md",
     "01.2__Linux_Practica/Nuevo usuarios_practica.md",
@@ -200,7 +201,6 @@
     "01_Linux/02_Linux_File_System.md",
     "01_Linux/01_Comandos_Basicos.md",
     "01_Linux/00_Conceptos_Clave_Linux.md",
-    "Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",
     "Modulo2_Panorama_de_amenazas",
     "Fortinet/Modulo1_introduccion",
     "Introducción a la Cibersegurida.md",
