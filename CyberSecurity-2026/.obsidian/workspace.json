@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6e8e3443dca26eca",
+        "id": "2c1f68065d8e29a5",
         "type": "tabs",
         "children": [
           {
-            "id": "c4d89eef9cb86654",
+            "id": "5e04b0b85169e5c0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -184,7 +184,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c4d89eef9cb86654",
+  "active": "3adad6a147defd8f",
   "lastOpenFiles": [
     "06_Alertas de avisos y brotes.md",
     "05_Marcos de ataque.md",

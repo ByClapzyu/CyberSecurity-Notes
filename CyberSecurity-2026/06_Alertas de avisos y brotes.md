@@ -27,4 +27,15 @@ PERMITE CODIGO MALICIOSO FORMA REMOTA UQE USAN ESA BIBLIOTECA
 - Alerta de brote usan marco para alertar a info sec, soc y otras partes interesadas
 
 Marcos de alertas de brote de FortiGuard
-- mar
+- marco de ciberseguridad (CSF) del Nist : componentes de ciclo de vida, proteger, detectar ,respondeder, recucperar e identificar
+- cadena de eliminacion de ciber: desglosa la fase de proteger CSF
+- marco de respuesta a incidentes del NIST: la defa ce detectar , responder y recuperar se rige por el maco de respuesta aincidente del nist
+
+que es y para que 
+**FortiDeceptor**: 
+**Fortclient**:
+Fortanalyzer:
+Fortisiem
+FortiSOCaaS:
+FortiSOar
+FortiEDR
