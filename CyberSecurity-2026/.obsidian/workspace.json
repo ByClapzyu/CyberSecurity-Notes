@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e2f58b6e6597dab2",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png"
-              },
-              "icon": "lucide-image",
-              "title": "Colonial_Pipeline"
-            }
-          },
-          {
             "id": "d54339c98e39f446",
             "type": "leaf",
             "state": {
@@ -33,8 +21,7 @@
               "title": "03_Amenazas a la ciberseguridad"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"

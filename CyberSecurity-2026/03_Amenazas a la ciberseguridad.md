@@ -27,3 +27,11 @@ dirigia: individuo o grupo / normal no distingue objetivos
 DOS: denegacion servicio DDoS: infecta mas computadoras, que se controla con C & C
 Ransomware: secuestro info
 cumpleaños :aprovecha vulenrabilidad hash
+gruta: credenciales robar 
+
+
+cosas de examen
+
+vectores ataque durante etapa previa a vlnerabilidad:
+- splantacion : 3 normal, dirigida altoperfil
+- 
