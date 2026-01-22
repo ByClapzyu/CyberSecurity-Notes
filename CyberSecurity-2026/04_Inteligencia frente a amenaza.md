@@ -70,9 +70,8 @@ El termómetro de gravedad. Del 0.0 al 10.0.
 
 ---
 
-# El Ciclo de Vida de la Inteligencia (Tu última sección)
+# El Ciclo de Vida de la Inteligencia 
 
-Lo que describiste al final son las fases oficiales. Ordénalas así para que tengan lógica de proceso:
 
 1. **Requisitos (Identificar):** ¿Qué queremos proteger y qué nos preocupa?
     

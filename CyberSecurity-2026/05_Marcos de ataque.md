@@ -11,29 +11,55 @@
     
 - **Ejemplo:** Grupo Lazarus (Corea del Norte), APT28 (Rusia).
 
+# Cyber Kill Chain (La Cadena de la Muerte)
 
+Fue desarrollada por **Lockheed Martin**
 
-cadena de eliminacion de ciberseguriad  (lot..) y mitr att&ck
+Es un modelo **LINEAL**. La teoría dice que si rompes _cualquier_ eslabón de la cadena, detienes el ataque.
 
+### Los 7 Pasos (Corrección de Terminología)
 
+Tus definiciones están bien, pero los **nombres técnicos** deben ser exactos:
 
-# Cadena eliminacion 2011 desarollado 7 pasoss
+1. **Reconocimiento (Reconnaissance):** Correcto. Investigar a la víctima (OSINT, LinkedIn, Shodan).
+    
+2. **Armamento (Weaponization):** (Corregí tu typo "aramento"). Es crear la bala. Unir el **Exploit** (lo que rompe la seguridad) con el **Payload** (el virus/malware). Ejemplo: Meter un script malicioso dentro de un PDF.
+    
+3. **Entrega (Delivery):** Correcto. ¿Cómo llega el PDF a la víctima? (Email, USB, Link).
+    
+4. **Explotación (Exploitation):** **¡OJO AQUÍ!** En tus notas pusiste "vulnerabilidad". El paso se llama **Explotación**. Es el momento exacto en que el código malicioso se ejecuta en la CPU de la víctima.
+    
+5. **Instalación (Installation):** Correcto. El malware se instala y busca persistencia (para no borrarse al reiniciar).
+    
+6. **Comando y Control (C2):** Correcto. El malware "llama a casa" (al servidor del hacker) para pedir instrucciones.
+    
+7. **Acciones sobre Objetivos (Actions on Objectives):** En tus notas pusiste "exfiltración". La exfiltración es lo más común, pero el objetivo podría ser también **Destrucción** (Ransomware) o **Espionaje**. El nombre oficial engloba todo.
+    
 
-**apoyar los metodos de defensa tradicionales**
+**Desventaja Clave (Añade esto):** La Kill Chain se centra mucho en el **Perímetro** y en evitar que entren. Una vez que el hacker está adentro (paso 5-6), este modelo se queda corto. Además, no sirve bien para amenazas internas.
 
-- reconocimiento: el atacante recopila info del objetivo y vulneabilid (codigo abierto consultas y herramientas )
-- aramento: atacante crea la carga util (malware y empaquetar para no ser detectado)
-- entrega: entrega la carga util (envio de correo con malware )
-- vulnerabilidad de seguridad: aprovecha la carga para acceder al objetivo (ejecutar la carga util)
-- intalacion: se afianza en el sistema (intalacion rootkit)
-- comando y control: establece comuniacion con sistema comprometidos (comunicacion de forma remota)
-- exfiltracion: extrae datos o su objetivo.
-**DESVENTAJA**
-- atauqe externo a la red
+# MITRE ATT&CK (La Matriz del Comportamiento)
 
+Si la Kill Chain es un "Mapa de Carreteras", MITRE ATT&CK es la "Tabla Periódica de los Hackers". Es el estándar de oro actual.
 
-# MITRE ATT&CK
+**¿Qué significa ATT&CK?**
 
-matriz, que describe tecnicas y tacticas y procediminto TTP que se agrupa por categoria, ayuda a identificar y priorizar vulnerabilidades mas criticas. valioso recurso .
+- **A**dversarial **T**actics, **T**echniques, **&** **C**ommon **K**nowledge.
+    
 
-**ventaja**: lengaje comprender ciberataques
+### Tactica vs  Tecnica
+
+- **Táctica (El QUÉ / El Objetivo):** ¿Qué quiere lograr el hacker?
+    
+    - _Ejemplo:_ "Quiero robar contraseñas" (Credential Access).
+        
+- **Técnica (El CÓMO):** ¿Cómo lo hace específicamente?
+    
+    - _Ejemplo:_ "Usando Keylogging" o "Haciendo Brute Force".
+        
+- **Procedimiento (El DETALLE):** La herramienta exacta.
+    
+    - _Ejemplo:_ "Usando el script `mimikatz.exe` con el flag `-dump`".
+        
+
+**Ventaja sobre Kill Chain:** MITRE es una **Matriz**, no una línea. Asume que el atacante **YA ESTÁ DENTRO** y describe cómo se mueve lateralmente, cómo escala privilegios y cómo evade defensas. Es mucho más detallado para el Blue Team.
