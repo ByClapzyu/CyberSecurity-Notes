@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Amenazas a la ciberseguridad.md",
+                "file": "Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
                 "mode": "source",
                 "source": false
               },
@@ -184,11 +184,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "379b52b01a654cae",
+  "active": "3adad6a147defd8f",
   "lastOpenFiles": [
     "Modulo2_Panorama_de_amenazas/02_Actores de amenazas (Threat Actors).md",
     "Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",
-    "03_Amenazas a la ciberseguridad.md",
+    "Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
     "Modulo2_Panorama_de_amenazas",
     "Fortinet/Modulo1_introduccion/01_Introducción a la ciberseguridad.md",
     "Fortinet/Modulo1_introduccion",
