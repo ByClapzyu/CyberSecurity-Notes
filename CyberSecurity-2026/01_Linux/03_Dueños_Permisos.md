@@ -15,9 +15,33 @@ Vamos a verlo de una manera muy informal para poder entender la diferencia de un
 Nosotros podemos añadir un usuario con el comando **adduser name** pero si lo intentamos nos dira que solo el root puede agregar un usuario o grupo al sistema. En esos caso se tiene que usar el comando **sudo** antes del comando para poder hacer que funcione.
 ![[adduser.png]]
 
+
+### Gestión de  Usuarios
+
+- **adduser****:** Crea un usuario de forma interactiva y completa.
+
+-  **useradd****:** Crea un usuario de forma básica y rápida.
+
+-  **passwd****:** Se utiliza para establecer o cambiar la contraseña de un usuario.
+
+-  **userdel****:** Elimina una cuenta de usuario del sistema.
+
+-  **usermod****:** Modifica una cuenta de usuario existente (por ejemplo, para cambiar la shell o el nombre).
+
+### Gestión de Grupos 
+
+-  **groupadd****:** Crea un nuevo grupo en el sistema.
+
+-  **groupdel****:** Elimina un grupo del sistema.
+
+-  **groups****:** Muestra los grupos a los que pertenece el usuario actual.
+
+-  **gpasswd****:** Se utiliza para gestionar grupos, como eliminar a un usuario de un grupo específico con la opción `-d`.
 # sudo
 
 El significado de sudo es el acronimo de **Super User Do** el cual nos da el superpoder de forma temporal para realizar cualquier accion en el sistema. Estos poderes son prestados el super usuario root el cual como se ha mencionado antes este puede hacer cualquier cosa así como borrar todo el sistema.
+
+**visudo****:** Es la forma recomendada y segura de editar el archivo `/etc/sudoers` (donde se definen los permisos de `sudo`).
 
 Hay un archivo en el cual podemos **ver a todos los usuarios que hay** en el sistema tanto personas como de servicios, ese archivo se llama **/etc/passwd**
 ![[passwd.png]]
@@ -34,6 +58,10 @@ Hay un archivo en el cual podemos **ver a todos los usuarios que hay** en el sis
 - **/etc/shadow**: Esta carpeta es super importante ya que aquí se pueden encontrar las **contraseñas (son los hashes de las contraseñas)** solo el root puede acceder a ella
 
 - **/etc/group**:  Aqui se encuentra los **grupos que hay** esta esta dividida en 4 columnas donde la última columna muestra a los **miembros secundarios** (los que no tienen este grupo como principal en /etc/passwd).
+
+- **/etc/sudoers:  **Es el archivo de configuración que define **quién** tiene permiso para ejecutar **qué comandos** con privilegios elevados (usando `sudo`). Es la "Lista VIP" del sistema.
+
+**Regla de Oro (Vital):** NUNCA lo edites directamente con `nano` o `vim`. **Siempre usa el comando:** `sudo visudo`. _(Razón: `visudo` verifica la sintaxis antes de guardar. Si te equivocas editando a mano, rompes `sudo` y te quedas fuera del sistema)._
 
 
 -

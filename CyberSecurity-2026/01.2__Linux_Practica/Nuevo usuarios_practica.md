@@ -23,3 +23,7 @@
 
     Con esto ya se puede hacer login con **su - uname** , para salirnos es **exit**. Para ver que se reflejo bien podemos hacer uso de **sudo tail /etc/shadow** y ahi veremos el hash de nuestra contraseña.
 
+### Dando y Quitando Poder!!
+
+
+

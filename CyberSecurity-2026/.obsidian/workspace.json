@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01.2__Linux_Practica/Nuevo usuarios_practica.md",
+                "file": "01_Linux/03_Dueños_Permisos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nuevo usuarios_practica"
+              "title": "03_Dueños_Permisos"
             }
           }
         ]
@@ -186,6 +186,7 @@
   },
   "active": "5e04b0b85169e5c0",
   "lastOpenFiles": [
+    "01.2__Linux_Practica/Nuevo usuarios_practica.md",
     "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "01_Linux/03_Dueños_Permisos.md",
     "Fortinet/Modulo2_Panorama_de_amenazas/06_Alertas de avisos y brotes.md",
@@ -195,7 +196,6 @@
     "Fortinet/Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",
     "Fortinet/Modulo2_Panorama_de_amenazas/02_Actores de amenazas (Threat Actors).md",
     "Fortinet/Modulo1_introduccion/01_Introducción a la ciberseguridad.md",
-    "01.2__Linux_Practica/Nuevo usuarios_practica.md",
     "01_Linux/passwd.png",
     "01_Linux/adduser.png",
     "01_Linux/02_Linux_File_System.md",
