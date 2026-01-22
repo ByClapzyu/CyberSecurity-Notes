@@ -1,37 +1,59 @@
 # ¿Qué es una amenaza a la ciberseguridad?
 
-Una amenaza a la ciberseguridad es una acción que aprovecha una vulnerabilidad y provoca daños en una red o sistema informatico.
+- **Amenaza (Threat):** Es la **acción** o el evento potencial. Aprovecha una vulnerabilidad para causar daño, robo o interrupción en el sistema.
+    
+- **Vector de Ataque:** Es el **método, camino o vehículo** que utiliza el actor malicioso para llegar a su objetivo (entrar en la red o inhibirla).
+    
+- **Ruta de Ataque (Attack Path):** Es la cadena completa de eventos o pasos que ocurren cuando se explota un vector.
 
-Un vector de ataque es un metodo que utiliza un actor malicioso para acceder ilegalmenten o inhibir una red, sistema o una instalación
+### Componentes de un Vector de Ataque
 
-**Componentes que conforman un vector de ataque**
-- vulnerabilidad: (usuarios)
-- mecanismo: (malware)
-- ruta: (correo electronico)
+Para que un ataque funcione, generalmente necesita estos 3 elementos:
 
-tipos : ingenieria socail electroica, fisica y vulnerabilidades tecnicas
-ruta de atauqe: es la cadena de eventos que se produce cuando se aprovecha los vectores de ataque.
+1. **Vulnerabilidad:** El fallo o debilidad (ej. un usuario descuidado, un puerto abierto).
+    
+2. **Mecanismo:** La herramienta usada (ej. Malware, Phishing).
+    
+3. **Ruta:** El canal de entrega (ej. Correo electrónico, USB, Web).
 
-Amenazas tipo
+## Tipos de Amenazas (Categorías)
 
-inge social:  manipulacion psicologica
-malware: soft hacer daño informatico
-acceso no autorizado: 
-falla del disello del sistema: defecto seguridad dispo o app
+1. **Ingeniería Social:** Manipulación psicológica para engañar a los usuarios (el "hackeo humano").
+    
+2. **Malware:** Software diseñado para causar daño informático.
+    
+3. **Acceso No Autorizado:** Entrar a sistemas donde no se tienen permisos.
+    
+4. **Falla del Diseño del Sistema:** Defectos en la lógica de seguridad de una aplicación o dispositivo (Bugs).
 
-Vectores comunes 
-(c y c ) (suplantacion de identidad  para instalr malware )
-(suplantacion alto perfil, dirigida no para botnet mas para malware)
-(alto perfil : personaas como ceo con poder )
-dirigia: individuo o grupo / normal no distingue objetivos 
-DOS: denegacion servicio DDoS: infecta mas computadoras, que se controla con C & C
-Ransomware: secuestro info
-cumpleaños :aprovecha vulenrabilidad hash
-gruta: credenciales robar 
+# Vectores de Ataque Comunes
 
+**Suplantación de identidad (Phishing)**
 
-cosas de examen
+Tenica usada para instalar malware o robar credenciales
 
-vectores ataque durante etapa previa a vlnerabilidad:
-- splantacion : 3 normal, dirigida altoperfil
-- 
+|**Tipo**|**Descripción**|**Objetivo**|
+|---|---|---|
+|**Phishing (Normal)**|Ataque masivo, no discrimina. "Tirar la red a ver qué pez cae".|Cualquiera (Volumen).|
+|**Spear Phishing (Dirigido)**|Ataque personalizado. Investigan a la víctima antes de atacar.|Individuo o Grupo específico.|
+|**Whaling (Alto Perfil)**|Ataque dirigido a "peces gordos" con mucho poder o acceso.|CEOs, Directivos, Gerentes.|
+**Ataque de Denegación de Servicio**
+
+Su objetivo es que el servicio **deje de funcionar** (disponibilidad), no necesariamente robar datos.
+
+- **DoS (Denial of Service):** Ataca desde **una sola fuente** (una computadora). Es fácil de bloquear.
+    
+- **DDoS (Distributed Denial of Service):** Ataca desde **múltiples fuentes** simultáneamente.
+    
+    - **Botnet:** Red de dispositivos infectados (zombies).
+        
+    - **C&C (Command & Control):** El servidor maestro que da la orden a la botnet para atacar todos a la vez.
+        
+
+**Ataques a Contraseñas y Cifrado**
+
+- **Fuerza Bruta (Brute Force):** Probar todas las combinaciones posibles de contraseñas hasta acertar.
+    
+- **Ataque de Cumpleaños (Birthday Attack):** Ataca la integridad. Aprovecha vulnerabilidades en los algoritmos de **Hash** para encontrar dos mensajes distintos que generen la misma huella digital (colisión).
+
+***Normalmente la etapa previa es sumplatacion de identidad ya que es necesario que el usuario abra la puerta***
