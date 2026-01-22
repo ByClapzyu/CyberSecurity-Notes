@@ -1,7 +1,7 @@
 # Useradd
 
 - comando: **useradd felix** : Esto crea un nuevo usuario llamado felix.
-    - **user add -m -s uname** : Crea usuario con carpeta home y shell moderna
+    - **useradd -m -s uname** : Crea usuario con carpeta home y shell moderna
 
     En la distribución de parrot, al intentar correr el comando $**useradd felix** este me devuelve `bash: useradd: command not found`, para solucionar eso necesitamos usar **sudo** porque esta herramienta vive en `/usr/sbin`, una zona exclusiva de root.
     
@@ -31,4 +31,4 @@
 	
 	**Solución**: Desde el usuario admin debemos de agregar al usuario invitado (`felix`), la grupo sudo con el comando: **sudo usermod -aG sudo felix**
 	
-`
+	**Resultado**: Al volver a entrar con el usuario invitado, se puede probar otra vez el comando y veremos que nos dejara.
