@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d66b9ea189f41ca8",
+        "id": "6e8e3443dca26eca",
         "type": "tabs",
         "children": [
           {
-            "id": "2c9935d34992ad56",
+            "id": "c4d89eef9cb86654",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05_Marcos de ataque.md",
+                "file": "06_Alertas de avisos y brotes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05_Marcos de ataque"
+              "title": "06_Alertas de avisos y brotes"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -185,8 +184,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2c9935d34992ad56",
+  "active": "c4d89eef9cb86654",
   "lastOpenFiles": [
+    "06_Alertas de avisos y brotes.md",
     "05_Marcos de ataque.md",
     "04_Inteligencia frente a amenaza.md",
     "Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
