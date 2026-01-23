@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Malware.md",
+                "file": "01_Malware y Vecores de Ataque.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_Malware"
+              "title": "01_Malware y Vecores de Ataque"
             }
           }
         ]
@@ -187,7 +187,7 @@
   "active": "059fb39a8ebe69f5",
   "lastOpenFiles": [
     "Fortinet/Modulo3_Ing_Social/01_ Ingenieria_Social.md",
-    "01_Malware.md",
+    "01_Malware y Vecores de Ataque.md",
     "Modulo4 _Malware",
     "Fortinet/Modulo3_Ing_Social",
     "Fortinet/Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
