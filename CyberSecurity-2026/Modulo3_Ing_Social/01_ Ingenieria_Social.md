@@ -33,5 +33,10 @@ Baiting: situacion tentadora que lo tiende a actuar
 
 # Tecnicas ing social
  
+Scareware: infunde miedo a traves desinformacion
+- abrevadero: dirigirse a un sitio que el objetivo frecuenta 
 
+Trampa Honeypot: atraccion del objetivo con algo tentador.
+
+Tailgating: aprovecha convenciones sociales para acceder a intalacion fisica o sala de acceso controlado (chaleco o paquetes ).
 
