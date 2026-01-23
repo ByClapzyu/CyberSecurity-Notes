@@ -49,9 +49,23 @@ Applets de java: descripcion
 trabajan para una organizacion o tienen acceso autorizado a sus redes o sistemas que suponen una amenaza fisica o ciberamenaza para la organizacion, puede ser empleado, ex , contratistas ...
 
 Clasificacion
-- neligente
+- neligente: 
+	- peon:  descripcion y pequeño ejemplo
+	- torpe : descripcion y peque ejemplo
 - malicioso truncloacks: espionaje, fraude, ropo de propiedead intelecutal sabotaje.
-	- topo
-	- colaborado
-	- lbo solitario
-	
+	- topo: 
+	- colaborado: trabaja con tercero
+	- lbo solitario:
+# VECTOR DE ATAQUE 
+
+fisico: 
+- espionaje sobre hombro
+- tailgaitng
+- busceo en contenedores
+- escuchar escondiadas.
+
+digital:
+- suplantacion dirigida
+- whaling
+- smishing
+- 
