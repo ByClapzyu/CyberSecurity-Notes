@@ -68,4 +68,29 @@ digital:
 - suplantacion dirigida
 - whaling
 - smishing
-- 
+
+# Indicador de amenaza interna
+
+- human(acciones personales): rencor, descontento cambia sin logica a mejor.
+- Red:
+	- horas inusuales
+	- trafico inusual
+- soliciut de acceso a sistena no relacionado con funcion laborar
+- utilizar dispositivos no autoriazado como usb
+- rastro de red y busqueda deliberada info condi
+- envio de info sensible por correo
+
+# acciones para proteger
+
+-conocer politicas
+no utilizar acceso directo para politicas se seguridad
+no exponer credenciales
+no permitir tailgating
+ptrodeger datos confi
+no compartir info privada
+utilizar parches en dispsoitvos 
+no desctivar seguridad en endpoints
+
+# accion en red para proteger ac
+
+- identifcar activos: 

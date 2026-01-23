@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -199,7 +200,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3adad6a147defd8f",
+  "active": "85750153967e35a2",
   "lastOpenFiles": [
     "Modulo3_Ing_Social",
     "Fortinet/Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
