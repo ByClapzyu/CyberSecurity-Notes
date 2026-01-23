@@ -98,7 +98,7 @@ Se dividen en dos grandes grupos: **Negligentes** (sin querer) y **Maliciosos** 
     - Envío de información sensible a correos personales (Gmail/Hotmail).
         
 
-### 🛡️ Acciones para Proteger Activos
+###  Acciones para Proteger Activos
 
 **En el Endpoint / Usuario:**
 
@@ -128,7 +128,7 @@ Se dividen en dos grandes grupos: **Negligentes** (sin querer) y **Maliciosos** 
 
 ## 6. Fraude y Campañas de Influencia
 
-### 💰 Fraude vs. Estafa
+###  Fraude vs. Estafa
 
 - **Ciberfraude:** Delito grave. Uso de engaño, malware o ingeniería social para obtener beneficio económico sustancial.
     
@@ -141,7 +141,7 @@ Se dividen en dos grandes grupos: **Negligentes** (sin querer) y **Maliciosos** 
     - _Pharming:_ Redirigir a un usuario de un sitio web legítimo a uno falso (a nivel de DNS o archivo hosts) para robar datos.
         
 
-### 📢 Campañas de Influencia (Fake News / Desinformación)
+### Campañas de Influencia (Fake News / Desinformación)
 
 Iniciativas a gran escala para cambiar la opinión pública (política, social).
 
