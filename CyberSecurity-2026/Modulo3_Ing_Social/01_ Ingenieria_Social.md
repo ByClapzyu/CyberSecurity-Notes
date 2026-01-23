@@ -91,6 +91,10 @@ no compartir info privada
 utilizar parches en dispsoitvos 
 no desctivar seguridad en endpoints
 
-# accion en red para proteger ac
+# accion en red para proteger activos
 
 - identifcar activos: 
+- herramientas automaticos LM
+	- analisis comportamientdo del usuario y evento
+- imparitr capacitacion
+	
