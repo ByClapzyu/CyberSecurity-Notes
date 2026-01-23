@@ -56,4 +56,14 @@ Su objetivo es que el servicio **deje de funcionar** (disponibilidad), no necesa
     
 - **Ataque de Cumpleaños (Birthday Attack):** Ataca la integridad. Aprovecha vulnerabilidades en los algoritmos de **Hash** para encontrar dos mensajes distintos que generen la misma huella digital (colisión).
 
+ **Categorías de vectores en Ransomware**
+
+- **Respuesta Correcta:**
+    
+    1. **Tecnología informática** (El malware en sí).
+        
+    2. **Posterior a la vulnerabilidad de seguridad** (La ejecución del payload/secuestro).
+        
+- _¿Por qué no Humano?_ Aunque usa ingeniería social para entrar, el examen clasifica la _acción del ransomware_ como un evento técnico post-brecha.
+
 ***Normalmente la etapa previa es sumplatacion de identidad ya que es necesario que el usuario abra la puerta***
