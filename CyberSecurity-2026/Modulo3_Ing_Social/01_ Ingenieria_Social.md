@@ -116,4 +116,9 @@ ciberestafa: son tipo de fraude, pero generalmetne se clasifican como menores o 
 **campaña de influencia** 
 
 son iniciativa a gran escala para cambiar la opinion publica, estas se suelen ejecutar de mala fe y buscan promover narrtiva falsa.
-- cre
+- cre cuenta de user falsos
+- crea contenido
+- publica contenido
+- personas real ven y ocmparten
+- los medios amplifican el mensjae
+
