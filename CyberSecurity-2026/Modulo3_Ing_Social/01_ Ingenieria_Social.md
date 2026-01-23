@@ -56,6 +56,7 @@ Clasificacion
 	- topo: 
 	- colaborado: trabaja con tercero
 	- lbo solitario:
+	- Un colaborador es una persona con información privilegiada que trabaja con un tercero externo. Un lobo solitario es una persona con información privilegiada que trabaja solo. Un peón es una persona con información privilegiada manipulada por un actor malicioso. Solo el topo finge ser una persona con información privilegiada cuando, en realidad, es una persona del exterior.
 # VECTOR DE ATAQUE 
 
 fisico: 
@@ -97,4 +98,22 @@ no desctivar seguridad en endpoints
 - herramientas automaticos LM
 	- analisis comportamientdo del usuario y evento
 - imparitr capacitacion
-	
+
+
+# fraude estafa, campañas de influencia
+
+ciberfraude:  tecnica de ing social, malware y otro tipo de engalo que se utiliza para hacer fraude o aprovechas de personas u organizacion para obtener un beneficio economico o personal.
+
+ciberestafa: son tipo de fraude, pero generalmetne se clasifican como menores o no tan graves como el ciberfraude.
+
+- web gobernamentales de imitacion
+- fraude de citas
+- fraude de vacaciones
+- compromiso de correo empresarial
+- pharming
+- estafa de tarjeta de felicitacion
+
+**campaña de influencia** 
+
+son iniciativa a gran escala para cambiar la opinion publica, estas se suelen ejecutar de mala fe y buscan promover narrtiva falsa.
+- cre
