@@ -34,9 +34,24 @@ Baiting: situacion tentadora que lo tiende a actuar
 # Tecnicas ing social
  
 Scareware: infunde miedo a traves desinformacion
-- abrevadero: dirigirse a un sitio que el objetivo frecuenta 
+abrevadero: dirigirse a un sitio que el objetivo frecuenta 
 
 Trampa Honeypot: atraccion del objetivo con algo tentador.
 
 Tailgating: aprovecha convenciones sociales para acceder a intalacion fisica o sala de acceso controlado (chaleco o paquetes ).
 
+---------------------
+
+Applets de java: descripcion 
+
+# Amenaza interna
+
+trabajan para una organizacion o tienen acceso autorizado a sus redes o sistemas que suponen una amenaza fisica o ciberamenaza para la organizacion, puede ser empleado, ex , contratistas ...
+
+Clasificacion
+- neligente
+- malicioso truncloacks: espionaje, fraude, ropo de propiedead intelecutal sabotaje.
+	- topo
+	- colaborado
+	- lbo solitario
+	
