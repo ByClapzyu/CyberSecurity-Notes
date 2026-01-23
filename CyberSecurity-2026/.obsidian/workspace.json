@@ -11,10 +11,14 @@
             "id": "78bee396d07ba41e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Firewalls.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Firewalls"
             }
           }
         ]
@@ -180,13 +184,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3adad6a147defd8f",
+  "active": "78bee396d07ba41e",
   "lastOpenFiles": [
+    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
+    "Firewalls.md",
     "Modulo1_Firewalls",
     "Getting_Started_in_Cybersecurity",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo3_Ing_Social/01_ Ingenieria_Social.md",
-    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo3_Ing_Social",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
@@ -215,7 +220,6 @@
     "IC.md",
     "Fortinet",
     "Untitled.base",
-    "01.2__Linux_Practica",
     "00_SO/02_1_Gestión de Memoria.md",
     "00_SO/02_Gestion de Memoria.md",
     "00_SO/05_The Linux Boot Process.md",
