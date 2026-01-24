@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Control de acceso a la red.md",
+                "file": "Control de acceso a la red (NAC).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Control de acceso a la red"
+              "title": "Control de acceso a la red (NAC)"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -184,9 +185,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3adad6a147defd8f",
+  "active": "bf5bf6a8a6a9f394",
   "lastOpenFiles": [
-    "Control de acceso a la red.md",
+    "Control de acceso a la red (NAC).md",
     "Getting_Started_in_Cybersecurity/Firewalls.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
     "Modulo1_Firewalls",

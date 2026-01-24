@@ -1,0 +1,1 @@
+Es un dispotivo o maquina virutal que controla el acceso a una red.
