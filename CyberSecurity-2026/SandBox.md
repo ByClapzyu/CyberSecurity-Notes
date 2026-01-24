@@ -14,4 +14,7 @@ primera generacion: no podian compartir la inteligencia frente a amenzas con oto
 
 segunda: se integraba mejor con otros dipositovs de segurdiad lo cual permitia compartir info de forma centralizada.
 
-tercera: Los ataques basados en IA necesitan un sandbox de tercera genracion basado en un estandar de analiss de amenzas 
+tercera: Los ataques basados en IA necesitan un sandbox de tercera genracion basado en un estandar de analiss de amenzas.
+Esots usan lenguaje de seguridad MITRE ATT&CK:  propociona a los dispotivos lenguaje para identificar, descrbiir y categorizar las amenzas que  se pueden compartir y que los dispostivos de otros proveedores pueden comprendeer facilemtne.
+
+FortiSandbox.
