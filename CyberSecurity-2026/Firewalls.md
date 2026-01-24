@@ -22,7 +22,7 @@ Desventaja: No bloquea paquetes no autorizado sis usan un protocolo aceptable co
 
 HTTP USOS : Contenido de texto estatico, comercio electronico, alojamiento de archivo y app webs. Al usar el mimso pueto el firewall no pued edistinguir entre aprobadas o maliciososas.
 
-### Firewall de tercera generación
+### Firewall de tercera generación (UTM)
 
 carga util de datos ,implementa el filtrado de capa de aplicacion pueden comprender protocolos como:, 
 - http
@@ -43,4 +43,15 @@ como FortiGate proporciona estas funcionalidades de seguridad avanzadas
 
 Primera linea de defensa: revisa sus maletas para detectar si lleva algun objeto maliciso
 segunda linea de defensa: haca una inspeccion profunda de paquete (DPI)
-tercera linea de defensa: 
+tercera linea de defensa: si se detecatan objetos sospechoss un agente de seguridad aparta la bolsa para osmeter a un nuevo control. ,  envia el contenido malicisos (a una sandbox) para un analisis mayor
+
+Sandbox: ejecuta progrmaas en un sistema confinado y separada de la red. El asislaminedo de la red impide la propagacion de malware u otras acciones maliciciosas.
+
+- Estos puede controlar las app pr clasificacion o usuarios: ayuda ap roteger los clinetes que navega por la web atauqes y amenzas 
+- adoptas varios enfoques de segmentacion: separa usuaris y dispositvos y aplicacions alinea con las neceisdaes de las empresas, elimina un unico punto de entrada.
+- Pasa de reactico a proactivo: usa la IA para aplicar las politicas de seguridad
+Estos ofrecen mayor inspeccion de alto rendimiento, mayor visiblidad de la red o poca o ninguna degradacion 
+
+Los centro de datos hbirido ofrecen a las empresas mayore agiliad, felxibilidad y escalabilidad segun la demanda , asi como una superfici de atauqe expandista.
+
+La inspeccion de lato rendimindo incye las aplicaciones, recursos infromaticos ,analisis datos cifrado en varias nubes privadas y publicas
