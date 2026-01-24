@@ -1,44 +1,101 @@
-Es un dispotivo o maquina virutal que controla el acceso a una red que categoriza automaticamente los dispostivos evalua y clasifica el cumplimiento de las politicas de seguridad, por usuario, dispositivo, ubicacion, sistema operativo y otros criterios que podrian detectar actividades inusuales. Muchas soluciones NAC tiene una arquitectura centralizada que mejora el control de los dispositivos en redes grandes y multiples  sitios.
+## Network Access Control (NAC)
 
-## Comienzo de Nac
+## Definición y Concepto
 
-Como metood de autenticacion y autorizacion para los dispositivos que se unian a la red que seguia los estandares IEEE 802.1X. El metodo invulucraba tres partes.
-El dispositivo cliente, el autenticador y el servidor de autenticacion.. 
+**Definición Simple:** Sistema o máquina virtual que controla el acceso a una red. Categoriza automáticamente los dispositivos, evalúa su cumplimiento de políticas (si tienen antivirus, si están actualizados) y decide si pueden entrar y hasta dónde pueden llegar.
 
-El autenticado podia ser un switch de red o un punto de acceso inalambrico que diferenciaba la red protegida de la desprotegida. El cliente proporcionaba credenciales en forma de nombre de usuario y contraseña, certificado digital u otro medio al autenticador, que reenviaba estas credenciales al servidor, dependinedo del resultado del autenticador bloqueaba el dispositvo o permitia acceso a la red.
+**Analogía del Mundo Real:** Imagina el **Control de Pasaportes/Aduana de un Aeropuerto**.
 
-Metodo para controlar red:
-portal cautivo: 
+- No importa quién seas, debes mostrar tu identificación (Autenticación).
+    
+- El agente revisa si tienes visa válida y si no traes contrabando (Postura de seguridad/Cumplimiento).
+    
+- Si todo está bien, te deja pasar, pero solo a la zona de turistas, no a la pista de aterrizaje (Segmentación).
 
-Retos emergentes del NAC:
+## Los Inicios: El Estándar IEEE 802.1X
 
-acceso de invitado
-traiga su propio dispositivo (BYOD)
-Internet de las cosas (IoT).
+Antes del NAC moderno, usábamos el protocolo **802.1X** para autenticar cables y Wi-Fi.
 
-Los dispostivos que se intentan a la red son de propiedad personal.. El departamento de MIS no controla o que ejecuta estos dispositvos.
+**Los 3 Jugadores del 802.1X (Pregunta de Examen):**
 
-Los dispostivos del IoT (Internet of Things) transmiten datos de un lugar a otro a traves de internet, ampliando la superficie de ataque.
+1. **Suplicante (Cliente):** El dispositivo que quiere entrar (Laptop, Celular). Debe proporcionar credenciales.
+    
+2. **Autenticador:** El "portero" que bloquea o abre la puerta. Generalmente es un **Switch** o un **Access Point (AP)**.
+    
+3. **Servidor de Autenticación:** El "cerebro" que tiene la base de datos de usuarios (generalmente un servidor **RADIUS**). Dice "Sí, pasa" o "No, bloquéalo".
 
-Las empresas usan IoT para ahorra tiempo. La veriedad de dispotivos, la falta de estandares y la incapacidad para proteger los dispositvos. Muchos carecen de ciclos de CPU o memoria para alojar software de autenticacion y seguridad. Se identifican mediante un secreto compartido o un numero de serie unico que se inserta durante la fabricacion. no obstante este  esquema de autenticacion es muy limitado, si se conoce el secreto, es probable que no haya forma de restablecerlo. sin la capaciadad  de intalar software hay poca visiblidad de esos dispostivos. Afortunadamente El Nac Evoluciono para resolver esta debilidades.
+## Retos Emergentes: ¿Por qué evolucionó el NAC?
 
-Cuando el MIS introduce el NAC en una red, lo primero que hace NAC es crear perfiles de todos los dispostivos coenctados, luego NAC, permite el acceso a los recursos de la red segun el perfil del dispostivo que se define por funcion. Si un dispostivo no tiene un perfil definido a un perfil que coincida com una funcion, conecta, se deniega la entradada.
-}
-NAC permite conectar una camara ip a un servidor de grabacion de video en red (NVR), pero impedir que se conecta a un servidor de fianzas, segun su perfil una camra IP no tiene porque comunicarse con un servidor de finaza Nac dirigira se camara ip a su vlan correspondinete. y el firewall ara el resto cunado el acceso se conde la red se segmenta for funcion del dispositov, si el dispositvo se compomete, el malware soo pued infectar aquellos objetos a los que el dispositvo tien epermiso para conectarse. Asi la camara ip comprometida del ejemplo anterior podira infectar el servido de NVr, pero no el de finanzas.
+El 802.1X funcionaba bien para PCs corporativas, pero falló con las nuevas tendencias:
 
-## Funcionalidades actuales de NAC
+### A. BYOD (Bring Your Own Device)
 
-Esto tambien se aplica a los contratistas,m socios e invitado que necesitaningresar a la red de una organizacion , en este caso estos usuarios estan segmentados por una red asi que puedne tener acceso de florma segura mientras se bloquea el acceso a areas resringifas. Para garantizar la seguridad de las red Las politcas de usaurio y dispostivo, se ajustan a medida a cambian las personas, los endpoints y las empresas.
+- Los empleados traen sus propios celulares/laptops. El departamento de TI (MIS) no controla esos equipos, pero debe darles acceso seguro.
+    
 
-Con la prevalencia de puntos de acceso WIFI en lugares publicos  y oficinas de empresas existe la necesidad del acceso temporal de invitado a estas redes. NAC permite a una organizacion administrar y autenticas usuarios y dispositvos temproales a trves de un protal de autoservicio. (ejemplo, perosna accede a red de un aeropuerto).
+### B. IoT (Internet of Things) - El Gran Dolor de Cabeza
 
-NAC se puede integrar en el marco de segurida de modo que cuado se detecteca una violacion de datos. NAC responde automaticamnete para notifcar el centro de operaciones de seguridad (SOC) y se cordina con otros dipositovs para neutralizar la amenaza. Tambien puede generar infromes e informacion sobre los intentos de acceso en toda la organizacion Nac se integra con otros porducots ocmo switches y solucones de red atraves de la interfaz de progrmaacion de aplicaicoens api abiertas o el shell seguro..
+- Cámaras, impresoras, sensores, termostatos.
+    
+- **El Problema:** Son dispositivos "sin cabeza" (Headless). No tienen pantalla ni teclado para poner usuario/contraseña, y a menudo tienen poca CPU/RAM, por lo que **no se les puede instalar software de seguridad (agentes)**.
+    
+- **Superficie de Ataque:** Si hackean una cámara (que suele tener seguridad débil o contraseñas por defecto imposibles de cambiar), pueden usarla para saltar al servidor de la empresa.
 
+## ¿Cómo funciona el NAC Moderno? (El Proceso)
 
-Importancia de NAC:
+Cuando conectas FortiNAC, el proceso sigue estos pasos lógicos:
 
-Mayor seguridad: autentica los usuarios
-Ahorro de datos: seguimito ny proteccion automatizado (menos recurso de ti)
-Automatizacion: (cunado hay uchso dispositvos)
-Mejores experiencias de TI: EL acceso sin dificultades proporciona una experiencia de usuari sin fricciones al conectarse a la red 
+### Paso 1: Visibilidad y Perfilado (Profiling)
 
+- **Regla de Oro:** "No puedes proteger lo que no puedes ver".
+    
+- NAC escanea la red y crea un **inventario** en tiempo real.
+    
+- **Identificación:** Como los IoT no te dicen quiénes son, NAC analiza su comportamiento o huella digital para decir: _"Esto es una Cámara IP Axis modelo X"_.
+    
+
+### Paso 2: Segmentación Dinámica (Micro-segmentación)
+
+- Una vez identificado el dispositivo, NAC le asigna un perfil y lo manda a su lugar correcto.
+    
+- **Caso de Uso (Cámara vs. Finanzas):**
+    
+    - NAC detecta una **Cámara IP**.
+        
+    - Automáticamente la mueve a la **VLAN de Video**.
+        
+    - Configura el Firewall para que esa cámara hable con el **NVR (Grabador)**, pero **BLOQUEA** su acceso al **Servidor de Finanzas**.
+        
+    - _Resultado:_ Si hackean la cámara, el malware se queda atrapado en la VLAN de video y no roba los datos bancarios.
+        
+
+### Paso 3: Respuesta Automatizada
+
+- NAC se integra con el SOC (Security Operations Center).
+    
+- Si un dispositivo aprobado empieza a comportarse raro (ej. la impresora intenta descargar archivos de Rusia), NAC lo aísla o desconecta automáticamente.
+
+## Funcionalidades Clave
+
+- **Acceso de Invitados (Guest Management):**
+    
+    - Portal Cautivo (página web donde aceptas términos o pones un código) para visitas.
+        
+    - Permite autoservicio sin molestar al equipo de TI.
+        
+- **Verificación de Postura:**
+    
+    - Antes de dejar entrar a una Laptop, revisa: ¿Tiene el antivirus activo? ¿Tiene los parches de Windows? Si no, la manda a una "VLAN de Cuarentena" para que se actualice.
+
+### Importancia y Beneficios
+
+| **Beneficio**                | **Descripción**                                                                   |
+| ---------------------------- | --------------------------------------------------------------------------------- |
+| **Visibilidad (Inventario)** | Sirve como un inventario permanente y vivo de todos los endpoints conectados.     |
+| **Seguridad Zero Trust**     | "Nunca confiar, siempre verificar". Autentica todo antes de conectar.             |
+| **Ahorro de Datos y TI**     | Automatiza procesos que antes eran manuales (mover puertos de VLAN).              |
+| **Experiencia de Usuario**   | Conexión sin fricción para usuarios autorizados; portales fáciles para invitados. |
+
+## FortiNac
+
+- **Características:** Arquitectura centralizada (ideal para redes grandes y múltiples sitios), visibilidad total de IoT, y respuesta automatizada ante incidentes.
