@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "532d2624a3b8a2af",
+        "id": "882eaf443c9f61b8",
         "type": "tabs",
         "children": [
           {
-            "id": "189dcd55e5601c19",
+            "id": "d8e5905a93bc4c60",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01.2__Linux_Practica/Bandit (OverTheWire).md",
+                "file": "Control de acceso a la red (NAC).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bandit (OverTheWire)"
+              "title": "Control de acceso a la red (NAC)"
             }
           }
         ]
@@ -184,8 +184,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "189dcd55e5601c19",
+  "active": "d8e5905a93bc4c60",
   "lastOpenFiles": [
+    "RED/Hack The Box.md",
+    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "Control de acceso a la red (NAC).md",
     "Getting_Started_in_Cybersecurity/Firewalls.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
@@ -200,13 +202,11 @@
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/05_Marcos de ataque.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/06_Alertas de avisos y brotes.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/02_Actores de amenazas (Threat Actors).md",
-    "RED/Hack The Box.md",
     "RED",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo1_introduccion/01_Introducción a la ciberseguridad.md",
     "01.2__Linux_Practica/Nuevo usuarios_practica.md",
     "01.2__Linux_Practica/Datos utiles CTF.md",
-    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "01_Linux/02_Linux_File_System.md",
     "00_SO/04_Archivos.md",
     "00_SO/03_Procesos.md",
