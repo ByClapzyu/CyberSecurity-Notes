@@ -24,12 +24,23 @@ HTTP USOS : Contenido de texto estatico, comercio electronico, alojamiento de ar
 
 ### Firewall de tercera generación
 
-carga util de datos ,implementa el filtrado de capa de aplicacion pueden comprender protocolos como:
+carga util de datos ,implementa el filtrado de capa de aplicacion pueden comprender protocolos como:, 
 - http
 - ftp
 - dns
 
+tambien protecciones combinadas como: antivirus, filtrado de correo electronico no deseado IPS VPN
 
 
-- Next-generation firewall (NGFW)
-- 
+
+Estado mas reciende del firewall : los ataques pueden venir de usuarios de confianza, dispostivo y apps
+
+
+### - Next-generation firewall (NGFW)
+Un firewall debe evitar los ciberatauqes en evolución en todos los extremos de la red, al mismo tiepo ofrecer seguridad, confiabildad y rendimiento de la red.
+
+como FortiGate proporciona estas funcionalidades de seguridad avanzadas
+
+Primera linea de defensa: revisa sus maletas para detectar si lleva algun objeto maliciso
+segunda linea de defensa: haca una inspeccion profunda de paquete (DPI)
+tercera linea de defensa: 
