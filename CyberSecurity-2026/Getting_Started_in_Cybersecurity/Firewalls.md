@@ -121,3 +121,44 @@
 - **Riesgo:** Esto **expande la superficie de ataque**.
     
 - **Solución NGFW:** Debe ofrecer visibilidad y control unificado sin importar dónde estén los datos, asegurando inspección de alto rendimiento incluso en tráfico cifrado entre nubes.
+---
+Notas de prueba
+# Módulo: Puntos Críticos del Examen (Network Security)
+
+Estas son definiciones específicas del curso FCF que pueden ser contraintuitivas. ¡Memorízalas tal cual!
+
+### 1. Next-Generation Firewall (NGFW)
+
+- **Pregunta:** ¿Qué característica de identificación diferencia un firewall NGFW de los anteriores?
+    
+- **Respuesta Correcta:** **"Usa la toma de decisiones basada en reglas"**.
+    
+- **💡 Nota mental:** Aunque técnicamente hace DPI (Inspección Profunda), el examen enfoca la diferencia en la _inteligencia_ de la decisión (basada en identidad/contexto) frente al filtrado mecánico de los anteriores.
+    
+
+### 2. Firewall de Primera Generación (Packet Filtering)
+
+- **¿Qué es?** Es el tipo de firewall más básico ("Stateless").
+    
+- **¿En qué se basa para controlar?** Controla el tráfico basándose estrictamente en:
+    
+    - **Direcciones de red** (IP Origen/Destino).
+        
+    - **Protocolos** (TCP/UDP).
+        
+    - **Puertos**.
+        
+- **⛔ Su Gran Limitación (Pregunta Trampa):**
+    
+    - **Respuesta Correcta:** **"Abría puertos aleatorios y usaba conexiones múltiples"**.
+        
+    - **Explicación:** Debido a que no tenía estado ("memoria"), no sabía manejar protocolos complejos como FTP Pasivo que piden abrir puertos al azar (ej. puerto 10500) para transferir datos. Para que funcionara, el administrador tenía que dejar esos puertos abiertos permanentemente, creando un agujero de seguridad.
+        
+
+### 3. Firewall UTM (Unified Threat Management)
+
+- **Pregunta:** ¿Qué componente monitorea protocolos como FTP y HTTP?
+    
+- **Respuesta Correcta:** **"Filtro de capa de aplicación"**.
+    
+- **Explicación:** Un firewall normal solo ve "Puerto 80". El UTM tiene un módulo específico (Application Layer) que entiende el _lenguaje_ de la aplicación (sabe qué es un comando "GET" de HTTP o un "PUT" de FTP).
