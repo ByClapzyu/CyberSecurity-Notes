@@ -108,7 +108,7 @@ El WAF moderno (como FortiWeb) no trabaja solo; se integra en la red.
 
 ---
 
-## 🦁 Producto Fortinet: FortiWeb
+## Producto Fortinet: FortiWeb
 
 Para el examen, asocia **WAF** con **FortiWeb**.
 
