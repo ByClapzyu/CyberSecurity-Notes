@@ -28,5 +28,17 @@ NAC permite conectar una camara ip a un servidor de grabacion de video en red (N
 
 ## Funcionalidades actuales de NAC
 
-Esto tambien se aplica a los contratistas,m socios e invitado que necesitan
+Esto tambien se aplica a los contratistas,m socios e invitado que necesitaningresar a la red de una organizacion , en este caso estos usuarios estan segmentados por una red asi que puedne tener acceso de florma segura mientras se bloquea el acceso a areas resringifas. Para garantizar la seguridad de las red Las politcas de usaurio y dispostivo, se ajustan a medida a cambian las personas, los endpoints y las empresas.
+
+Con la prevalencia de puntos de acceso WIFI en lugares publicos  y oficinas de empresas existe la necesidad del acceso temporal de invitado a estas redes. NAC permite a una organizacion administrar y autenticas usuarios y dispositvos temproales a trves de un protal de autoservicio. (ejemplo, perosna accede a red de un aeropuerto).
+
+NAC se puede integrar en el marco de segurida de modo que cuado se detecteca una violacion de datos. NAC responde automaticamnete para notifcar el centro de operaciones de seguridad (SOC) y se cordina con otros dipositovs para neutralizar la amenaza. Tambien puede generar infromes e informacion sobre los intentos de acceso en toda la organizacion Nac se integra con otros porducots ocmo switches y solucones de red atraves de la interfaz de progrmaacion de aplicaicoens api abiertas o el shell seguro..
+
+
+Importancia de NAC:
+
+Mayor seguridad: autentica los usuarios
+Ahorro de datos: seguimito ny proteccion automatizado (menos recurso de ti)
+Automatizacion: (cunado hay uchso dispositvos)
+Mejores experiencias de TI: EL acceso sin dificultades proporciona una experiencia de usuari sin fricciones al conectarse a la red 
 
