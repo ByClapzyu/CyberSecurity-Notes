@@ -20,8 +20,13 @@ Los dispostivos que se intentan a la red son de propiedad personal.. El departam
 
 Los dispostivos del IoT (Internet of Things) transmiten datos de un lugar a otro a traves de internet, ampliando la superficie de ataque.
 
-Las empresas usan IoT para ahorra tiempo. La veriedad de dispotivos, la falta de estandares y la incapacidad para proteger los dispositvos. Muchos carecen de ciclos de CPU o memoria para alojar software de autenticacion y seguridad. Se identifican mediante un secreto compartido o un numero de serie unico que se inserta du
+Las empresas usan IoT para ahorra tiempo. La veriedad de dispotivos, la falta de estandares y la incapacidad para proteger los dispositvos. Muchos carecen de ciclos de CPU o memoria para alojar software de autenticacion y seguridad. Se identifican mediante un secreto compartido o un numero de serie unico que se inserta durante la fabricacion. no obstante este  esquema de autenticacion es muy limitado, si se conoce el secreto, es probable que no haya forma de restablecerlo. sin la capaciadad  de intalar software hay poca visiblidad de esos dispostivos. Afortunadamente El Nac Evoluciono para resolver esta debilidades.
 
+Cuando el MIS introduce el NAC en una red, lo primero que hace NAC es crear perfiles de todos los dispostivos coenctados, luego NAC, permite el acceso a los recursos de la red segun el perfil del dispostivo que se define por funcion. Si un dispostivo no tiene un perfil definido a un perfil que coincida com una funcion, conecta, se deniega la entradada.
+}
+NAC permite conectar una camara ip a un servidor de grabacion de video en red (NVR), pero impedir que se conecta a un servidor de fianzas, segun su perfil una camra IP no tiene porque comunicarse con un servidor de finaza Nac dirigira se camara ip a su vlan correspondinete. y el firewall ara el resto cunado el acceso se conde la red se segmenta for funcion del dispositov, si el dispositvo se compomete, el malware soo pued infectar aquellos objetos a los que el dispositvo tien epermiso para conectarse. Asi la camara ip comprometida del ejemplo anterior podira infectar el servido de NVr, pero no el de finanzas.
 
+## Funcionalidades actuales de NAC
 
+Esto tambien se aplica a los contratistas,m socios e invitado que necesitan
 
