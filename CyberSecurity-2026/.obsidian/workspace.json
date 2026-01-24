@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "35ac83d0a0fb29c9",
+        "id": "ca4483e0eb2b580c",
         "type": "tabs",
         "children": [
           {
-            "id": "eb0650a2386b37f5",
+            "id": "c7c887251b8dc018",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Application Firewall (WAF).md",
+                "file": "Puerta de enlace de correo seguro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Web Application Firewall (WAF)"
+              "title": "Puerta de enlace de correo seguro"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -185,14 +184,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eb0650a2386b37f5",
+  "active": "c7c887251b8dc018",
   "lastOpenFiles": [
-    "Web Application Firewall (WAF).md",
-    "SandBox.md",
-    "Control de acceso a la red (NAC).md",
+    "Getting_Started_in_Cybersecurity/04_Web Application Firewall (WAF).md",
+    "Puerta de enlace de correo seguro.md",
+    "Getting_Started_in_Cybersecurity/03_SandBox.md",
+    "Getting_Started_in_Cybersecurity/02_Control de acceso a la red (NAC).md",
     "RED/Hack The Box.md",
     "01.2__Linux_Practica/Bandit (OverTheWire).md",
-    "Getting_Started_in_Cybersecurity/Firewalls.md",
+    "Getting_Started_in_Cybersecurity/01_Firewalls.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
     "Modulo1_Firewalls",
     "Getting_Started_in_Cybersecurity",
@@ -225,7 +225,6 @@
     "Fortinet",
     "Untitled.base",
     "00_SO/02_1_Gestión de Memoria.md",
-    "00_SO/02_Gestion de Memoria.md",
     "00_SO/Pasted image 20260116170550.png",
     "00_SO/Pasted image 20260116183953.png",
     "Untitled.canvas",
