@@ -1,156 +1,136 @@
-El internet de las cosas IoT aumento el numero de endponts que se deben proteger.
 
-Hay muchas estrategias y politicas que se pueden usar para proteger los dispossitivos tradicionales y lo mas recientes conectados a la red.
+# Módulo: Seguridad de Endpoints
 
-Muchas de esas tecnicas estan enfocadas a empresas y redes de empresas, pero tambien sep eude usar en etorno personal. 
+##  Introducción
 
-**Controles administrativos**
+El auge del Internet de las Cosas (IoT) ha aumentado exponencialmente el número de endpoints que deben protegerse. Una red es tan segura como su endpoint más vulnerable.
 
-- Contraseñas
+Las estrategias se dividen en cuatro pilares principales:
+
+1. **Controles Administrativos:** Políticas humanas (Contraseñas, Restricciones, Privilegio Mínimo).
     
-- Restricciones de usuario
+2. **Mantenimiento:** Higiene digital (Actualizaciones, Parches, Copias de seguridad).
     
-- Principio de privilegio mínimo (PoLP)
+3. **Protección Local:** Endurecimiento del sistema (Cifrado, DLP, Arranque seguro).
     
-
-**Mantenimiento de endpoint**
-
-- Actualizaciones automáticas/Parches
-    
-- Revisiones de la política
-    
-- Copias de seguridad
+4. **Monitoreo:** Vigilancia activa (EPP, IDS, EDR).
     
 
-**Protección de endpoint local**
+---
 
-- Endurecimiento del OS y arranque
-    
-- Administración de arranque
-    
-- Seguridad y cifrado del disco
-    
-- Prevención de pérdida de datos (DLP)
-    
+## Controles Administrativos
 
-**Monitoreo de endpoint**
+**Principio de Privilegio Mínimo (PoLP):** Es la regla de seguridad más básica y efectiva. Consiste en permitir a los usuarios y procesos únicamente el acceso y los permisos estrictamente necesarios para desempeñar sus funciones, y nada más.
 
-- Plataforma de protección de endpoints (EPP)
+**Gestión de Políticas:** Tener una vista amplia y descendente para diseñar la seguridad ayuda a determinar políticas de red efectivas.
+
+---
+
+## Seguridad del Sistema Operativo y Arranque
+
+**El Riesgo:** Han surgido amenazas que atacan el firmware y los procesos de arranque (antes de que cargue el antivirus).
+
+**Protección Física y BIOS:**
+
+- Es crucial proteger físicamente los dispositivos para evitar accesos no autorizados.
     
-- Sistemas de detección de intrusiones (IDS)
-    
-- Detección y respuesta de endpoints (EDR)
-
-La forma mas sencilla de proteger los endpontis, es que este coenctado a una contraseña segura, 
-principio de privilegio minimo (PoLP
-Solo permita a los usuarios el acceso a los permisos que necesitan para desempeñar sus funciones
-
-restricciones
-- Una red es tan segura como su endpoint más vulnerable.
-    
-- Tener una vista más amplia y descendente para diseñar y aplicar la seguridad puede ayudar a determinar las políticas de una red.
-sistema operativo e inicio
-**Firmware y los procesos de arranque**
-
-- Han surgido amenazas que atacan el firmware y los procesos de arranque de los dispositivos de endpoint.
+- **Bloqueo de BIOS:** Se debe configurar una contraseña en la BIOS para evitar que un atacante cambie la secuencia de arranque (ej. arrancar desde una USB con malware).
     
 
-**Protección Física y Arranque**
+**UEFI vs. BIOS (Firmware):**
 
-- Proteger físicamente los dispositivos para que los atacantes no tengan acceso físico es extremadamente importante.
+- Conocer cómo carga el OS es vital.
     
-- Bloquear el BIOS y otros sistemas de tiempo de arranque puede evitar este tipo de ataques.
+- **UEFI (Unified Extensible Firmware Interface):** Es la evolución de la BIOS.
     
-    - BIOS
-        
-    - Sistemas de tiempo de arranque
-        
-
-**Firmware**
-
-- Conocer cómo los endpoints de la red cargan sus Sistemas operativos (OS) es importante para prevenir los ataques de malware del firmware.
-    
-- Restringir el firmware para que solo cargue software aprobado es una de las nuevas funciones más importantes de UEFI sobre BIOS.
+- **Secure Boot (Arranque Seguro):** Es una de las funciones más importantes de UEFI. Restringe el firmware para que **solo cargue software/sistemas operativos firmados y aprobados**, evitando rootkits de arranque.
     
 
-**Selección y Gestión del OS**
+**Estandarización del OS:** Mantener una lista fija de sistemas operativos de confianza y estandarizados en la empresa facilita la administración y asegura que solo versiones seguras accedan a la red.
 
-- Seleccione y use un OS fácil de administrar y seguro.
+---
+
+## Cifrado de Datos y Discos
+
+Los dispositivos portátiles (laptops, celulares) son de alto riesgo por robo o pérdida. Si no están cifrados, ver el historial de navegación o caché DNS puede revelar información confidencial de la arquitectura de la red corporativa.
+
+### Tipos de Cifrado
+
+**A. Cifrado de Disco Completo (FDE - Full Disk Encryption):**
+
+- Es una solución basada en **Software**.
     
-- Tener una lista fija de sistemas operativos de confianza puede ayudar a reforzar la seguridad de la red en general al permitir que solo los tipos y versiones de OS conocidos accedan a las redes.
+- El sistema operativo se encarga de cifrar todo el disco.
     
-- La mayoría de los endpoints usan algún tipo de cargador de arranque y firmware para proteger y cargar el OS.
-
-## ventaja de suar prottiles 
-
-telefeono o laptop portaatiles so nporatiles
-desventaja: los datos no estan cifrados es muy facil de estraer inf outil,  si es coportativa sin cifrar puede tener mucha info util sobre la posutra de las eguridad de la emrpesa.
-- Ver el historial de navegación y las consultas DNS almacenadas en caché de una computadora puede revelar información confidencial de la red y procedimientos de seguridad.
-- Proteger y cifrar completamente los endpoints es un aspecto crítico de la ciberseguridad, especialmente para los dispositivos de alto riesgo que pudieran contener gran cantidad de información confidencial.
-### **Cifrado, seguridad de disco y DLP**
-
-**Cifrado de disco completo (FDE)**
-
-- Una solución basada en software en la que el sistema operativo cifra el disco.
+- Ejemplo: BitLocker.
     
 
-**Hardware de seguridad**
+**B. Unidad de Autocifrado (SED - Self-Encrypting Drive):**
 
-- Módulo de plataforma de confianza (TPM)
-**Unidad de autocifrado (SED)**
-
-- Disco duro con un módulo integrado que maneja automáticamente el cifrado y descifrado del contenido del disco duro mediante instrucciones del firmware y OS.
+- Es una solución basada en **Hardware**.
     
-- Con una unidad SED, la labor criptográfica recae en el módulo integrado en el disco duro.
+- El disco duro tiene un módulo integrado que maneja automáticamente el cifrado y descifrado.
     
-### **Prevención de pérdida de datos (DLP)**
-
-- Puede detectar si alguien está intentando copiar información confidencial de un dispositivo o enviarla a través de la red.
-    
-- Puede bloquear o registrar la transacción por seguridad.
-    
-- Impide o limita el uso de unidades que se conectan como memorias USB o discos duros externos.
-    
-- También puede basarse en la red.
-### **Cifrado en dispositivos modernos**
-
-- Muchos dispositivos modernos, como los teléfonos inteligentes, usan automáticamente el cifrado de disco completo.
-    
-- Revise siempre si están disponibles el cifrado de disco y la DLP en los endpoints.
-
-
-Actualizaciones automaticas / parches
-
-Aquí tienes el texto extraído y organizado de las últimas imágenes:
-
-### **Mantenimiento y Actualizaciones**
-
-- **Importancia de la administración:** Es extremadamente importante que los administradores puedan actualizar, parchear y hacer copias de seguridad de todos los endpoints conectados.
-    
-- **Desafíos:** La dificultad para mantener planificaciones confiables para la aplicación de parches y generar copias de seguridad está relacionada con el gran número de dispositivos y procedimientos diferentes para hacer actualizaciones y copias de seguridad.
-    
-- **Estandarización:** Tener un modelo y fabricante estandarizado de computadora de escritorio, portátiles, servidores y teléfonos inteligentes para una empresa puede simplificar enormemente la tarea de mantenimiento de parches y actualizaciones.
-    
-    - **Limitaciones:** Esto no siempre es viable debido a la necesidad de dar soporte a equipos heredados críticos y al aumento del "Traiga su propio dispositivo" o BYOD en los entornos de trabajo.
-        
-
-### **Reducción de Riesgos y Vulnerabilidades**
-
-- Cerrar las vulnerabilidades potenciales es un paso clave para prevenir un ataque de ciberseguridad a gran escala.
-    
-- Actualizar los OS, el firmware y los programas y aplicaciones de software vulnerables es una forma sencilla y eficaz de reducir el riesgo en general.
-    
-- La infiltración posterior se puede obstaculizar porque ninguna otra herramienta del conjunto de herramientas de un atacante será efectiva.
-    
-- Tener un sistema totalmente parcheado y actualizado puede ayudar a ralentizar y restringir el compromiso de los sistemas.
+- **Ventaja:** La labor criptográfica la hace el disco, no el procesador (CPU) de la computadora, mejorando el rendimiento.
     
 
-### **Copias de Seguridad y Recuperación**
-**dipositivos criticos**
-- **Solución de copia de seguridad:** Ayuda para la recuperación después de ciberataques o accidentes.
+**C. TPM (Trusted Platform Module):**
+
+- Es un chip de **Hardware** de seguridad en la placa madre.
     
--  Muchos dispositivos del IoT no tienen la funcionalidad para hacer copia de seguridad.
+- Almacena claves criptográficas, certificados y contraseñas de forma segura, separada del disco duro. Ayuda a verificar la integridad del sistema.
     
-- Tener equipos de reserva que se puedan configurar fácilmente para sustituir a los dispositivos dañados, robados o comprometidos debe ser parte de un plan integral de recuperación de desastres.
+
+---
+
+##  Prevención de Pérdida de Datos (DLP)
+
+El software DLP (Data Loss Prevention) vigila la exfiltración de información.
+
+**Funciones:**
+
+- Detecta si alguien intenta copiar información confidencial (ej. números de tarjetas, planos).
     
- Tener una planificación regular para hacer copias de seguridad es una de las formas más eficaces de mitigar un ataque de ransomware.
+- Bloquea la transferencia o registra el incidente.
+    
+- **Control de Periféricos:** Puede impedir el uso de memorias USB o discos externos no autorizados.
+    
+
+---
+
+## Mantenimiento: Parches y Respaldos
+
+**Actualizaciones y Parches:**
+
+- Es la forma más sencilla y eficaz de reducir el riesgo.
+    
+- Cerrar vulnerabilidades conocidas impide que las herramientas de los atacantes funcionen.
+    
+- **Desafío:** La diversidad de dispositivos (BYOD) y equipos heredados (Legacy) dificulta la estandarización de parches.
+    
+
+**Copias de Seguridad (Backups):**
+
+- Es fundamental para la recuperación ante desastres y la mitigación de ataques de **Ransomware**.
+    
+- **Problema en IoT:** Muchos dispositivos IoT no tienen función de respaldo.
+    
+- **Solución IoT:** Tener equipos de reserva (hardware spare) configurados para sustituir rápidamente a los dañados.
+
+## Técnicas de Endurecimiento por Dispotivo
+
+|**Dispositivo**|**Técnicas de Protección Recomendadas**|
+|---|---|
+|**Teléfono Inteligente**|1. EPP (Plataforma de Protección de Endpoints)<br><br>  <br><br>2. Actualización de Parches<br><br>  <br><br>3. Cifrado de disco completo (suele venir activo por defecto)|
+|**Servidor**|1. EPP<br><br>  <br><br>2. Cifrado de disco completo<br><br>  <br><br>3. Actualización de Parches rigurosa|
+|**Cámaras Inalámbricas (IoT)**|**Aislamiento de Red:** Al no soportar agentes de seguridad, deben estar en una VLAN separada sin acceso a la red principal.|
+|**Refrigerador Inteligente (IoT)**|**Aislamiento de Red:** Igual que las cámaras, son dispositivos inseguros que deben segregarse.|
+
+
+**Glosario de Monitoreo:**
+
+- **EPP (Endpoint Protection Platform):** Antivirus de nueva generación. Prevención.
+    
+- **EDR (Endpoint Detection and Response):** Detecta ataques complejos en tiempo real y permite responder (investigar, aislar).
+    
+- **IDS (Intrusion Detection System):** Detecta intrusiones basándose en firmas o anomalías.
