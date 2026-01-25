@@ -55,28 +55,68 @@ Aquí tienes el desglose del "por qué" y la definición de cada ventaja:
     - Crea túneles cifrados (VPN) automáticamente sobre cualquier tipo de conexión, protegiendo los datos en tránsito, incluso sobre internet público.
         
 
-## 4. Evolución de la Tecnología SD-WAN
+##  Evolución de la Tecnología SD-WAN
+# Evolución de SD-WAN: Ventajas y Desventajas
 
-La tecnología ha pasado por tres etapas clave para adaptarse al panorama de TI:
+En el examen, es vital entender qué problema resolvía cada fase y **qué problema nuevo creaba** (su desventaja), lo que obligaba a pasar a la siguiente fase.
 
-**Fase 1: Necesidad de mayor ancho de banda**
+### Fase 1: Necesidad de Mayor Ancho de Banda (WAN Híbrida)
 
-- El objetivo inicial era simplemente agregar más capacidad de conexión para soportar el aumento de tráfico, uniendo múltiples enlaces.
+En esta etapa, las empresas empezaron a mezclar enlaces costosos (MPLS) con enlaces de internet baratos (Banda ancha) para tener más capacidad.
+
+- **Ventajas:**
     
-
-**Fase 2: Necesidad de alto rendimiento**
-
-- Aquí nace la SD-WAN propiamente dicha. El enfoque cambió a optimizar la calidad de la experiencia del usuario, priorizando aplicaciones críticas sobre el ancho de banda bruto.
+    - **Mayor Ancho de Banda:** Se suma la capacidad de múltiples enlaces.
+        
+    - **Reducción de Costos Inicial:** Se reduce la dependencia exclusiva de las costosas líneas MPLS al usar internet público.
+        
+- **Desventajas:**
     
+    - **Rendimiento Inconsistente:** El tráfico se envía por cualquier enlace disponible sin inteligencia. Si el enlace de internet tiene "ruido" (pérdida de paquetes), las aplicaciones fallan (voz robótica, videos lentos).
+        
+    - **Falta de conocimiento de la aplicación:** La red no sabe diferenciar entre una llamada de Zoom crítica y un video de YouTube; trata todo igual.
+        
 
-**Fase 3: Necesidad de una infraestructura de seguridad unificada (Actual)**
+### Fase 2: Necesidad de Alto Rendimiento (SD-WAN Pura / Overlay)
 
-- Con la conexión directa a internet desde las sucursales, surgió el riesgo de seguridad. Esta fase integra la seguridad avanzada directamente en la red SD-WAN (Secure SD-WAN).
+Aquí nace la SD-WAN real. Se añade inteligencia para reconocer aplicaciones y dirigir el tráfico.
+
+- **Ventajas:**
     
+    - **Conciencia de Aplicaciones:** Identifica aplicaciones críticas (SAP, Voz) y las prioriza.
+        
+    - **Selección Dinámica de Ruta:** Si un enlace falla o se pone lento, mueve el tráfico automáticamente al otro enlace en milisegundos.
+        
+    - **Mejor Experiencia de Usuario (QoE):** Resuelve los problemas de latencia y jitter de la Fase 1.
+        
+- **Desventajas (Punto Crítico del Examen):**
+    
+    - **Brecha de Seguridad:** Al permitir que las sucursales se conecten **directo a Internet (Direct Internet Access)** para ir a la nube, se saltan el firewall central. La sucursal queda expuesta a ataques.
+        
+    - **Complejidad de Gestión:** Para solucionar la falta de seguridad, las empresas tenían que comprar un firewall extra. Esto significaba gestionar dos cajas distintas (Router SD-WAN + Firewall) con dos consolas diferentes.
+        
+
+### Fase 3: Necesidad de Seguridad Unificada (Secure SD-WAN)
+
+La convergencia final. Se une la red y la seguridad en un solo dispositivo (Enfoque Fortinet).
+
+- **Ventajas:**
+    
+    - **Seguridad Integrada (NGFW):** Inspección profunda de tráfico (SSL Inspection, Antivirus, IPS) integrada en el mismo flujo de SD-WAN.
+        
+    - **Gestión Simplificada:** Un solo dispositivo, un solo sistema operativo, una sola consola (Single Pane of Glass).
+        
+    - **Reducción de Costos (TCO):** No necesitas comprar firewalls y routers por separado.
+        
+    - **Cumplimiento:** Facilita cumplir normas de seguridad al tener visibilidad total.
+        
+- **Desventajas:**
+    
+    - _(En el contexto del examen y la marca, esta fase se presenta como la solución ideal sin desventajas técnicas mayores, salvo la necesidad de reemplazar equipos antiguos por dispositivos capaces de procesar seguridad y red simultáneamente)._
 
 ---
 
-## 5. Secure SD-WAN
+##  Secure SD-WAN
 
 **Definición** Es la convergencia de redes y seguridad. Secure SD-WAN es la combinación de las funciones de un **Firewall de Próxima Generación (NGFW)** y la tecnología **SD-WAN** en un solo dispositivo físico.
 
