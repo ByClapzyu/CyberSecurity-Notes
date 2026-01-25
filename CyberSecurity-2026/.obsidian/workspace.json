@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "aa3e5620fab403a9",
+        "id": "85509cc1b959aabd",
         "type": "tabs",
         "children": [
           {
-            "id": "58631929559e5a82",
+            "id": "b08147733395e3d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "09_ Monitoreo de endpoint.md",
+                "file": "10_SOAR.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09_ Monitoreo de endpoint"
+              "title": "10_SOAR"
             }
           }
         ]
@@ -184,8 +184,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "58631929559e5a82",
+  "active": "b08147733395e3d4",
   "lastOpenFiles": [
+    "10_SOAR.md",
     "09_ Monitoreo de endpoint.md",
     "08_Tecnica endurecimiento de enpoints.md",
     "07_Wi-Fi segura.md",
@@ -218,7 +219,6 @@
     "00_SO/04_Archivos.md",
     "00_SO/03_Procesos.md",
     "01_Linux/01_Comandos_Basicos.md",
-    "01_Linux/00_Conceptos_Clave_Linux.md",
     "01_Linux/passwd.png",
     "01_Linux/adduser.png",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas",
