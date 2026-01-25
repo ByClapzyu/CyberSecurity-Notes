@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "filtrado de contenido.md",
+                "file": "Getting_Started_in_Cybersecurity/05_Puerta de enlace de correo seguro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "filtrado de contenido"
+              "title": "05_Puerta de enlace de correo seguro"
             }
           }
         ]
@@ -184,10 +184,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b25b8aa6c1df5180",
+  "active": "3adad6a147defd8f",
   "lastOpenFiles": [
-    "Puerta de enlace de correo seguro.md",
-    "filtrado de contenido.md",
+    "Getting_Started_in_Cybersecurity/06_filtrado de contenido.md",
+    "Getting_Started_in_Cybersecurity/05_Puerta de enlace de correo seguro.md",
     "Getting_Started_in_Cybersecurity/04_Web Application Firewall (WAF).md",
     "Getting_Started_in_Cybersecurity/03_SandBox.md",
     "Getting_Started_in_Cybersecurity/02_Control de acceso a la red (NAC).md",
