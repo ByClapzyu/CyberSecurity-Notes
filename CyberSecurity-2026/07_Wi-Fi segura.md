@@ -9,9 +9,30 @@ REDES INALAMBRICAS vs Cableadas
 -  ventaja : movilidad
 - desventaja: seguridad: si no se sigue los protocolo adecuados o tro puede escuchar la comunicacion.
 
+IP Y TCP son protocolos que usan las redes inalambircas y cableadas
 Proteccion de redes wifi
 
 - privacidad equivalente por cable (WEP)
 - Acceso wifi protegido (WPA v 1 y 2 .)
-	- algoritmo de estandar de cifrado avanzado (AES)
-	- 
+	- algoritmo de estandar de cifrado avanzado (AES: explica un poco que es)
+	- nivel de seguridad domestica > frase de contraseña compartida
+	- nivel de seguridad de empresa > 
+	- mecanismo de autnticacion y cifrdao IEEE 802.1.x (explica un poco que es )
+
+- WPA v3 
+	- un estableciminedo de comunicacion segura
+	- mayor facilidad para añadir dispostivos
+	- aumento del tamaño de la clave criptografica
+
+Riesgo de ing social
+redes publicas : honey pot
+identificador de conjunto de sevicios (SSID no autorizado): el atacante puede hacer un AP falso haciendo cree que es la red que se habia conectado antes para que el dispostivos se coencte ataque evil twin : tipo man in the middle. no confia ssi dcon seguridad  abierta. aprovechar carecteristica de cifrado o vpn.
+
+Buenas practicas para conf una red.
+- cambiar SSID y la frase de contraseña predetermiandos.
+- elegir una frase de contraseña segura compleja
+- activar la seguridad de entrutador par grantiza cifradode los datos.
+- actualizar firmware del enrutador 
+- seleccional el ultimo protocolo de srguridad compatible con sus dispositivos.
+**Mas caracteristicas**
+
