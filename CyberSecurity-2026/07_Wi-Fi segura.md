@@ -1,0 +1,1 @@
+La wifi basado en la norma IEEE 802.11. Es una tecnologia inalambrica empleada para la conexion en red de area local de dispositivos.
