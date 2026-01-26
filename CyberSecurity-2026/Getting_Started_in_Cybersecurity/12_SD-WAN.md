@@ -65,13 +65,14 @@ En el examen, es vital entender qué problema resolvía cada fase y **qué probl
 En esta etapa, las empresas empezaron a mezclar enlaces costosos (MPLS) con enlaces de internet baratos (Banda ancha) para tener más capacidad.
 
 - **Ventajas:**
-    
+	- **equilibrio carga basico**
     - **Mayor Ancho de Banda:** Se suma la capacidad de múltiples enlaces.
         
     - **Reducción de Costos Inicial:** Se reduce la dependencia exclusiva de las costosas líneas MPLS al usar internet público.
         
 - **Desventajas:**
     
+    - **complejidad**
     - **Rendimiento Inconsistente:** El tráfico se envía por cualquier enlace disponible sin inteligencia. Si el enlace de internet tiene "ruido" (pérdida de paquetes), las aplicaciones fallan (voz robótica, videos lentos).
         
     - **Falta de conocimiento de la aplicación:** La red no sabe diferenciar entre una llamada de Zoom crítica y un video de YouTube; trata todo igual.

@@ -7,4 +7,6 @@ razones para cabiar :
 
 vetajas de usar consola centralizada:
 - capacidad... apps criticas para la empresa
-- proteccion
+- mayor visiblidad
+
+proble primera: complejidad
