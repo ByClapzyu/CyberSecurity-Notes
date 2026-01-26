@@ -48,3 +48,10 @@ Desde un panel unico tiene visibidlad de toda la red.
 - topoliga de como esta coenctado cada objeto
 - determina el comportamiento, advertiendo de un posbie ataque 
 - 
+### **SIEM evolucionó de:**
+
+1. **Una plataforma de información.** _(Representado por el primer icono en la parte superior)_
+    
+2. **Centro de inteligencia frente a amenazas.** _(Representado por el segundo paso en la evolución)_
+    
+3. **Un centro de seguridad y operaciones de red totalmente integrado y automatizado.** _(Representado como el estado final, conectado a múltiples dispositivos y usuarios en la red)_
