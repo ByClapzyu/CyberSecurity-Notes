@@ -120,4 +120,7 @@ Password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 
 # Bandit 8
 
+En este bandit 8 tambien la flag esta guardada en el file data.txt y nos dice que es la unica que no se repite. Para esto se usara `sort` para dar orden y `uniq` para filtrar, con la bandera `-u` para filtrar los que se repiten solo una vez. 
+
+comando final : **sort data.txt | uniq -u**
 
