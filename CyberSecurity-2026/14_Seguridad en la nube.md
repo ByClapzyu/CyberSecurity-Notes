@@ -18,7 +18,7 @@
 
 ---
 
-## 2. Modelos de Servicio en la Nube
+##  Modelos de Servicio en la Nube
 
 Se definen por quién gestiona qué capas de la tecnología (Modelo de Responsabilidad Compartida).
 
@@ -103,7 +103,7 @@ Es el modelo de consumo final. El software está alojado y gestionado al 100% po
 
 ---
 
-## 3. Seguridad en la Nube
+##  Seguridad en la Nube
 
 La seguridad en la nube se basa estrictamente en el **Modelo de Responsabilidad Compartida**. La seguridad no es solo tarea del proveedor (AWS/Azure/Google), el cliente también tiene obligaciones.
 
