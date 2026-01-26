@@ -1,98 +1,118 @@
+## Definición y Filosofía
 
-Establece una sesion segura entre una entidad final y una red, al mismo tiempo gaarantiza un control granular sobre el acceso a los recursos y ejerce confianza cero, independientemente de la ubivacion de la entidad final o de la red.
+**Concepto ZTNA:** Es un modelo de seguridad que establece una sesión segura entre una entidad final (usuario/dispositivo) y la red corporativa.
 
-**confinazza cero**: acceso con minimo privilegios (no confia en nadie)
-Automatica tuneles cifrados:
-	Entidad final al proxy de acceso de ztna (ejemplo da ejemplo, por ejemplo firewall)
-	recursos ocultos 
-**Componentes:**
-
-- Cliente de ZTNA (se puede utilizar con un navegador web)
+- **Independencia:** Funciona igual sin importar si el usuario está en la oficina o en una cafetería, y sin importar dónde esté alojada la red (On-premise o Nube).
     
-- Proxy de acceso de ZTNA
-    
-- Servidor de directorio de autenticación local o identidad como servicio (IDaaS)
-    
-- Servidor y firewall de política de seguridad de ZTNA
-
-- **Control de acceso dinámico**
-    
-    - Acceso granular por sesión
-	    - acceso por sesión: significa cada vez que el usuario se conecta a la red, se autentica y se hace una avaluacion de riesgo sobre el dispostivo que se coencta.
-        
-    - **Basado en:**
-        
-        - Identidad del usuario
-            
-        - Identidad del dispositivo y perfil de riesgo.
-	        - dispostivi: puede ser una compu, o un portatil
-            
-        - Política: puede definir parametros de acceso a los recursos segun su función del usuario, el tipo de dispositvo y otros factores.
-
-### **Flujo de trabajo de ZTNA**
-
-**Componentes del Diagrama:**
-
-- **Clientes:** Cliente local con FortiClient y Cliente remoto con FortiClient (conectado vía Internet).
-    
-- **FortiClient EMS:** Servidor de políticas de ZTNA.
-    
-- **FortiGate:** Firewall y Proxy de acceso de ZTNA.
-    
-- **Destino:** Servidores protegidos y recursos.
+- **Recursos Ocultos:** A diferencia de una VPN tradicional donde se ve toda la red, en ZTNA los recursos no publicados son invisibles para el usuario.
     
 
-**Intercambio de información:**
+**Filosofía de Confianza Cero (Zero Trust):**
 
-- **FortiClient envía la siguiente información a FortiClient EMS:**
+- **Principio:** "Nunca confiar, siempre verificar".
     
-    - Atributos del dispositivo, como el tipo de sistema operativo.
-        
-    - Información del usuario, como ID de usuario.
-        
-    - Postura de seguridad del dispositivo.
-        
-- **FortiClient EMS genera:**
+- **Acceso con Mínimos Privilegios:** Se otorga acceso solo a lo estrictamente necesario.
     
-    - Etiquetas.
-        
-    - Un certificado digital de cliente.
-        
+- **Túneles Cifrados Automáticos:** Se crea un túnel seguro desde la entidad final hasta el proxy de acceso (ej. Firewall FortiGate).
+    
+
+##  Componentes de la Arquitectura
+
+1. **Cliente de ZTNA:** Software instalado en el endpoint (Agente) o uso a través de navegador web (Clientless).
+    
+2. **Proxy de Acceso de ZTNA:** Es la puerta de entrada que intercepta la conexión, verifica y permite el paso. (En soluciones Fortinet, este rol lo cumple el **FortiGate**).
+    
+3. **Servidor de Autenticación:** Verifica quién es el usuario (AD, LDAP, IDaaS).
+    
+4. **Motor de Políticas (Policy Server):** Define quién entra y quién no.
+    
+
+##  Control de Acceso Dinámico
+
+ZTNA no revisa al usuario una sola vez; lo hace constantemente.
+
+**Acceso por Sesión (Granularidad):** Cada vez que un usuario intenta acceder a un recurso, se realiza una nueva evaluación.
+
+- Se autentica al usuario.
+    
+- Se evalúa el riesgo del dispositivo en tiempo real.
+    
+
+**Factores de Decisión (Contexto):** Para dar acceso, el sistema analiza:
+
+- **Identidad del Usuario:** ¿Quién es? (Rol, departamento).
+    
+- **Identidad del Dispositivo:** ¿Es una laptop corporativa o personal?
+    
+- **Postura de Seguridad (Perfil de Riesgo):** ¿Tiene antivirus? ¿Está actualizado?
+    
 
 ---
 
-### **¿Cómo funciona el ZTNA de Fortinet?**
+##  Flujo de Trabajo e Implementación (Fortinet)
 
-#### **Paso 1: Validación de la identidad del dispositivo**
+En el ecosistema de Fortinet, los roles se definen así:
 
-- **A.** El endpoint se conecta al proxy de acceso de ZTNA.
-    
-- **B.** FortiGate desafía al endpoint para la identificación del dispositivo.
-    
-- **C.** El endpoint envía el certificado del dispositivo a FortiGate, que emite FortiClient EMS.
-    
-- **D.** FortiGate aplica las etiquetas y reglas asociadas al dispositivo.
-    
+**Componentes:**
 
-#### **Paso 2: Autenticación del usuario**
-
-- **A.** FortiGate desafía al endpoint para la autenticación del usuario.
+- **Cliente:** FortiClient (Local o Remoto).
     
-- **B.** El usuario introduce sus credenciales en el endpoint.
+- **Servidor de Políticas:** FortiClient EMS (Enterprise Management Server).
     
-- **C.** FortiGate reenvía las credenciales al servidor de autenticación, que puede ser un AD, un directorio LDAP, una base de datos o una Identidad como servicio (IDaaS).
+- **Proxy de Acceso:** FortiGate.
     
-- **D.** La identidad del usuario se valida y se recuperan sus funciones en el servidor de autenticación.
-    
-- **E.** FortiGate usa las funciones del usuario para determinar el acceso a la aplicación de la red.
+- **Destino:** Servidores protegidos.
     
 
-#### **Paso 3: Establecimiento de sesión**
+**Intercambio de Información (Telemetría):**
 
-1. Validación de la identidad del dispositivo.
+1. **FortiClient (Endpoint)** envía a **FortiClient EMS**:
     
-2. Autenticación del usuario.
+    - Atributos del dispositivo (Sistema Operativo, versión).
+        
+    - Información del usuario (ID).
+        
+    - **Postura de Seguridad:** Estado actual de salud del dispositivo (si tiene parches, antivirus activo, vulnerabilidades).
+        
+2. **FortiClient EMS** procesa esto y genera:
     
-3. **Sesión cifrada establecida.**
+    - **Certificado Digital:** Para identificar al dispositivo.
+        
+    - **Etiquetas (Tags):** Aquí es donde entra tu nota clave.
+        
+        - _Nota:_ **La información u objeto que incluye la etiqueta representa la postura de seguridad del dispositivo.** (Ejemplo: Etiqueta "Seguro", Etiqueta "Vulnerable", Etiqueta "Finanzas").
+            
 
-no se donde poner pero: info u objeto que incluye la etiqueta es la postura segurdad del dispostivo
+---
+
+##  El Proceso de Conexión (Paso a Paso)
+
+Cuando un usuario intenta entrar, ocurren estos tres pasos secuenciales:
+
+### Paso 1: Validación de la Identidad del Dispositivo
+
+- **A.** El endpoint intenta conectar al Proxy (FortiGate).
+    
+- **B.** FortiGate solicita la identificación del dispositivo.
+    
+- **C.** El endpoint presenta su **Certificado de Dispositivo** (el que le dio el EMS).
+    
+- **D.** FortiGate verifica el certificado y revisa las **Etiquetas** de postura de seguridad asociadas. (Si la etiqueta dice "Vulnerable", bloquea el acceso aquí).
+    
+
+### Paso 2: Autenticación del Usuario
+
+- **A.** Si el dispositivo pasa, FortiGate pide identificación del usuario.
+    
+- **B.** El usuario ingresa credenciales (o usa SSO).
+    
+- **C.** FortiGate valida contra el servidor de identidad (AD, LDAP, IDaaS).
+    
+- **D.** Se recuperan las funciones/roles del usuario.
+    
+- **E.** FortiGate cruza la información: ¿Este Usuario + Este Dispositivo tienen permiso para Esta Aplicación?
+    
+
+### Paso 3: Establecimiento de Sesión
+
+- Una vez validadas ambas identidades (Usuario y Dispositivo) y verificada la postura de seguridad, se establece la **sesión cifrada** hacia el recurso específico.
