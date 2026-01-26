@@ -40,4 +40,11 @@ Problema
 - configuracion e integracion (compleja)
 
 Escasaes de personal hiz oque la SIEM se automatizara mas.
+- gana tiempo y presicion
 
+avance: centro de operaciones de red NOC y centro de operaciones de sergriad SOC.
+Desde un panel unico tiene visibidlad de toda la red.
+- inventario de usuarios y dispositovs 
+- topoliga de como esta coenctado cada objeto
+- determina el comportamiento, advertiendo de un posbie ataque 
+- 
