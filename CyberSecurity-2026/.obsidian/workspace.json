@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "161efd01058445bc",
+        "id": "30fab141bdad446d",
         "type": "tabs",
         "children": [
           {
-            "id": "f51d7fe13ae2cad5",
+            "id": "9f36ab3b660fc282",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "15_ SASE (Borde de servicio de acceso seguro).md",
+                "file": "11_SIEM (Administración de información y eventos de seguridad ).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "15_ SASE (Borde de servicio de acceso seguro)"
+              "title": "11_SIEM (Administración de información y eventos de seguridad )"
             }
           }
         ]
@@ -184,8 +184,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f51d7fe13ae2cad5",
+  "active": "9f36ab3b660fc282",
   "lastOpenFiles": [
+    "11_SIEM (Administración de información y eventos de seguridad ).md",
     "15_ SASE (Borde de servicio de acceso seguro).md",
     "14_Seguridad en la nube.md",
     "13_ZTNA (Acceso a la red de confianza cero).md",
@@ -218,7 +219,6 @@
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo1_introduccion/01_Introducción a la ciberseguridad.md",
     "01.2__Linux_Practica/Nuevo usuarios_practica.md",
-    "01.2__Linux_Practica/Datos utiles CTF.md",
     "01_Linux/passwd.png",
     "01_Linux/adduser.png",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas",
