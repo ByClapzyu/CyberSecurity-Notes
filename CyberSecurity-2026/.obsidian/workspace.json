@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a6bc16ca618cf46f",
+        "id": "86bba1df4fd98521",
         "type": "tabs",
         "children": [
           {
-            "id": "5ebdc7d84485ef31",
+            "id": "b65a57161403d7c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
+                "file": "01_Criptografía e infrestructura de clave pública. (PKI).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_Malware y Vecores de Ataque"
+              "title": "01_Criptografía e infrestructura de clave pública. (PKI)"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -185,8 +184,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5ebdc7d84485ef31",
+  "active": "b65a57161403d7c5",
   "lastOpenFiles": [
+    "01_Criptografía e infrestructura de clave pública. (PKI).md",
+    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/04_Inteligencia frente a amenaza.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
     "01.2__Linux_Practica/Bandit (OverTheWire).md",
@@ -207,7 +208,6 @@
     "Fortinet/Getting_Started_in_Cybersecurity/02_Control de acceso a la red (NAC).md",
     "RED/Hack The Box.md",
     "Fortinet/Getting_Started_in_Cybersecurity/01_Firewalls.md",
-    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
     "Modulo1_Firewalls",
     "Fortinet/Getting_Started_in_Cybersecurity",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape",
@@ -219,7 +219,6 @@
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/02_Actores de amenazas (Threat Actors).md",
     "RED",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",
-    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo1_introduccion/01_Introducción a la ciberseguridad.md",
     "01_Linux/passwd.png",
     "01_Linux/adduser.png",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas",
