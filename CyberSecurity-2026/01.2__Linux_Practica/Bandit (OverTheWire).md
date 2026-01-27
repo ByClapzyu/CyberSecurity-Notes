@@ -124,3 +124,16 @@ En este bandit 8 tambien la flag esta guardada en el file data.txt y nos dice qu
 
 comando final : **sort data.txt | uniq -u**
 
+*dato importante*
+Siempre que se use **uniq** se necesita usar **sort** ya que solo nos elimina las repeticiones seguidas.
+
+password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+# Bandit 9 
+
+
+
+
+
+
+password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
