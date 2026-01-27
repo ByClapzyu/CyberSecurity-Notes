@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -186,8 +187,9 @@
   },
   "active": "b65a57161403d7c5",
   "lastOpenFiles": [
-    "Libreta de un solo uso.png",
+    "combinasion asimetrico y simetrico.png",
     "01_Criptografía e infrestructura de clave pública. (PKI).md",
+    "Libreta de un solo uso.png",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/04_Inteligencia frente a amenaza.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",

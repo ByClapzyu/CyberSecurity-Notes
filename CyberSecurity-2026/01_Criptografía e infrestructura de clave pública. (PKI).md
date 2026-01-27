@@ -91,4 +91,29 @@ ventajas y desventajas.
 cifrado y decifrado mas rapido que la criptografia asimetrica.
 eficiente para cifrar y decifrar cantidades grandes de datos.
 
-- se basa en una calve secreta que debe ser compartida entre partes involucrades, debe mantenerse se
+- se basa en una calve secreta que debe ser compartida entre partes involucrades, debe mantenerse secreta,(problema seguridad)
+
+## Algoritmo asimetrico
+ se usa para operaciones cirptografics que usan un par de claves relaconadas matematicamente,.
+ puede hacer todoa o algunas de las operaciones.
+ - cifrado
+ - intercambio de clave 
+ - firma digital.
+Estos son conocidos como algoritmos y criptografia de clave publica.
+
+- Diffie Helman
+- RSA
+- Curva eliptica ECC
+- PGP Y GPG
+- DSA
+Ventaja
+- mayor seguridad (no comparten claves privadas)
+- publica cifra, privdada decifra.
+- 
+desventaja
+- lentas
+- no es eficinete para cntidades grande de datos
+
+Combinacion de ambas : se elimina las desventajas.
+
+![[combinasion asimetrico y simetrico.png]]
