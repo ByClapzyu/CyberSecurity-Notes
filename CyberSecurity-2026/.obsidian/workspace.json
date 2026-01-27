@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01.2__Linux_Practica/Bandit (OverTheWire).md",
+                "file": "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bandit (OverTheWire)"
+              "title": "01_Malware y Vecores de Ataque"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -186,6 +187,9 @@
   },
   "active": "5ebdc7d84485ef31",
   "lastOpenFiles": [
+    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/04_Inteligencia frente a amenaza.md",
+    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
+    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "01.2__Linux_Practica/Nuevo usuarios_practica.md",
     "Fortinet/Getting_Started_in_Cybersecurity/11_SIEM (Administración de información y eventos de seguridad ).md",
     "Fortinet/Getting_Started_in_Cybersecurity/15_ SASE (Borde de servicio de acceso seguro).md",
@@ -202,7 +206,6 @@
     "Fortinet/Getting_Started_in_Cybersecurity/03_SandBox.md",
     "Fortinet/Getting_Started_in_Cybersecurity/02_Control de acceso a la red (NAC).md",
     "RED/Hack The Box.md",
-    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "Fortinet/Getting_Started_in_Cybersecurity/01_Firewalls.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
     "Modulo1_Firewalls",
@@ -211,8 +214,6 @@
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo3_Ing_Social/01_ Ingenieria_Social.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo3_Ing_Social",
-    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
-    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/04_Inteligencia frente a amenaza.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/05_Marcos de ataque.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/06_Alertas de avisos y brotes.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/02_Actores de amenazas (Threat Actors).md",
