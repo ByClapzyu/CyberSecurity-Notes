@@ -32,3 +32,30 @@ se desplaza x cantidad de letrar (secreto/clave)  y el metodo algoritmo de cifra
 
 **libreta de un solo uso**: introduce alatoriedad en el metodo de sustitucion., 26 posibles combinaciones para cada letra. casi 12 millones de combinaciones para un mensaje de 5 letras , sin computadora es imposible de decifrar mediante fuerza bruta.
 
+![[Libreta de un solo uso.png]]
+
+## Cifrado de computadoras
+
+# Cifrado de flujo
+
+Cifra un flujo de datos de texto plano bit a bit o byte a byte.
+Ejemplo: FISH, RC4 (Cifrado rives)
+
+mas rapidos
+# Cifrado de bloque
+Cifra datos de texto plano en bloques
+el tamaño del bloque depende del tamaño de la clave,
+Ejemplo: DES, 3DES, AES y BlowFish 
+
+# calve digital
+En criptografía es un valor que se puede expresar alfanumericamente y que se usa para hacer operaciones criptograficas.
+- firma digital
+- codigo de autenticacion de mencaje (MAC: es una funcion hash que usa una clave digital para garantizarla integridad y auntenticidad del mensaje)
+- cifrado
+	- flujo de info tren dos dispostivos
+	- datos estacionarios masivos
+	- fragmente pequeño de datos ,como una clave digital.
+- pueden ser:
+	- privada o secretas
+	- publica
+	- 
