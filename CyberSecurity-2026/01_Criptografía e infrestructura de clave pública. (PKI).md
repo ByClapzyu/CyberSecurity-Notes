@@ -18,6 +18,17 @@ resultado: comercio electroniyo y comunicación segura.
 
 # cifrados
 
-forma secrete o disimulada de escribir un código.
+**cifrado**:forma secrete o disimulada de escribir un código.
 
+**algoritmos**: los algortimos y las claves digitales prmiten cifras y decifrar información.
+	Los algoritmos son información pública y las claves son, generalmente secretas
+
+## Tipo de cifrado
+
+**por sustitución** :  este usand antes informatica (**julius caesar**)
+se desplaza x cantidad de letrar (secreto/clave)  y el metodo algoritmo de cifrado,. 
+
+**transposicional**: re ordenar las letrar como (rail fence)  se necesita sbaer cuantas filas hay (secreto/clave)
+
+**libreta de un solo uso**: introduce alatoriedad en el metodo de sustitucion., 26 posibles combinaciones para cada letra. casi 12 millones de combinaciones para un mensaje de 5 letras , sin computadora es imposible de decifrar mediante fuerza bruta.
 
