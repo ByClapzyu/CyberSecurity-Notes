@@ -58,4 +58,37 @@ En criptografía es un valor que se puede expresar alfanumericamente y que se us
 - pueden ser:
 	- privada o secretas
 	- publica
-	- 
+## longitudes y fortalezas de clave
+
+Publicas :
+- clave grande 1024 bits y superior , cifrar fragmentos pequeños de datos
+	- transferencia de claves y firmas digitales
+- clave pequeña entre 128 y 256 bits, cifriar datos masivos.
+	- flujo de datos o datos masivos donde el rendimiento es cfitico
+- longitu + cmplejidad
+
+ejemplo de ocntraseña (10 caracteres solo numero )(10 millones) vs contraseña de 8 caracteres nuero,letra y signos (218 trillones)
+
+Estiraminetos de clave
+metood para hacer mas seguras las claves o contraseñas.
+- funcion dos de derivacion de clave basda en contraseña (PBKDF2)
+- BCRYPYT
+el proceso de salting: la es es un valor aleatorio añadido a otro valor para aumentar la entropia.
+
+## Algoritmo simetrico
+
+Algoritmo simetrico: cifrado que se usa para cifrar y decifrar datos con la misma clave/llave
+- des
+- 3des
+- idea
+- aes
+- rc4 (flujo),rc5,rc6
+- blowfish/twofish
+- (pon descripcion breve de cada uno)
+
+ventajas y desventajas.
+
+cifrado y decifrado mas rapido que la criptografia asimetrica.
+eficiente para cifrar y decifrar cantidades grandes de datos.
+
+- se basa en una calve secreta que debe ser compartida entre partes involucrades, debe mantenerse se
