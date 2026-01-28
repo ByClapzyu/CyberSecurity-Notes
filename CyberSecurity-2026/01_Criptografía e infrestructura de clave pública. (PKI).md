@@ -117,3 +117,30 @@ desventaja
 Combinacion de ambas : se elimina las desventajas.
 
 ![[combinasion asimetrico y simetrico.png]]
+## Hashing y firmas digitales
+
+Es el proceso de convertir datos  de tamaño arbitrario en un valor unico de tamaño fijo.
+
+funciones importantes:
+- valor de salida tiene una longitud fija
+	- lo determina el algoritmo de hashing
+	- niega al actor malicioso maliciosos informacion sobre la naturaleza de los datos de entrada.
+- El valor de salida es unico para cada valor de entrada
+	- detecta cambios en los datos de entrada cuando el valor de salida es diferente.
+	- impide que el actor maliciosos tenga la posibilidad de alterar los datos y cumplir su onjetivo
+	- evita coliisones
+- El hashing no es reversible y es unidireccional
+	- no se puede reporducir el valor de entrada usando el valor de salida.
+	- impide que el actor malicioso use el valor de salida pra determinar el valor de entrada.
+
+Crear una  firma digital:
+- se necesita el hashing y la criptografia asimetrica.
+- estas garantizan:
+	- integridad 
+	- autenticacion de firmante
+	- no repudio (no puede negar validez)
+	
+proceso:
+valor de entrada --> funcion hash --> valor de salida hash --> algoritmo asimetrico --> firma digital --> dato firmado digitalmente.
+
+Proceso de verificacion
