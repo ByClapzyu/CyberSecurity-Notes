@@ -4,24 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "86bba1df4fd98521",
+        "id": "fec75a61f3b6cc1a",
         "type": "tabs",
         "children": [
           {
-            "id": "b65a57161403d7c5",
+            "id": "8f121db2f4843149",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Modulo 1_ cipto y infres clave pub/combinasion asimetrico y simetrico.png"
+              },
+              "icon": "lucide-image",
+              "title": "combinasion asimetrico y simetrico"
+            }
+          },
+          {
+            "id": "5fb052246e39db78",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Criptografía e infrestructura de clave pública. (PKI).md",
+                "file": "Red segura.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_Criptografía e infrestructura de clave pública. (PKI)"
+              "title": "Red segura"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,12 +197,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b65a57161403d7c5",
+  "active": "5fb052246e39db78",
   "lastOpenFiles": [
-    "paradoja cumpleaños.png",
-    "Libreta de un solo uso.png",
-    "01_Criptografía e infrestructura de clave pública. (PKI).md",
-    "combinasion asimetrico y simetrico.png",
+    "Modulo 1_ cipto y infres clave pub/combinasion asimetrico y simetrico.png",
+    "Red segura.md",
+    "Modulo 3",
+    "Modulo 2_ Red segura",
+    "Modulo 1_ cipto y infres clave pub",
+    "Modulo 1_ cipto y infres clave pub/01_Criptografía e infrestructura de clave pública. (PKI).md",
+    "Modulo 1_ cipto y infres clave pub/paradoja cumpleaños.png",
+    "Modulo 1_ cipto y infres clave pub/Libreta de un solo uso.png",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/04_Inteligencia frente a amenaza.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
@@ -218,15 +235,11 @@
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo3_Ing_Social",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/05_Marcos de ataque.md",
-    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/06_Alertas de avisos y brotes.md",
     "RED",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",
     "01_Linux/passwd.png",
     "01_Linux/adduser.png",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas",
-    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo1_introduccion",
-    "Fortinet",
-    "Untitled.base",
     "00_SO/Pasted image 20260116170550.png",
     "00_SO/Pasted image 20260116183953.png",
     "Untitled.canvas",
