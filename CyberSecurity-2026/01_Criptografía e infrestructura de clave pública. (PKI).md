@@ -143,4 +143,27 @@ Crear una  firma digital:
 proceso:
 valor de entrada --> funcion hash --> valor de salida hash --> algoritmo asimetrico --> firma digital --> dato firmado digitalmente.
 
-Proceso de verificacion
+Proceso de verificacion:
+se checa el hash y debe coincidir con el original.
+
+## Funciones Hash
+
+- Resumen de mensajes cinco (MD5) y MD6
+- Algoritmo hash seguro (SHA-1, SHA-2, SHA-3)
+	- -SHA-2 inclye SHA-224, 256, 384, 512
+	- varias longitudes de salida SHA-3
+- Algoritmo LANMAN y NT LAN Manager (NTLM) de Microsoft
+- HAVEL y RIPEMD
+
+## Ataques comunes contra el hashing
+
+- Ataque de fuerza bruta, eficaz si el actor tiene pista sobre la naturaleza de los datos de entrada.
+- ataque de cumpleaños (explica breve y claro)
+	- es mas facil encontrar dos concidencias si no importa que son
+	- colision: dos entradas dan 2 salids iguales.
+	- calculo matematicos al problema del dia de cumpleaños en la teoria de la probabilidad.
+-**defensa**
+aumenta el tamaño de la longitud hash
+estiramientos de clave.
+
+- 
