@@ -232,3 +232,21 @@ Ventajas:
 - limita los ataques a un segmento especifico
 - mayor proteccion de los dispotivos vulnerables
 - reduccion alcance dispsotivo afectado por cumplimineto normativo.
+
+
+## FortiGate
+
+Es un firewall de next generation  que ofrece seguridad empresarial lider en la industria, con visibilidad completa y proteccion contra amenazas.
+
+Beneficio:
+- seguridad ultrarapida en toda la red
+- defensa coherente en tiempo real
+- excelente experiencia de usuario 
+- eficiencia operativa y flujos de trabajo automatizados
+
+
+Estructura
+la plataforma de fotigate agrega solidez sin comprometer la flexibilidad, mediante la combinacion de varios elementos clave:
+- servicios de suscripcion de fotiguard, funciones de seguridad
+- el sistema operativo FortiOS y unidades de procesamiento de seguridad SPU 
+- fortigate tambine puede integrarse con otros productos de fortinet.
