@@ -234,3 +234,103 @@ Ventajas:
 - reduccion alcance dispsotivo afectado por cumplimineto normativo.
 
 
+## Switching y puertos seguros
+
+### **La importancia de Switching y puertos seguros**
+
+- **Capa de enlace de datos:** Asigna paquetes a las VLAN basándose en la dirección MAC de origen de la trama del paquete.
+    
+- **Tabla CAM (Memoria direccionable por contenido):** Muestra la relación entre Puerto n.º, Dirección MAC y VLAN (ej. Puerto 1 -> MAC A -> VLAN 100).
+    
+
+---
+
+### **Amenazas y ataques comunes: Características**
+
+- **Ventajas:**
+    
+    - Reenvío de paquete más rápido.
+        
+    - Menos colisiones.
+        
+- **Desventajas:**
+    
+    - Propenso a posibles tormentas.
+        
+- **Tipos de tramas:**
+    
+    - Trama de difusión.
+        
+    - Trama de unidifusión.
+        
+    - Trama multidifusión.
+        
+
+---
+
+### **Definiciones de Tramas y Control de Tormentas**
+
+- **Control de tormentas:** Controla el número de tormentas configurando un umbral para la cantidad de tramas inundadas permitidas por segundo y puerto.
+    
+- **Trama de difusión:** Una trama de difusión es una trama que tiene todos los bytes de la dirección MAC de destino establecidos en FF.
+    
+- **Trama de unidifusión desconocida:** Es una trama que tiene una dirección MAC de destino desconocida. Esto significa que la dirección MAC no es conocida por la tabla CAM.
+    
+- **Trama de multidifusión desconocida:** Tiene una MAC multidifusión desconocida, lo que significa que no está configurada en la tabla CAM.
+    
+
+---
+
+### **Ataques Específicos: Inundación y Spoofing**
+
+**1. Inundación de MAC (MAC Flooding)**
+
+- **Definición:** La inundación de MAC es un ataque cuyo objetivo es llenar la tabla CAM del switch, creando una potencial denegación de servicio y fuga de información confidencial.
+    
+- **Características:** Similar a un ataque de Denegación de servicio (DOS) por inundación.
+    
+- **En la tabla CAM:** Se observa un mismo puerto (ej. Puerto 3) asociado a múltiples direcciones MAC extrañas (C, R, F, G) en la misma VLAN.
+    
+
+**2. Spoofing de MAC**
+
+- **Definición:** El Spoofing de MAC consiste en sustituir la dirección MAC asignada de fábrica por otra.
+
+Se puede limitar el numero de entrada por pueto o vlan
+### **Seguridad de Puertos y Direcciones MAC**
+
+- **Direcciones Sticky MAC:** El switch aprende la dirección MAC, que se convierte en una entrada persistente en la tabla CAM del switch. Solo se elimina cuando el switch se reinicia.
+    
+- **Direcciones MAC estáticas:** La dirección MAC se configura y nunca se elimina de la tabla CAM del switch.
+    
+
+### **Autenticación de Red**
+
+- **Autenticación 802.1X:** 802.1X es un estándar diseñado para proporcionar autenticación a los dispositivos de red que quieren unirse a una red.
+
+### **Medidas de Seguridad para Switches**
+
+- **Proteger los switches físicos localmente.**
+    
+- **Separar switches.**
+    
+- **Limitar los ataques por inundación** limitando las direcciones MAC permitidas por puerto.
+    
+- **Configurar direcciones MAC estáticas o sticky MAC.**
+    
+- **Usar las ACL** para filtrar direcciones no verificadas.
+    
+- **Añadir autenticación de puertos.**
+    
+- **Implementar el reflejo de puerto** para monitorear puertos activos.
+    
+
+### **Acciones de Restricción y Configuración**
+
+- Restringir el número de direcciones MAC para un puerto específico en una tabla CAM.
+    
+- Configurar direcciones MAC estáticas en la tabla CAM.
+    
+- Restringir el acceso a la administración del switch con protocolos seguros.
+    
+- Restringir el número de las VLAN.
