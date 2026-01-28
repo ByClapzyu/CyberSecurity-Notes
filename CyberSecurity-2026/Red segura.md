@@ -1,116 +1,171 @@
+## Conceptos Fundamentales
 
-Perimetro seguro: confiar pero verificar
-- verificar acceso inciarl, confiable interno/ no externo
-- reglas predefinidas y politicas comunes.
+**Comparativa Rápida:**
 
-confianza cero: no confiar simere verificar
-
-
-SD-WAN
-Red logica sobre fisica, 
-
-SASE: nube, implementacion como servicio ocn seguridad itegrada.
-
-
-# Perimetro seguro
-
-Zona confiable / red adminsitrada (confiable)
-- autenticacion
-- autorizacion
-filtra trafico capa osi:
-- enlace de datos: (control de acceso: MAC, ACL (lista define dispostivos de onfianza y acciones especificar para una red))
-- **transporte**: filtrado de paquetes (sin estado: basandose en direccion ip, puertos  protocolo ) con estado (5 tupla, conexion tcp/ip), filtrado de NAT (traducir una ip publica a privada y viceveversa) red privada, ip puerto. 
-- **app**: filtrado de proxy () ftp sip, puerto tcp/udp
-
-Limitaciones
-- BYOD (dispostivo persoanl)
-- IoT
-- Nube
-
-# Confianza zero
-
-Identidad y contexto 
-- nunca confie, verifique siempre
-	- autenticacion y autorizacion
-- implemente el privilegio minimo
-- suponga que su red tuvo una violacion de datos
-	- reducción de la superficie de ataque.
-red perimetral
-definicion
-y algo de un ataque que dieron ejemplo del caballo de troya.
-
-
-El principio de nunca confie:
-- **Definición:** La confianza se deriva explícitamente de una combinación de aspectos basados en la identidad y el contexto.
+- **Perímetro Seguro:** "Confiar, pero verificar". Se enfoca en defender la frontera.
     
-- **Proceso de identificación:** Autenticación de múltiples factores.
+- **Confianza Cero (Zero Trust):** "Nunca confiar, siempre verificar". Se enfoca en proteger el recurso individual.
     
-- **Aspectos basados en el contexto:**
+- **SD-WAN:** Red lógica sobre física. Desacopla el software del hardware.
     
-    - Hora y fecha
-        
-    - Geolocalización
-        
-    - Postura de seguridad
-        
-
----
-
-### **Autenticación de múltiples factores (MFA)**
-
-- **Definición:** La Autenticación de múltiples factores (MFA) es un método de autenticación en el que solo se permite el acceso a un usuario o dispositivo informático después de presentar con éxito dos o más pruebas, o factores, a un mecanismo de autenticación.
-    
-- **Ejemplo típico:** Una forma típica de conseguir la MFA es exigir un nombre de usuario y una contraseña más un código de acceso de un solo uso.
+- **SASE:** Convergencia de red y seguridad en la nube (implementación como servicio).
     
 
 ---
 
-### **Ejemplos de Contexto de Seguridad**
+## 2. Modelo de Perímetro Seguro (Tradicional)
 
-**Contexto de Hora y fecha**
+Se basa en la idea de una "Zona Confiable" (Red Interna) y una "Zona No Confiable" (Internet).
 
-- Un ejemplo de contexto de hora y fecha es cuando se distingue el horario laboral del no laboral comercial para restringir el acceso a los recursos o para exigir un método adicional de autenticación, como la contraseña de un solo uso (OTP).
+**Funcionamiento:**
+
+- Verifica el acceso inicial.
+    
+- Si logras entrar, se te considera un usuario "confiable" interno.
+    
+- Se basa en reglas predefinidas y políticas comunes para todos.
     
 
-**Contexto de Geolocalización**
+**Capas de Filtrado (Modelo OSI):**
 
-- Un ejemplo de contexto basado en la geolocalización es cuando las alertas pueden activar restricciones para los recursos basándose en la ubicación geográfica del solicitante.
+1. **Enlace de Datos:** Control de acceso mediante direcciones MAC y ACL (Listas de Control de Acceso que definen dispositivos de confianza).
+    
+2. **Transporte:**
+    
+    - **Filtrado de paquetes Sin Estado (Stateless):** Solo mira IP, puertos y protocolos.
+        
+    - **Filtrado de paquetes Con Estado (Stateful):** Rastrea la conexión completa (la 5-tupla TCP/IP).
+        
+    - **NAT:** Traduce IPs públicas a privadas y viceversa (oculta la red interna).
+        
+3. **Aplicación:** Filtrado de Proxy para protocolos específicos (FTP, SIP, Web).
     
 
-**Contexto de Postura de seguridad**
+**Limitaciones (Por qué falla hoy):**
 
-- Un ejemplo de contexto basado en la postura de seguridad es cuando se imponen restricciones a un dispositivo que no cumple los requisitos de seguridad, como parches actualizados y software antivirus.
-
-### **Estrategia de Seguridad y Pasos**
-
-1. **Administración de acceso privilegiado (PAM)**
+- **Analogía del Caballo de Troya:** El modelo perimetral es como una ciudad amurallada. Es dura por fuera, pero blanda por dentro. Si un atacante logra cruzar el muro (como el Caballo de Troya), tiene vía libre para moverse lateralmente porque la red interna es "confiable".
     
-2. **Definir la superficie de protección**
+- **Nuevas Tecnologías:** La desaparición del perímetro físico debido a:
     
-3. **Aplicar el método de Kipling**
+    - **BYOD:** Dispositivos personales entrando a la red.
+        
+    - **IoT:** Dispositivos "sin cabeza" difíciles de asegurar.
+        
+    - **Nube:** Los datos ya no están en el centro de datos local.
+        
+
+---
+
+## 3. Modelo de Confianza Cero (Zero Trust)
+
+**Principios Clave:**
+
+1. **Nunca confíe, verifique siempre:** La confianza no es implícita, se debe ganar en cada solicitud.
+    
+2. **Implemente el Privilegio Mínimo:** Dar solo el acceso justo y necesario.
+    
+3. **Suponga una violación de datos (Assume Breach):** Diseñar la red asumiendo que el atacante ya está dentro.
+    
+
+**La Ecuación de la Confianza:** La confianza se deriva explícitamente de: **Identidad + Contexto**.
+
+### A. El Proceso de Identificación
+
+Se requiere **Autenticación de Múltiples Factores (MFA)**.
+
+- **Definición:** Método que exige presentar con éxito dos o más pruebas (factores) para acceder.
+    
+- **Ejemplo:** Nombre de usuario/contraseña (algo que sabes) + Código de un solo uso u OTP (algo que tienes).
+    
+
+### B. Aspectos Basados en el Contexto
+
+No basta con saber la contraseña, el entorno debe ser seguro:
+
+- **Hora y Fecha:** Distinguir horario laboral del no laboral. (Ejemplo: Si alguien entra a las 3 AM, pedir un OTP extra o bloquear).
+    
+- **Geolocalización:** Restricciones basadas en la ubicación física (Ejemplo: Bloquear accesos desde países donde la empresa no opera).
+    
+- **Postura de Seguridad:** Estado de salud del dispositivo. (Ejemplo: Si el dispositivo no tiene el antivirus actualizado o le faltan parches, se deniega el acceso).
     
 
 ---
 
-### **Detalles de los Componentes**
+## 4. Estrategia de Implementación
 
-**1. Administración de acceso privilegiado (PAM)**
+Pasos para construir una arquitectura Zero Trust:
 
-- PAM es un mecanismo de seguridad de la información que salvaguarda las identidades con acceso o funcionalidades especiales más allá de los usuarios normales.
+**1. Definir la Superficie de Protección**
+
+- A diferencia del "perímetro" (que es toda la red), aquí identificamos los **recursos críticos** (Datos, Aplicaciones, Activos, Servicios).
+    
+- Se evalúa la confidencialidad y quién necesita acceder a ellos.
     
 
-**2. Superficie de protección**
+**2. Administración de Acceso Privilegiado (PAM)**
 
-- Definir la superficie de protección es un proceso que consiste en identificar los recursos de la red, evaluar el grado de confidencialidad y determinar qué funciones necesitan acceder a estos.
+- Mecanismo para proteger las "Llaves del Reino".
+    
+- Salvaguarda las identidades con permisos especiales (administradores) que van más allá de los usuarios normales.
     
 
-**3. Método de Kipling**
+**3. Aplicar el Método de Kipling**
 
-- El método de Kipling consiste en hacerse una serie de preguntas, como ¿quién?, ¿qué?, ¿cuándo?, ¿dónde?, ¿por qué? y ¿cómo?, durante la preparación de la resolución de un problema.
+- Se usa para crear políticas granulares haciéndose las preguntas universales durante la resolución de problemas o creación de reglas:
+    
+    - ¿Quién? (Usuario)
+        
+    - ¿Qué? (Aplicación)
+        
+    - ¿Cuándo? (Hora)
+        
+    - ¿Dónde? (Ubicación)
+        
+    - ¿Por qué? (Clasificación de datos)
+        
+    - ¿Cómo? (Dispositivo/Postura)
+        
 
-principio de suposicion de una violacion de datos
-preparacion para lo peor
-microsegmentacion
+**4. Microsegmentación (Respuesta a "Suposición de Violación")**
+
+- Divide la red en zonas muy pequeñas y seguras.
+    
+- Si un atacante entra en un segmento, no puede saltar a los demás. Prepara la red para "lo peor".
+    
+
+---
+
+## 5. Componentes Técnicos de Zero Trust
+
+**Agente de Endpoint:** Proporciona visibilidad profunda y control sobre:
+
+- Sistema Operativo.
+    
+- Nivel de parches.
+    
+- Software instalado.
+    
+- Evaluación de riesgo.
+    
+
+**Control de Acceso Basado en Funciones (RBAC):** Las políticas se definen según el rol: Empleado, Invitado, Contratista, Gerente, TI, etc.
+
+---
+
+## 6. Comparativa Crítica: NAC vs. ZTNA
+
+Es vital distinguir cuándo usar cada uno en una estrategia moderna.
+
+|**Característica**|**Control de Acceso a la Red (NAC)**|**Acceso de Confianza Cero (ZTNA)**|
+|---|---|---|
+|**Uso Principal**|Ideal para dispositivos **IoT** o "sin cabeza" (impresoras, cámaras) que están en la red local.|Ideal para **Usuarios** y acceso a aplicaciones (especialmente remotos).|
+|**Función**|Identifica dispositivos y ofrece visibilidad en la LAN.|Establece automáticamente una **sesión segura** y cifrada hacia la aplicación.|
 
 
-Otros metodos de confianza cero
+## Resumen de Beneficios Zero Trust
+
+- **No hay confianza implícita:** Se exige MFA y Contexto constante.
+    
+- **Privilegio Mínimo:** Reduce el daño potencial.
+    
+- **Reducción de Superficie de Ataque:** Mediante microsegmentación y revisión de acceso a los activos.

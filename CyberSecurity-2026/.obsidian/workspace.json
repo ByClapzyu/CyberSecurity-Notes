@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8f121db2f4843149",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Modulo 1_ cipto y infres clave pub/combinasion asimetrico y simetrico.png"
-              },
-              "icon": "lucide-image",
-              "title": "combinasion asimetrico y simetrico"
-            }
-          },
-          {
             "id": "5fb052246e39db78",
             "type": "leaf",
             "state": {
@@ -33,8 +21,7 @@
               "title": "Red segura"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
