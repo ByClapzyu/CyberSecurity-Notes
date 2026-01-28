@@ -169,3 +169,15 @@ Es vital distinguir cuándo usar cada uno en una estrategia moderna.
 - **Privilegio Mínimo:** Reduce el daño potencial.
     
 - **Reducción de Superficie de Ataque:** Mediante microsegmentación y revisión de acceso a los activos.
+
+
+# Administración de la red de seguridad centralizada.
+
+La administracion de la red de seguridad centralizada, consiste en recopilar datos relacionados con seguridad de diversos dispositivos en una solo ubicacion central.
+
+a traves de una SNMP (protocolo recolecta y organiza info sobre dispsotivos administrados) y API (interfaz de software que permite a  dos dispositivos comunicarse entre si).
+administracion de red: confi, control, operacion y diagnostico de seguridad
+
+## Arquitectua Data Fabric.
+
+monitorear y administrar los datos y las apps donde quiera que esten, sin dejar dobernanse de manera centralizada.
