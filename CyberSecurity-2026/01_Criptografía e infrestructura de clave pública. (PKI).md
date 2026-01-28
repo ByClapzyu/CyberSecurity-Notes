@@ -162,8 +162,20 @@ se checa el hash y debe coincidir con el original.
 	- es mas facil encontrar dos concidencias si no importa que son
 	- colision: dos entradas dan 2 salids iguales.
 	- calculo matematicos al problema del dia de cumpleaños en la teoria de la probabilidad.
+	- ![[paradoja cumpleaños.png]]
 -**defensa**
 aumenta el tamaño de la longitud hash
 estiramientos de clave.
 
-- 
+## Infrestructura de clave publica.
+
+  La infraestructura de clave pública (PKI) es un ecosistema compuesto por políticas, procedimientos, software y hardware necesarios para crear, distribuir, almacenar, usar y revocar certificados digitales.
+
+Cuatro entidades:
+- Autoridad certifiacion (CA)
+- Autoridad de registro (RA)
+- Servidor de directorio 
+- Entidad final
+
+Certificado digital:
+
