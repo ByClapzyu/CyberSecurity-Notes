@@ -347,7 +347,7 @@ Antes Texto plano:
 - **Navegacion web**: http
 - https: (tls )
 - **control remoto**:telnet
-- ssh: (verificacion de conexion extremo a extremo)
+- ssh: (verificacion de conexion extremo a extremo, diffie helman DH, codigo de autenticacion de mensajes MAC)
 - **acceso remoto**: l2tp
 - ipsec: ()
 
