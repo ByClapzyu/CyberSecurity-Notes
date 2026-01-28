@@ -199,4 +199,36 @@ Ventajas:
 - 
 # Segmentacion de red
 
-Divide la red en segmentos mas pequeños y aislados. (por departamentos)
+Divide la red en segmentos mas pequeños y aislados. (por departamentos) (solo servidores que sea necesario DMZ(una red pisponible para internet))
+
+explicacion breve de : trafico vertical y horizontal.
+
+Segmentacion logica (mas pequeña y manejable):
+capa osi
+capa de enlace de datos
+vlan (redes de area local virutales: dispostivos se comunica entre si a traves de switches)
+ 
+
+
+segmentacion fisica
+capa red
+acl
+enrutadores
+politca de firewall
+
+## Como segmentar una red
+capa de la aplicacion
+sd.-wan: Permite comunicacion a traves de internet mediante tuneles superpuestos cifrados
+red superpuesta: red virutalizada contruida sobre la red subadyacente: se refiere a la intfrestructura fisica de la red.(ejemplo)
+
+Administracion de segmento de red segura:
+servidor de puente: control de acceso mejorada, automatizacion adicional, monitoreo adicional.
+host bastion: proporciona acceso a una red privada desde una red externa., resiste ataques, acceso a una app.
+
+Ventajas:
+- configuacion snecilla de la adm de la red
+- reduccion numero de difusiones de la red
+- minimica la congestion
+- limita los ataques a un segmento especifico
+- mayor proteccion de los dispotivos vulnerables
+- reduccion alcance dispsotivo afectado por cumplimineto normativo.
