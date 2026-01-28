@@ -181,3 +181,22 @@ administracion de red: confi, control, operacion y diagnostico de seguridad
 ## Arquitectua Data Fabric.
 
 monitorear y administrar los datos y las apps donde quiera que esten, sin dejar dobernanse de manera centralizada.
+usa la IA: Para automatizar cosas repetivias y da recomendaciones
+
+Fortinet Security Fabric:
+ecosistema abierto: api y conectores fabric
+centro de administracion de fabric: visibilidaad de extremo a extremo
+accso de confinaza cero: ajustes dinamicos
+fortiguard:velocidad coordinacion y deteccion
+
+Ventajas:
+- vista de alto nivel y amplia visibilidad.: evita problemas de seguridad, reduce el timepo de respuestaa los incidentes y minimiza las interupciones.
+- integracion de dispostivo: definicon cenralizada de connfiguraciones y orquestacions de politicas.
+- reduccion de numero de tareas repetitivas y manueales
+- mantenimiento facil
+- prevision de capacidad y rendimeinto mas sencilla
+- auditorias de cumplimiento mas sencilla
+- 
+# Segmentacion de red
+
+Divide la red en segmentos mas pequeños y aislados. (por departamentos)
