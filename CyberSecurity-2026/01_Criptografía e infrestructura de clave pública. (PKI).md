@@ -179,3 +179,66 @@ Cuatro entidades:
 
 Certificado digital:
 
+- En criptografía, un certificado digital es un documento electrónico que emite y firma una entidad de confianza, como una CA.
+    
+- Contiene el nombre del titular del certificado y podría contener o no una clave pública.
+    
+### **Tipos y Estándares de Certificados**
+
+- **Certificados con claves públicas:**
+    
+    - Cifrado
+        
+    - Verificación
+        
+- **Certificados sin claves públicas:**
+    
+    - Política
+        
+    - Lista de revocación de certificado (CRL)
+        
+- **Estándar:** El estándar del certificado es X.509 versión 3.
+    
+
+---
+
+### **Campos de un Certificado Digital**
+
+
+- Número de serie: valor unico que asigna entidad de confianza  o ca que creo el certificado
+    
+- Algoritmos: 
+    
+- Período de validez: rango de fecha y horas dentro  del que el certificado es valido.
+    
+- Nombre del emisor: identifica la identidad de confianza que emitio el certificado
+    
+- Nombre del sujeto: ... vinculada a lresto del contenido de certifiacion
+    
+- Valor de clave: codigo alfanumerico incrustado en el certificacod
+    
+- Uso de clave: como se puede usar la clave.
+
+### **Funciones principales de la CA**
+
+- **Emitir certificados a las entidades finales y al sistema para ayudar a administrar los siguientes certificados:**
+    
+    - CRL
+        
+    - Certificados de política
+        
+- **Establecer un ecosistema de confianza.** La confianza depende de la **clave privada de la CA**.
+    
+
+---
+
+### **¿Por qué confiar en la clave privada?**
+
+- **Relación con una entidad de confianza.**
+    
+- **Un marco legal respalda la confianza:**
+    
+    - Prueba de las normas de seguridad más estrictas.
+        
+    - CA de alta seguridad frente a CA de baja seguridad.
+
