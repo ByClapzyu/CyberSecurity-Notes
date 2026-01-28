@@ -334,3 +334,20 @@ Se puede limitar el numero de entrada por pueto o vlan
 - Restringir el acceso a la administración del switch con protocolos seguros.
     
 - Restringir el número de las VLAN.
+
+# Protocolos de seguridad
+
+Conjunto dereglas y metodos para establecer una comunicacion entre distintos dispostivos.
+
+prtege los datos que se entrega en una comunicacion cifrada.
+
+Antes Texto plano:
+- **correo**MIME (estandar que exxtiende protocolos como el protcolo simple de transferencia de correo SMTP para manejar datos que no son ASCII)
+- mime seguro s/mime: seguridad autenticacion, no repudio integridad de datos. Confidencialidad extreo a extremo.
+- **Navegacion web**: http
+- https: (tls )
+- **control remoto**:telnet
+- ssh: (verificacion de conexion extremo a extremo)
+- **acceso remoto**: l2tp
+- ipsec: ()
+
