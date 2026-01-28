@@ -242,3 +242,88 @@ Certificado digital:
         
     - CA de alta seguridad frente a CA de baja seguridad.
 
+### **Almacenamiento de certificados en el servidor de directorio**
+
+**Normas de PKI:**
+
+- X.500
+    
+- Protocolo ligero de acceso a directorios (LDAP)-servidor de directorio compatible
+    
+
+**Entradas dedicadas en el directorio para:**
+
+- Política
+    
+- CRL
+    
+- Lista de revocación de autoridad (ARL)
+    
+- Certificado cruzado
+    
+- Certificado CA
+    
+
+---
+
+### **Solicitud de un certificado a la autoridad de registro**
+
+**Definición y Función:**
+
+- Una autoridad de registro (RA) es una función para la inscripción de certificados que se usa en las PKI.
+    
+- La RA verifica y reenvía las solicitudes de certificados a la CA.
+    
+
+**Características de la inscripción:**
+
+- Los certificados pueden emitirse a personas, dispositivos y aplicaciones.
+    
+- La inscripción se puede hacer en línea o en persona.
+    
+- La solicitud de un certificado es similar a la solicitud de la licencia de automóvil.
+    
+- El grado de investigación puede depender del nivel de seguridad de la CA.
+    
+
+---
+
+### **Uso de un certificado en el endpoint**
+
+**Capacidades requeridas:** Los endpoints criptográficos deben poder:
+
+- Generar claves.
+    
+- Generar y enviar una solicitud de servicio de certificado (CSR).
+    
+- Cifrar y firmar.
+    
+
+---
+
+### **Roles y Funciones (Revisión de Conocimientos)**
+
+**1. Autoridad de registro (RA)**
+
+- Examina y registra las entidades finales de certificados.
+    
+
+**2. Entidad final**
+
+- Genera claves.
+    
+- Envía CSR.
+    
+- Valida certificados.
+    
+- Usa claves y certificados para cifrar y descifrar, firmar y verificar.
+    
+
+**3. Autoridad de certificación (CA)**
+
+- Crea, distribuye y revoca certificados.
+    
+
+**4. Servidor de directorio**
+
+- Almacena certificados.
