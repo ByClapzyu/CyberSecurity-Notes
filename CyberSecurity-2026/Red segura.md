@@ -351,3 +351,133 @@ Antes Texto plano:
 - **acceso remoto**: l2tp
 - ipsec: ()
 
+## Amenazas comunes de la red y prevencion
+
+Actividades ilicitas o malicios que pretenden arpovechar las vulnerabilidades de la red. violar, dañar y sabotear.
+
+motivaciones: polticas, finacieras, represalias.
+
+atauqes:
+-spoofing
+secuetro
+ataque de repeticion
+ataque de transitivos
+DoS
+
+# Ataque Dos
+
+- ataque de inundación: 
+### **Ataques de Inundación (Flood)**
+
+- El objetivo de los ataques de inundación es saturar un dispositivo. Normalmente, una botnet crea el ataque con tráfico sin conexión como UDP o ICMP.
+    
+
+---
+
+### **Tipos de Ataques Específicos**
+
+**Ataque Smurf**
+
+- En un ataque Smurf, el atacante falsifica la IP de origen de la víctima para difundir un paquete de Protocolo control de mensajes de Internet (ICMP) a una red.
+    
+
+**Ataque Fraggle**
+
+- Al igual que el ataque smurf, el ataque fraggle personifica a la víctima y envía un paquete UDP falsificado a la dirección de difusión del enrutador. Inunda de tráfico el dispositivo de la víctima, reduciendo sus recursos para las solicitudes legítimas.
+    
+
+**Inundación de SYN**
+
+- Una inundación de SYN es parte de los ataques de protocolo dirigidos específicamente a los servidores, proxy o firewall.
+    
+- Durante este ataque, el atacante establece comunicación de un TCP de tres vías incompleto, permitiendo que las inundaciones de SYN agoten los recursos del dispositivo, que espera conexiones a medio abrir.
+    
+
+**Ataque de Christmas tree**
+
+- Durante un ataque de Christmas tree, el atacante envía un paquete de TCP con banderas FIN, URG y PSH establecidas.
+    
+
+---
+
+### **Ataques por Fragmentación y Malformación**
+
+**Ping de la muerte**
+
+- Durante un ping de la muerte, estos paquetes se fragmentan antes de la transmisión. Cuando el dispositivo de destino vuelve a ensamblar el paquete malformado, se puede producir un desbordamiento del búfer o un colapso.
+    
+
+**Ataque de goteo (Teardrop)**
+
+- Un ataque de goteo consiste en enviar paquetes fragmentados, modificados con cargas útiles superpuestas y sobredimensionadas.
+    
+- Cuando el dispositivo de destino intenta volver a ensamblar los fragmentos, los paquetes se superponen unos a otros, colapsando el dispositivo de red de destino.
+    
+
+---
+
+### **Ataques Destructivos y de Agotamiento de Recursos**
+
+**Denegación de servicio permanente (PDoS)**
+
+- En una Denegación de servicio permanente (PDoS), el atacante aprovecha las vulnerabilidades del dispositivo para sustituir su software por una imagen de firmware corrupta, inutilizando el dispositivo.
+    
+- No basta con volver a arrancar el dispositivo, sino que la recuperación de este requiere una reinstalación del firmware correcto o un reemplazo total del hardware.
+    
+
+**Bomba fork**
+
+- Una bomba fork continúa replicándose a sí misma a través de los procesos secundarios, agotando los recursos disponibles y ralentizando o colapsando el sistema.
+
+
+
+### **Prevención de ataques de DoS**
+
+**Relación entre Ataques y Métodos de Prevención:**
+
+- **Ataques de paquetes malformados:**
+    
+    - **Tipos:** Ping de la muerte, Ataques de XMAS, Ataques de goteo.
+        
+    - **Prevención:** Detección de anomalía en paquete.
+        
+- **Ataques de agotamiento de recursos:**
+    
+    - **Tipo:** Bombas fork.
+        
+    - **Prevención:** Limitación de procesos para un solo usuario.
+        
+- **Ataques de amplificación/reflexión:**
+    
+    - **Tipos:** Ataques Smurf, Ataques Fraggle.
+        
+    - **Prevención:** Los enrutadores evitan el reenvío de paquetes.
+        
+- **Ataques volumétricos:**
+    
+    - **Tipo:** Ataques de inundación (en general).
+        
+    - **Prevención:** Sensores DoS o analizadores del comportamiento de la red.
+        
+
+---
+
+### **Medidas de Seguridad y Endurecimiento**
+
+**1. Cerrar puertos innecesarios**
+
+- Escáner de puerto (por ejemplo Nmap).
+    
+- Política de firewall (por ejemplo, FortiGate).
+    
+
+**2. Corregir vulnerabilidades conocidas**
+
+- Prueba de penetración.
+    
+- Actualizar con los últimos parches.
+    
+
+**3. Segmentación de la red**
+
+**4. Principios de confianza cero**
