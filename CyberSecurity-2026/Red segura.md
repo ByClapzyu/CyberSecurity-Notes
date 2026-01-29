@@ -7,6 +7,9 @@
 
 [Switching y Puertos Seguros](#switching_y_puertos_seguros)
 
+[Amenazas Comunes y Ataques DoS](#amenazas_comunes_y_ataques_dos)
+
+
 
 ---
 # administración_de_red_seguridad_centralizada
@@ -173,7 +176,7 @@ Es la evolución de los protocolos de texto plano a protocolos cifrados para gar
 |**Control Remoto**|Telnet|**SSH**|Verificación extremo a extremo, Intercambio Diffie-Hellman (DH), Código de Autenticación de Mensajes (MAC).|
 |**Acceso Remoto (VPN)**|L2TP (Solo túnel)|**IPsec**|Cifrado robusto, autenticación e integridad de paquetes.|
 
-## amenazas comunes y ataques dos
+## amenazas_comunes_y_ataques_dos
 
 **Motivaciones:** Políticas, financieras, represalias.
 
