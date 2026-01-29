@@ -362,3 +362,195 @@ Restringe el acceso a un lugar o recursos (Autorización).
 
 ## ciclo-de-vida-administracion-identidad-acceso
 
+**Fases del Ciclo:**
+
+1. **Aprovisionamiento:**
+    
+    - Crear cuenta para usuario o dispositivo.
+        
+    - Asignar funciones o grupos.
+        
+2. **Autenticación:**
+    
+    - Validar la identidad del usuario o dispositivo.
+        
+3. **Autorización:**
+    
+    - Determinar si un usuario válido tiene permisos.
+        
+    - Hacer auditoría y registrar las conexiones.
+        
+4. **Autoservicio:**
+    
+    - Cambio de contraseña.
+        
+    - Actualizar la información de cuenta.
+        
+    - Solicitar acceso a información denegada.
+        
+    - Informar sobre actividades sospechosas.
+        
+5. **Dar de baja:**
+    
+    - Quitar permisos.
+        
+    - Eliminar reglas, funciones y grupos de control de acceso.
+        
+
+**Actividades Generales:**
+
+- Crear reglas de política, funciones y grupos de control de acceso.
+    
+- Revisión periódica de todas las fases del ciclo de vida.
+    
+
+---
+
+### **Desafíos del control de acceso**
+
+1. **Configuración del control de acceso:**
+    
+    - Varias funciones, grupos y políticas en varios departamentos y dispositivos.
+        
+    - Complejidad de las reglas.
+        
+    - Comprensión incoherente de los dispositivos de control de acceso.
+        
+    - Reglas mal configuradas o que no se usan y dificultan la configuración correcta.
+        
+2. **Coherencia:**
+    
+    - Flexibilidad necesaria para crear políticas de control de acceso adecuadas.
+        
+    - Creación de varias políticas y reglas de control de acceso coherentes en varias plataformas.
+        
+3. **Experiencia del usuario:**
+    
+    - Cambio de contraseñas.
+        
+    - Manejo de contraseñas caducadas.
+        
+    - Otorgar acceso adicional a los recursos necesarios fácilmente.
+        
+4. **Auditoría:**
+    
+    - Creación de un registro unificado en papel para la autenticación y autorización.
+        
+    - Manejo de sitios geográficamente dispersos y ubicaciones de control de acceso.
+        
+    - Consolidación de varios tipos de dispositivos de control de acceso y tipos de registro.
+        
+
+---
+
+### **Políticas de Usuarios**
+
+- Política de reportes.
+    
+- Política de contraseña.
+    
+- Política de uso permitido.
+    
+
+---
+
+### **Archivos y carpetas: Permisos y Jerarquía**
+
+- **Concepto:** Conocer los permisos de archivos y carpetas de los distintos sistemas operativos al definir políticas de control de acceso.
+    
+- **Herencia y jerarquía de permisos para sistemas de archivos:**
+    
+    - Tenga siempre en cuenta cómo se asignan el control de acceso y los permisos a los sistemas de archivos.
+        
+    - Aplicar permisos a una carpeta y a todas las carpetas y archivos en esta para garantizar la máxima protección.
+        
+    - Evitar cambiar muchos permisos pequeños, específicos y separados de archivos y carpetas a un grupo o usuario específico.
+        
+    - Consolidar archivos y carpetas con los mismos conjuntos de permisos en una sola ubicación para facilitar la aplicación de la política de control de acceso y evitar el crecimiento descontrolado de privilegios y la complejidad.
+        
+
+---
+
+### **Principio de privilegio mínimo y arquitectura de confianza cero**
+
+**Principio de privilegio mínimo (PoLP):**
+
+- **Objetivo:** Minimiza la superficie de ataque.
+    
+- **Definición:** Permite que un usuario o dispositivo acceda solo a los recursos que necesita para cumplir su propósito.
+    
+
+**Arquitectura de confianza cero (ZTA):**
+
+- **Objetivo:** Verifica continuamente.
+    
+- **Definición:** Autentica y autoriza todas las conexiones a recursos independientemente de dónde provengan las conexiones.
+    
+
+**Diagrama de Flujo:**
+
+- Las conexiones (Remoto, Campus, Sucursal) se tratan bajo el principio de "Nunca confíe".
+    
+- La ZTA aplica una política de "Siempre verifica" antes de dar acceso a los recursos.
+
+
+## Administradores y permisos
+
+### **dministradores y gobernanza: Descripción General**
+
+- Controlar la postura de seguridad y crear políticas de control de acceso.
+    
+- Definir políticas importantes de escalada, desastres e incorporación/baja.
+    
+- Comunicar estas políticas a través de planes y políticas de seguridad.
+    
+- Hacer auditorías periódicas de las cuentas de usuario y de las políticas de control de acceso.
+    
+
+---
+
+### **1. Separación de funciones**
+
+- Mantener siempre la separación entre usuarios y administradores con cuentas y políticas de control de acceso.
+    
+- Control de acceso separado para los distintos departamentos que tienen requisitos diferentes para permitir un control de acceso más granular y seguro.
+    
+- Aplicar esto a nivel de sistema operativo usando funciones como el Control de acceso de usuarios (UAC) de Windows y los privilegios de superusuario de Linux.
+    
+- Separar el control de acceso mediante divisiones que tengan sentido, como el departamento, el nivel de trabajo o la ubicación geográfica.
+    
+- Minimizar la sobrecarga, el crecimiento descontrolado de reglas y la escalada de privilegios.
+    
+
+### **2. Creación y recertificación de políticas de control de acceso**
+
+- Crear y documentar la creación de políticas de control de acceso para que un administrador pueda ver el panorama general.
+    
+- Revisar periódicamente (al menos una vez al año) todas las políticas de control de acceso para comprobar si son pertinentes o si es necesario actualizarlas o eliminarlas.
+    
+- Reevaluar las políticas de control de acceso cuando se produzcan cambios importantes en la red o en la infraestructura, y no suponga que las políticas existentes podrán manejar nuevos equipos o situaciones.
+    
+
+### **3. Instrucción de los usuarios**
+
+- Conocimiento de las políticas de seguridad y control de acceso de la empresa.
+    
+- Capacidad para crear contraseñas seguras y usar formularios de cambio.
+    
+- Capacidad para identificar e informar actividades sospechosas o políticas de control de acceso mal configuradas.
+    
+
+### **4. Incorporación, recertificación y baja de usuarios**
+
+- Métodos de incorporación claros y fáciles de usar para crear perfiles de control de acceso seguro.
+    
+- Recertificación periódica para garantizar que los usuarios tienen asignadas las políticas de control de acceso correctas.
+    
+- Políticas exhaustivas para la baja de usuarios para eliminar todos los accesos de los usuarios y las cuentas antiguas.
+    
+
+### **5. Planes de escalado y recuperación de desastres**
+
+- Planes públicos de recuperación de desastres.
+    
+- Estrategias de escalado claras y fáciles de usar para que los usuarios puedan informar de actividades sospechosas y denunciar políticas de acceso mal configuradas.
