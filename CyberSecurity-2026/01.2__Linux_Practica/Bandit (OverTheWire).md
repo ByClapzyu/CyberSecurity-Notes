@@ -131,7 +131,11 @@ password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 
 # Bandit 9 
 
+En bandit 9  la flag esta guardada en un archivo bianrio llamado data.txt.
+pista importante:
+- esta despues de ===
 
+comando fianl
 
 
 
