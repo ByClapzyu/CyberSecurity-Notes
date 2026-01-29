@@ -134,7 +134,20 @@ password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 La contraseña está escondida dentro de `data.txt`, pero este es un **archivo binario**.
 
 - _Problema:_ Si usamos `cat`, la terminal se llena de símbolos raros ("ruido") y puede bloquearse, ya que interpreta bytes de control como instruccione
-- Solución: filtrar  el ruido con  `strings`
+- Solución: Filtrar el ruido con `strings` para ver texto legible
 
+comando: **strings** : Escanea un archivo binario y extrae solo las secuencias de caracteres **legibles** (humanos/ASCII). Ignora todo lo demás.
+
+comando final: **strings data.txt | grep =**
 
 password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+# Bandit 10
+
+La contraseña esta escodida dentro de `data.txt`, pero esta codificado con **base64**
+
+- _Problema_: si usamos `cat` nos saldra la contraseña codificada
+- _Solución_:  usar `base64` para decodificar
+
+Si usamos `base64 --help` , podremos ver las diferentes flags que hay, la mas
+
