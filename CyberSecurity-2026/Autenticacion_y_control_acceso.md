@@ -287,4 +287,61 @@ Control de acceso: restringe el acceso a lugar o recusos / autorizacion
 
 Control de acceso obligatorio (MAC): no permite que ningun actor cambie los requisitos de seguridad.
 
-Control de acceso discrecional (DAC): permite que un factor externo modifique las restricciones de control de acceso.  el sujeto o mecanismo
+Control de acceso discrecional (DAC): permite que un factor externo modifique las restricciones de control de acceso.  el sujeto o mecanismo puede ajustar los permisos e incluso conceder nuevos accesos.
+
+Control de acceso basado en atributo (LBAC):  SEGUN su rol
+RSBAC: basao en una lista o algo asi
+RBAC: 
+ABAC
+
+### **Control de acceso basado en atributos (ABAC)**
+
+- Control de seguridad que involucra varios atributos (hora del día, identificación).
+    
+- Control de acceso dinámico (DAC) de Microsoft.
+    
+- Modelos de seguridad de base de datos.
+    
+- Políticas de Next-Generation Firewall.
+    
+
+### **Control de acceso basado en funciones (RBAC)**
+
+- Seguridad de grupo de Active Directory de Microsoft.
+    
+- Funciones de administrador en muchos sistemas operativos y dispositivos de seguridad.
+    
+- Políticas de seguridad de la empresa basadas en la función o el cargo.
+    
+
+### **Control de acceso basado en reglas (RSBAC)**
+
+- Conjuntos de reglas del enrutador.
+    
+- iptables.
+    
+- Puertas de hotel con cerradura de tiempo.
+    
+- Tarjetas de entrada a áreas restringidas.
+    
+
+### **Control de acceso discrecional (DAC)**
+
+- Guardia de seguridad de un edificio.
+    
+- Control de acceso de usuario (UAC) de Microsoft.
+    
+- Permisos del sistema de archivos Linux.
+    
+
+### **Control de acceso basado en etiquetas (LBAC)**
+
+- Clasificación de documentos.
+    
+
+### **Control de acceso obligatorio (MAC)**
+
+- Candado.
+    
+- Sistema operativo SELinux.
+
