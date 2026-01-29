@@ -80,4 +80,35 @@ unico inicios de sesion, pasando token de autenticación (como cookie )para inic
 comun en empresas y nubes. (confianza entre empresas , idp sp acuerdo)
 
 Ventajas:
-- reduc
+- reduce carga de recordar credenciales
+- reduce redudncia de credenciales y costos operativos de la organizacion
+- facilida el cumplimineto y la organizacion de informe de usuario
+
+nota : (usar mfa para reforzar)
+Desventaja
+
+- credenciales comprometidas dan al actor accreso a todo
+
+
+como funciona?
+
+necestia:
+- usuario
+- proveedor de srvicio sp
+- prodeveedor de identidad 
+- idp
+usaurio --> sp --> idp  ---> token autenticacion , token inscurtado prueba de su autenticacion--> sp
+
+
+Protocolo de SSO
+
+- QAuth
+- SAML:  basado en xml . Usa afirmaciones de seguridad para intecambiar info entre las partes 
+	- la sercion de uatenticacion: indica como se autentico la entidad e incluye fcha y hora
+	- la asersion de atributos proporciona infromacion adicional sobre la identidad
+- asercion de autorizacion identifica lo que la identidad esta autorizada a hacer
+- Los protocolos de sso son estandares abiertos de delegacion de acceso que se us para que losusuarios concedan a sitios o paps acceso a su info en otros sitios, pero sin darlas contraseñas.
+
+ForitAuthenticator:
+- idp verifica con servidor de autenticacion
+- 
