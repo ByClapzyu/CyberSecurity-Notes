@@ -1,3 +1,21 @@
+[Métodos de autenticación](#métodos_de_autenticación)
 
-identificación: revela su identidad
-verificación: demostrar qu
+
+
+----
+
+# métodos_de_autenticación
+
+### Inherencia
+
+### posesión
+
+### conocimiento
+
+### comportar
+
+
+
+Factores contextuales: pueden  afectar el proceso de autenticación
+- ubicacion de la identidad
+- 
