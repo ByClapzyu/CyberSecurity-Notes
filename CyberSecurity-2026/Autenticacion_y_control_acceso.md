@@ -1,6 +1,8 @@
 [Métodos de autenticación](#métodos_de_autenticación)
 
 [Inicio de Sesión Único (SSO)](#sso_(inicio_de_sesión_único))
+- [Protocolos de SSO](#protocolos_de_sso)
+
 
 ----
 
@@ -73,42 +75,88 @@ Consiste en utilizar **varios métodos de autenticación** juntos (por ejemplo: 
 
 # sso_(Inicio_de_sesión_único)
 
-Logra el quilibrio entre productividad y seguridad.
+Logra el equilibrio entre productividad y seguridad.
 
-unico inicios de sesion, pasando token de autenticación (como cookie )para inicar en otros sitios. LDAP combatible 
+- **Funcionamiento:** Permite inicios de sesión únicos, pasando un **token de autenticación** (como una cookie) para iniciar sesión automáticamente en otros sitios.
+    
+- **Compatibilidad:** Es compatible con LDAP.
+    
+- **Uso:** Común en empresas y nubes (se basa en la confianza entre empresas y acuerdos entre el Proveedor de Identidad - IdP y el Proveedor de Servicios - SP).
+    
 
-comun en empresas y nubes. (confianza entre empresas , idp sp acuerdo)
+---
 
-Ventajas:
-- reduce carga de recordar credenciales
-- reduce redudncia de credenciales y costos operativos de la organizacion
-- facilida el cumplimineto y la organizacion de informe de usuario
+## ventajas y desventajas
 
-nota : (usar mfa para reforzar)
-Desventaja
+### Ventajas
 
-- credenciales comprometidas dan al actor accreso a todo
+- Reduce la carga de recordar múltiples credenciales.
+    
+- Reduce la redundancia de credenciales y los costos operativos de la organización.
+    
+- Facilita el cumplimiento y la organización de informes de usuario.
+    
+- **Nota:** Se recomienda usar MFA para reforzar la seguridad.
+    
 
+### Desventaja
 
-como funciona?
+- Si las credenciales se ven comprometidas, dan al actor malicioso acceso a todo.
+    
 
-necestia:
-- usuario
-- proveedor de srvicio sp
-- prodeveedor de identidad 
-- idp
-usaurio --> sp --> idp  ---> token autenticacion , token inscurtado prueba de su autenticacion--> sp
+---
 
+## cómo funciona (flujo)
 
-Protocolo de SSO
+Se necesitan los siguientes actores:
 
-- QAuth
-- SAML:  basado en xml . Usa afirmaciones de seguridad para intecambiar info entre las partes 
-	- la sercion de uatenticacion: indica como se autentico la entidad e incluye fcha y hora
-	- la asersion de atributos proporciona infromacion adicional sobre la identidad
-- asercion de autorizacion identifica lo que la identidad esta autorizada a hacer
-- Los protocolos de sso son estandares abiertos de delegacion de acceso que se us para que losusuarios concedan a sitios o paps acceso a su info en otros sitios, pero sin darlas contraseñas.
+- Usuario.
+    
+- Proveedor de Servicio (SP).
+    
+- Proveedor de Identidad (IdP).
+    
 
-ForitAuthenticator:
-- idp verifica con servidor de autenticacion
-- 
+**El flujo es:** Usuario --> SP --> IdP ---> **Token de autenticación** (Token incrustado como prueba de su autenticación) --> SP.
+
+---
+
+## protocolos_de_sso
+
+### OAuth
+
+Son estándares abiertos de delegación de acceso que se usan para que los usuarios concedan a sitios o aplicaciones acceso a su información en otros sitios, pero **sin dar las contraseñas**.
+
+### SAML (Security Assertion Markup Language)
+
+Basado en **XML**. Usa afirmaciones de seguridad para intercambiar información entre las partes.
+
+**Tipos de aserciones (afirmaciones):**
+
+1. **La aserción de autenticación:** Indica cómo se autenticó la entidad e incluye fecha y hora.
+    
+2. **La aserción de atributos:** Proporciona información adicional sobre la identidad.
+    
+3. **La aserción de autorización:** Identifica lo que la identidad está autorizada a hacer.
+    
+
+---
+
+## fortiauthenticator
+
+- Actúa como IdP (Proveedor de Identidad).
+    
+- Verifica las credenciales con el servidor de autenticación
+
+---
+# marco,protocolo_y_herramientas_de_auntenticación
+
+Es el esquema o plan basico sobre como las entidades demostraran sus idnetidades dentro de un sistema.
+
+**Servicio de autenticacion remota de usuarios de marcacion (RADIUS)
+- protocolo remoto de autenticacion, autroizacion y registro (AAA)
+- cliente- servidor
+- punto central para la autenticacion del usuario del sistema
+- pueede habilitar el marco de 802.1x
+
+proceso:
