@@ -131,13 +131,10 @@ password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 
 # Bandit 9 
 
-En bandit 9  la flag esta guardada en un archivo bianrio llamado data.txt.
-pista importante:
-- esta despues de ===
+La contraseña está escondida dentro de `data.txt`, pero este es un **archivo binario**.
 
-comando fianl
-
-
+- _Problema:_ Si usamos `cat`, la terminal se llena de símbolos raros ("ruido") y puede bloquearse, ya que interpreta bytes de control como instruccione
+- Solución: filtrar  el ruido con  `strings`
 
 
 password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
