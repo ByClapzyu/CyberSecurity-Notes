@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Autenticacion_y_control_acceso.md",
+                "file": "01.2__Linux_Practica/Bandit (OverTheWire).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Autenticacion_y_control_acceso"
+              "title": "Bandit (OverTheWire)"
             }
           }
         ]
@@ -186,8 +186,8 @@
   },
   "active": "071bf3ded4ef35fa",
   "lastOpenFiles": [
-    "autenticacion_802.1x.png",
     "Autenticacion_y_control_acceso.md",
+    "autenticacion_802.1x.png",
     "RED/Hack The Box.md",
     "Technical_introduction_to_cybersecurity/Modulo 2_ Red segura/Red Segura.md",
     "Technical_introduction_to_cybersecurity",
