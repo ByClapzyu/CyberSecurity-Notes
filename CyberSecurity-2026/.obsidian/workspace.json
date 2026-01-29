@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FortiGate.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FortiGate"
+              "title": "Untitled"
             }
           }
         ]
@@ -187,11 +187,11 @@
   "active": "e4492846aa2e97b5",
   "lastOpenFiles": [
     "Red segura.md",
+    "FortiGate.md",
     "Fortinet/Getting_Started_in_Cybersecurity/13_ZTNA (Acceso a la red de confianza cero).md",
     "Untitled.md",
     "Fortinet/Getting_Started_in_Cybersecurity/15_ SASE (Borde de servicio de acceso seguro).md",
     "Fortinet/Getting_Started_in_Cybersecurity/12_SD-WAN.md",
-    "FortiGate.md",
     "Modulo 1_ cipto y infres clave pub/combinasion asimetrico y simetrico.png",
     "Modulo 3",
     "Modulo 2_ Red segura",
