@@ -2,7 +2,9 @@
 
 [Inicio de Sesión Único (SSO)](#sso_(inicio_de_sesión_único))
 - [Protocolos de SSO](#protocolos_de_sso)
+
 [marco,protocolo_y_herramientas_de_auntenticación](#marco,protocolo_y_herramientas_de_auntenticación)
+
 
 ----
 
@@ -278,3 +280,11 @@ Definen la manera en que se hace la autenticación y establecen las reglas de in
 
 # control_de_acceso_y_metodos
 
+Control de acceso: restringe el acceso a lugar o recusos / autorizacion
+- lista
+- identificacion
+
+
+Control de acceso obligatorio (MAC): no permite que ningun actor cambie los requisitos de seguridad.
+
+Control de acceso discrecional (DAC): permite que un factor externo modifique las restricciones de control de acceso.  el sujeto o mecanismo

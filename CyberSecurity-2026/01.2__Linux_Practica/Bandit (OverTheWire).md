@@ -149,5 +149,13 @@ La contraseña esta escodida dentro de `data.txt`, pero esta codificado con **ba
 - _Problema_: si usamos `cat` nos saldra la contraseña codificada
 - _Solución_:  usar `base64` para decodificar
 
-Si usamos `base64 --help` , podremos ver las diferentes flags que hay, la mas
+Si usamos `base64 --help` , podremos ver las diferentes flags que hay, la que usaremos es `-d`
+
+- **base64 -d** : para decodificar 
+
+comando final: **bae64 -d data.txt**
+
+Password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+
 
