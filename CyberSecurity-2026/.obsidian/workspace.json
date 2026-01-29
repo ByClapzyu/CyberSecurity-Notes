@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Red segura.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Red segura"
+              "title": "Untitled"
             }
           }
         ]
@@ -186,9 +186,10 @@
   },
   "active": "e4492846aa2e97b5",
   "lastOpenFiles": [
-    "Fortinet/Getting_Started_in_Cybersecurity/12_SD-WAN.md",
-    "Red segura.md",
+    "Fortinet/Getting_Started_in_Cybersecurity/15_ SASE (Borde de servicio de acceso seguro).md",
     "Untitled.md",
+    "Red segura.md",
+    "Fortinet/Getting_Started_in_Cybersecurity/12_SD-WAN.md",
     "FortiGate.md",
     "Modulo 1_ cipto y infres clave pub/combinasion asimetrico y simetrico.png",
     "Modulo 3",
@@ -203,7 +204,6 @@
     "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "01.2__Linux_Practica/Nuevo usuarios_practica.md",
     "Fortinet/Getting_Started_in_Cybersecurity/11_SIEM (Administración de información y eventos de seguridad ).md",
-    "Fortinet/Getting_Started_in_Cybersecurity/15_ SASE (Borde de servicio de acceso seguro).md",
     "Fortinet/Getting_Started_in_Cybersecurity/14_Seguridad en la nube.md",
     "Fortinet/Getting_Started_in_Cybersecurity/13_ZTNA (Acceso a la red de confianza cero).md",
     "Fortinet/Getting_Started_in_Cybersecurity/07_Wi-Fi segura.md",
