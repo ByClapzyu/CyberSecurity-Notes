@@ -1,8 +1,10 @@
-[Admi]
+[Administración de la Red de Seguridad Centralizada](#Administración de la Red de Seguridad Centralizada)
+
+[Arquitectura Data Fabric](#arquitectura_data_fabric)
 
 --------
 
-##  Administración de la Red de Seguridad Centralizada
+##  administración_de_la_Red de Seguridad Centralizada
 
 **Definición:** Consiste en recopilar datos relacionados con la seguridad de diversos dispositivos en una sola ubicación central para su gestión, control, operación y diagnóstico.
 
@@ -13,7 +15,7 @@
 - **API (Application Programming Interface):** Interfaz de software que permite a dos dispositivos comunicarse entre sí automáticamente.
     
 
-### Arquitectura Data Fabric
+### arquitectura_data_fabric
 
 Su objetivo es monitorear y administrar los datos y aplicaciones donde quiera que estén (nube o local), sin perder la gobernanza centralizada.
 
@@ -48,7 +50,7 @@ Es la implementación de este concepto por Fortinet.
 
 ---
 
-## 2. Segmentación de Red
+##  Segmentación de Red
 
 **Concepto:** Divide la red en segmentos más pequeños y aislados (ej. por departamentos como Finanzas, RRHH).
 
