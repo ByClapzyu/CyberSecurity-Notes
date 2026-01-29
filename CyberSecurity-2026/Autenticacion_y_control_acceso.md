@@ -159,4 +159,103 @@ Es el esquema o plan basico sobre como las entidades demostraran sus idnetidades
 - punto central para la autenticacion del usuario del sistema
 - pueede habilitar el marco de 802.1x
 
-proceso:
+proceso de autenticacion radius
+
+Los paquetes de datos se usan para intercambiar datos entre dispositivos informáticos en una red de conmutación de paquetes. Son unidades de datos formateadas que contienen información de control y datos de usuario, también conocidos como carga útil.
+
+Repositiorio de credenciales de usuario radius
+
+- Base de datos RADIUS
+    
+- Servidores externos:
+    
+    - Lenguaje de consulta estructurada (SQL)
+        
+    - Protocolo ligero de acceso a directorios (LDAP)
+
+nota: - Microsoft Active Directory (AD) es un ejemplo de directorio compatible con LDAP.
+
+
+Directorio compatible con el protocolo ligero de acceso a direcotrios LDAP
+
+- LDAP es un protocolo abierto de aplicación estándar de la industria para acceder a servicios de directorio a través de una red IP.
+    
+- LDAP es un protocolo de comunicación para servidores de directorio.
+    
+
+### **TACACS+**
+
+- **Definición:** Similar a RADIUS, TACACS+ es un protocolo remoto de Autenticación, autorización y registro (AAA).
+    
+- **Características técnicas:**
+    
+    - TACACS+ cifra todos los protocolos AAA.
+        
+    - TACACS+ usa TCP como protocolo de transporte de red.
+        
+
+### **Características de RADIUS**
+
+- RADIUS solo cifra las contraseñas.
+    
+- RADIUS usa UDP.
+
+
+### **Métodos de Autenticación**
+
+Los métodos de autenticación definen la manera en que se hace la autenticación. También se podrían describir como los protocolos que establecen las reglas de interacción y verificación que los endpoints o sistemas usan para comunicarse.
+
+#### **Protocolo de autenticación de contraseña (PAP)**
+
+- **Funcionamiento:** Envía el Nombre de usuario y contraseña; el servidor responde con Aceptar o rechazar.
+    
+- Puede autenticar sesiones PPP.
+    
+- Usa un proceso de establecimiento de comunicación de dos vías.
+    
+- Usa información de autenticación estática.
+    
+
+#### **Protocolo de autenticación por desafío mutuo (CHAP)**
+
+- **Funcionamiento:** Implica la generación de una cadena aleatoria, autenticación hash cifrada y una respuesta.
+    
+- Puede autenticar sesiones PPP.
+    
+- Usa un proceso de establecimiento de comunicación de tres vías.
+    
+- La cadena aleatoria y el resultado hash de los nombres de usuario de los dispositivos garantizan una información de autenticación dinámica.
+    
+- La versión de Microsoft se llama MS-CHAP.
+    
+
+---
+
+### **Marco de autenticación 802.1x**
+
+**Definición:** 802.1x es un estándar IEEE para el Control de acceso a la red basado en puertos (PNAC).
+
+**Componentes del Marco:**
+
+1. **Solicitante (Supplicant):**
+    
+    - Es el dispositivo cliente.
+        
+    - Envía formularios de autenticación como: Nombre de usuario y Contraseña, o Certificado digital.
+        
+2. **Intermediario (Authenticator):**
+    
+    - También conocido como Autenticador.
+        
+    - Es un dispositivo de red que proporciona un enlace de datos entre el cliente y la red.
+        
+    - Ejemplos: Switch de Ethernet, Punto de acceso inalámbrico.
+        
+3. **Servidor de autenticación:**
+    
+    - Un servidor de confianza que adjudica el proceso de autenticación.
+        
+    - Normalmente admite los protocolos RADIUS y EAP.
+
+
+![[Pasted image 20260129141336.png]]

@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -187,6 +186,7 @@
   },
   "active": "071bf3ded4ef35fa",
   "lastOpenFiles": [
+    "Pasted image 20260129141336.png",
     "RED/Hack The Box.md",
     "Autenticacion_y_control_acceso.md",
     "Technical_introduction_to_cybersecurity/Modulo 2_ Red segura/Red Segura.md",
