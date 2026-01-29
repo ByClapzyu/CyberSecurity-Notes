@@ -1,6 +1,6 @@
 [Métodos de autenticación](#métodos_de_autenticación)
 
-
+[Inicio de Sesión Único (SSO)](#sso_(inicio_de_sesión_único))
 
 ----
 
@@ -8,48 +8,76 @@
 
 ### Inherencia
 
-caracteristica fisica unica 
-- huellas 
-- retiansa
-- iris
-- patrones faciales
-- medidas de las manos
-(estatica, biometrica o pasiva)
-### posesión
-algo que uno tiene
-- tarjeta bancaria
-- clave privada de firma
-- maquina o dispositivo (contraseña o pin)
-- token de software / hardware
-	- otp
-	- contraseña de un solo uso basada en HMAC  HOTP
-	- totp
-- mensajera sms
+Se refiere a **"Algo que eres"**. Se basa en una característica física única del usuario.
 
+- **Nota:** Se considera una autenticación estática, biométrica o pasiva.
+**Ejemplos:**
+
+- Huellas dactilares.
+- Retinas.
+- Iris.
+- Patrones faciales.
+- Medidas de las manos.
+### posesión
+
+Se refiere a **"Algo que tienes"**. El usuario debe tener el objeto físico para autenticarse.
+
+**Ejemplos:**
+
+- Tarjeta bancaria.
+- Clave privada de firma.
+- Máquina o dispositivo (que contiene contraseña o PIN).
+- Mensajería SMS.
+- **Token de software / hardware:**
+    - **OTP:** Contraseña de un solo uso.
+    - **HOTP:** Contraseña de un solo uso basada en HMAC (basada en eventos/contador).
+    - **TOTP:** Contraseña de un solo uso basada en el tiempo.
 
 ### conocimiento
 
-Cuando uno se autentica con algo que uno conoce 
-- preguntas y respuestas(Q&A
-- contraseña
-- numero de indetificacion personal pin 
+Se refiere a **"Algo que sabes"**. Es cuando uno se autentica con información que solo el usuario debería conocer.
 
-### comportar
+**Ejemplos:**
 
-algo que una persona hace
+- Preguntas y respuestas de seguridad (Q&A).
+- Contraseña.
+- Número de identificación personal (PIN).
+### comportamiento
 
-- identificacion voz 
-- pulsasion de teclas
-- caracteristica de uso de raton
-(datos biometricos activos)
+Se refiere a **"Algo que haces"**. Analiza la forma única en la que una persona interactúa con el sistema.
 
+- **Nota:** Se consideran datos biométricos activos.
+**Ejemplos:**
 
-Factores contextuales: pueden  afectar el proceso de autenticación
-- ubicacion de la identidad
-- comportamiento de la identidad
+- Identificación de voz.
+- Pulsación de teclas (dinámica de tecleo).
+- Características de uso del ratón.
 
-Autenticacion de multipls factores (MFA)
+## factores contextuales y mfa
 
-Varios metodos de autenticacion. y no es tan probable que un actor ponga en peligro facotres de autenticacion
+### Factores Contextuales
 
- 
+Son elementos externos que pueden afectar o validar el proceso de autenticación.
+
+- Ubicación de la identidad (Geolocalización).
+    
+- Comportamiento de la identidad (Análisis de patrones de uso).
+    
+### Autenticación de Múltiples Factores (MFA)
+
+Consiste en utilizar **varios métodos de autenticación** juntos (por ejemplo: Conocimiento + Posesión).
+
+- **Beneficio clave:** No es tan probable que un actor malicioso logre poner en peligro múltiples factores de autenticación simultáneamente.
+
+ ----
+
+# sso_(Inicio_de_sesión_único)
+
+Logra el quilibrio entre productividad y seguridad.
+
+unico inicios de sesion, pasando token de autenticación (como cookie )para inicar en otros sitios. LDAP combatible 
+
+comun en empresas y nubes. (confianza entre empresas , idp sp acuerdo)
+
+Ventajas:
+- reduc
