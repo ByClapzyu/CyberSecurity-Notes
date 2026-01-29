@@ -1,10 +1,8 @@
-[Administración de la Red de Seguridad Centralizada](#Administración de la Red de Seguridad Centralizada)
 
-[Arquitectura Data Fabric](#arquitectura_data_fabric)
 
---------
 
-##  administración_de_la_Red de Seguridad Centralizada
+---
+## administración de red seguridad centralizada
 
 **Definición:** Consiste en recopilar datos relacionados con la seguridad de diversos dispositivos en una sola ubicación central para su gestión, control, operación y diagnóstico.
 
@@ -15,14 +13,14 @@
 - **API (Application Programming Interface):** Interfaz de software que permite a dos dispositivos comunicarse entre sí automáticamente.
     
 
-### arquitectura_data_fabric
+### arquitectura data fabric
 
 Su objetivo es monitorear y administrar los datos y aplicaciones donde quiera que estén (nube o local), sin perder la gobernanza centralizada.
 
 - **Uso de IA:** Automatiza tareas repetitivas y ofrece recomendaciones inteligentes.
     
 
-### Fortinet Security Fabric
+### fortinet security fabric
 
 Es la implementación de este concepto por Fortinet.
 
@@ -50,7 +48,7 @@ Es la implementación de este concepto por Fortinet.
 
 ---
 
-##  Segmentación de Red
+## segmentación de red
 
 **Concepto:** Divide la red en segmentos más pequeños y aislados (ej. por departamentos como Finanzas, RRHH).
 
@@ -61,7 +59,7 @@ Es la implementación de este concepto por Fortinet.
 - **Tráfico Horizontal (Este-Oeste):** Tráfico interno entre servidores o dispositivos de la misma red.
     
 
-### Tipos de Segmentación
+### tipos de segmentación
 
 **A. Segmentación Lógica (Pequeña y Manejable)**
 
@@ -77,7 +75,7 @@ Es la implementación de este concepto por Fortinet.
 - **Herramientas:** ACLs (Listas de Control de Acceso), Enrutadores y Políticas de Firewall. Es una separación dura y física.
     
 
-### Cómo Segmentar una Red Moderna
+### cómo segmentar una red moderna
 
 1. **Capa de Aplicación:** Segmentación basada en el servicio (Web, Base de Datos).
     
@@ -104,7 +102,7 @@ Es la implementación de este concepto por Fortinet.
 
 ---
 
-## 3. Switching y Puertos Seguros
+## switching y puertos seguros
 
 La seguridad en la Capa 2 (Enlace de Datos) es crítica porque es donde se conectan los usuarios.
 
@@ -115,7 +113,7 @@ La seguridad en la Capa 2 (Enlace de Datos) es crítica porque es donde se conec
 - **Tabla CAM (Content Addressable Memory):** Es la "memoria" del switch. Muestra la relación: `Puerto Nº -> Dirección MAC -> VLAN`.
     
 
-### Amenazas y Ataques Comunes en Capa 2
+### amenazas y ataques comunes en capa 2
 
 **1. Inundación de MAC (MAC Flooding)**
 
@@ -131,7 +129,7 @@ La seguridad en la Capa 2 (Enlace de Datos) es crítica porque es donde se conec
 - **Definición:** El atacante suplanta (falsifica) su dirección MAC por la de un dispositivo autorizado para saltarse los filtros de seguridad.
     
 
-### Definiciones de Tramas y Control
+### definiciones de tramas y control
 
 - **Trama de Difusión (Broadcast):** Destino `FF:FF:FF:FF:FF:FF`. Se envía a todos.
     
@@ -140,7 +138,7 @@ La seguridad en la Capa 2 (Enlace de Datos) es crítica porque es donde se conec
 - **Control de Tormentas (Storm Control):** Configura un umbral límite para evitar que estas tramas inunden y colapsen la red.
     
 
-### Medidas de Seguridad para Switches
+### medidas de seguridad para switches
 
 - **Seguridad de Puertos (Port Security):** Limitar el número de direcciones MAC permitidas por puerto.
     
@@ -157,7 +155,7 @@ La seguridad en la Capa 2 (Enlace de Datos) es crítica porque es donde se conec
 
 ---
 
-## 4. Protocolos de Seguridad (Cifrado)
+##  protocolos de seguridad
 
 Es la evolución de los protocolos de texto plano a protocolos cifrados para garantizar confidencialidad, integridad y autenticación.
 
@@ -168,14 +166,11 @@ Es la evolución de los protocolos de texto plano a protocolos cifrados para gar
 |**Control Remoto**|Telnet|**SSH**|Verificación extremo a extremo, Intercambio Diffie-Hellman (DH), Código de Autenticación de Mensajes (MAC).|
 |**Acceso Remoto (VPN)**|L2TP (Solo túnel)|**IPsec**|Cifrado robusto, autenticación e integridad de paquetes.|
 
-
-
-
-## 5. Amenazas Comunes y Ataques DoS
+## amenazas comunes y ataques dos
 
 **Motivaciones:** Políticas, financieras, represalias.
 
-### Ataques de Inundación (Flood) - Volumétricos
+### ataques de inundación - volumétricos
 
 El objetivo es saturar el ancho de banda o los recursos del dispositivo.
 
@@ -186,7 +181,7 @@ El objetivo es saturar el ancho de banda o los recursos del dispositivo.
 3. **Inundación SYN:** Explota el "apretón de manos" TCP (3-way handshake). El atacante envía muchos `SYN` pero nunca responde con `ACK`. El servidor se queda esperando (conexiones medio abiertas) y agota su memoria.
     
 
-### Ataques por Fragmentación y Malformación
+### ataques por fragmentación y malformación
 
 Envían paquetes "rotos" que el dispositivo no sabe cómo procesar.
 
@@ -197,7 +192,7 @@ Envían paquetes "rotos" que el dispositivo no sabe cómo procesar.
 3. **Christmas Tree (XMAS):** Envía un paquete TCP con todas las banderas encendidas (FIN, URG, PSH). Consume muchos recursos de procesamiento.
     
 
-### Ataques Destructivos
+### ataques destructivos
 
 - **PDoS (Phashing):** Daña el hardware permanentemente corrompiendo el firmware. Requiere reemplazo físico del equipo.
     
@@ -206,7 +201,7 @@ Envían paquetes "rotos" que el dispositivo no sabe cómo procesar.
 
 ---
 
-## 6. Medidas de Prevención y Endurecimiento
+##  medidas de prevención y endurecimiento
 
 **Relación Ataque - Prevención:**
 
@@ -216,8 +211,6 @@ Envían paquetes "rotos" que el dispositivo no sabe cómo procesar.
 |**Agotamiento de Recursos** (Bombas Fork)|**Limitación de procesos:** Restringir cuántos procesos puede abrir un solo usuario.|
 |**Amplificación/Reflexión** (Smurf, Fraggle)|**Configuración de Router:** Evitar el reenvío de paquetes de difusión dirigida.|
 |**Volumétricos** (Inundaciones)|**Sensores DoS / Análisis de Comportamiento:** Detectar picos inusuales de tráfico.|
-
-
 **Buenas Prácticas de Endurecimiento:**
 
 1. **Cerrar puertos innecesarios:** Usar escáneres como Nmap para ver qué está abierto y cerrar lo que no se usa en el Firewall.
