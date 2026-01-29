@@ -93,3 +93,32 @@ Un arquitecto de seguridad debe implantar el modelo de confianza cero en una red
 ¿Qué ofrece el borde de servicio de acceso seguro (SASE) a los usuarios remotos fuera de la red en comparación con los usuarios en la red?
 - las mismas poltiicas
 
+¿Qué tipo de ataque se puede manejar únicamente con la última generación de sandbox?
+- ia
+
+¿Por qué conocer las IP de origen de un ataque podría no ser relevante? (Elija dos).
+- botnet
+- falsificarse
+
+¿Qué red está dentro del perímetro de seguridad?
+- red confinaza
+
+
+¿Qué aplicación podría proporcionar la lista de puertos abiertos a un ingeniero de seguridad, para que se puedan cerrar los innecesarios?
+- nmap
+
+¿Qué ventajas espera obtener al implementar una arquitectura Data Fabric? (Elija dos).
+- las diferentres
+- el monitore
+
+
+¿Cómo puede un arquitecto de seguridad segmentar una red? (Elija dos).
+- A través de redes de área local virtuales (VLAN)
+- Mediante la red de área amplia definida por software (SD-WAN)
+
+¿Cómo se podría filtrar el tráfico en el perímetro de seguridad? (Elija dos).
+- capa transporte
+
+
+En este entorno SD-WAN, ¿qué representa la línea roja?
+- res super puesta
