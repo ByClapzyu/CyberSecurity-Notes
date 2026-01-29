@@ -1,8 +1,15 @@
 
+[Administración de red seguridad centralizada](#administración_de_red_seguridad_centralizada)
+
+[Arquitectura Data Fabric](#arquitectura_data_fabric)
+
+[Segmentación de Red](#segmentación_de_red)
+
+[Switching y Puertos Seguros](#switching_y_puertos_seguros)
 
 
 ---
-## administración de red seguridad centralizada
+# administración_de_red_seguridad_centralizada
 
 **Definición:** Consiste en recopilar datos relacionados con la seguridad de diversos dispositivos en una sola ubicación central para su gestión, control, operación y diagnóstico.
 
@@ -13,7 +20,7 @@
 - **API (Application Programming Interface):** Interfaz de software que permite a dos dispositivos comunicarse entre sí automáticamente.
     
 
-### arquitectura data fabric
+# arquitectura_data_fabric
 
 Su objetivo es monitorear y administrar los datos y aplicaciones donde quiera que estén (nube o local), sin perder la gobernanza centralizada.
 
@@ -48,7 +55,7 @@ Es la implementación de este concepto por Fortinet.
 
 ---
 
-## segmentación de red
+# segmentación_de_red
 
 **Concepto:** Divide la red en segmentos más pequeños y aislados (ej. por departamentos como Finanzas, RRHH).
 
@@ -102,7 +109,7 @@ Es la implementación de este concepto por Fortinet.
 
 ---
 
-## switching y puertos seguros
+## switching_y_puertos_seguros
 
 La seguridad en la Capa 2 (Enlace de Datos) es crítica porque es donde se conectan los usuarios.
 
