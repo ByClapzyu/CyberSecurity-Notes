@@ -42,7 +42,7 @@
 
 ---
 
-## 2. Fortinet Security Fabric
+##  Fortinet Security Fabric
 
 **Definición:** Es una plataforma de ciberseguridad integrada, compuesta por soluciones de seguridad interconectadas que trabajan juntas para proteger toda la superficie de ataque digital.
 
@@ -57,7 +57,7 @@
 
 ---
 
-## 3. Componentes Clave (Definiciones Detalladas)
+##  Componentes Clave (Definiciones Detalladas)
 
 Estas son las tecnologías que impulsan al FortiGate y al Security Fabric:
 
