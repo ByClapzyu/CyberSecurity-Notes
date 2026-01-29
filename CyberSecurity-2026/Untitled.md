@@ -71,3 +71,5 @@ Debe hacer una auditoría de cumplimiento de la seguridad. ¿Qué tipo de implem
 - Protocolo de transferencia de hipertexto (HTTP)
 
 ¿Qué principios son parte del modelo de seguridad de confianza cero? (Elija dos).
+- Suponer que su red tiene una violación de datos
+- Implementar el privilegio mínimo
