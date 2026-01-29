@@ -2,7 +2,7 @@
 
 [Inicio de Sesión Único (SSO)](#sso_(inicio_de_sesión_único))
 - [Protocolos de SSO](#protocolos_de_sso)
-
+[marco,protocolo_y_herramientas_de_auntenticación](#marco,protocolo_y_herramientas_de_auntenticación)
 
 ----
 
@@ -151,111 +151,130 @@ Basado en **XML**. Usa afirmaciones de seguridad para intercambiar información 
 ---
 # marco,protocolo_y_herramientas_de_auntenticación
 
-Es el esquema o plan basico sobre como las entidades demostraran sus idnetidades dentro de un sistema.
+**Definición:** Es el esquema o plan básico sobre cómo las entidades demostrarán sus identidades dentro de un sistema.
 
-**Servicio de autenticacion remota de usuarios de marcacion (RADIUS)
-- protocolo remoto de autenticacion, autroizacion y registro (AAA)
-- cliente- servidor
-- punto central para la autenticacion del usuario del sistema
-- pueede habilitar el marco de 802.1x
+---
 
-proceso de autenticacion radius
+## radius-servicio-de-autenticación-remota
 
-Los paquetes de datos se usan para intercambiar datos entre dispositivos informáticos en una red de conmutación de paquetes. Son unidades de datos formateadas que contienen información de control y datos de usuario, también conocidos como carga útil.
+**Definición (RADIUS):** Servicio de autenticación remota de usuarios de marcación.
 
-Repositiorio de credenciales de usuario radius
-
-- Base de datos RADIUS
+- Es un protocolo remoto de **Autenticación, Autorización y Registro (AAA)**.
     
-- Servidores externos:
+- Funciona bajo arquitectura **Cliente-Servidor**.
     
-    - Lenguaje de consulta estructurada (SQL)
+- Actúa como punto central para la autenticación del usuario del sistema.
+    
+- Puede habilitar el marco de 802.1x.
+    
+
+**Proceso de autenticación RADIUS:** Utiliza **paquetes de datos** para intercambiar información entre dispositivos en una red de conmutación.
+
+- Son unidades de datos formateadas que contienen información de control y datos de usuario (conocidos como **carga útil**).
+    
+
+**Repositorio de credenciales de usuario RADIUS:** El servidor RADIUS puede verificar las credenciales contra:
+
+1. **Base de datos RADIUS:** Local (interna).
+    
+2. **Servidores externos:**
+    
+    - Lenguaje de consulta estructurada (SQL).
         
-    - Protocolo ligero de acceso a directorios (LDAP)
-
-nota: - Microsoft Active Directory (AD) es un ejemplo de directorio compatible con LDAP.
-
-
-Directorio compatible con el protocolo ligero de acceso a direcotrios LDAP
-
-- LDAP es un protocolo abierto de aplicación estándar de la industria para acceder a servicios de directorio a través de una red IP.
-    
-- LDAP es un protocolo de comunicación para servidores de directorio.
-    
-
-### **TACACS+**
-
-- **Definición:** Similar a RADIUS, TACACS+ es un protocolo remoto de Autenticación, autorización y registro (AAA).
-    
-- **Características técnicas:**
-    
-    - TACACS+ cifra todos los protocolos AAA.
-        
-    - TACACS+ usa TCP como protocolo de transporte de red.
+    - Protocolo ligero de acceso a directorios (LDAP).
         
 
-### **Características de RADIUS**
+---
 
-- RADIUS solo cifra las contraseñas.
-    
-- RADIUS usa UDP.
+## ldap-protocolo-ligero-de-acceso-a-directorios
 
+**Definición:** Protocolo abierto de aplicación estándar de la industria para acceder a servicios de directorio a través de una red IP. Es un protocolo de comunicación para servidores de directorio.
 
-### **Métodos de Autenticación**
+**Nota Importante:**
 
-Los métodos de autenticación definen la manera en que se hace la autenticación. También se podrían describir como los protocolos que establecen las reglas de interacción y verificación que los endpoints o sistemas usan para comunicarse.
-
-#### **Protocolo de autenticación de contraseña (PAP)**
-
-- **Funcionamiento:** Envía el Nombre de usuario y contraseña; el servidor responde con Aceptar o rechazar.
-    
-- Puede autenticar sesiones PPP.
-    
-- Usa un proceso de establecimiento de comunicación de dos vías.
-    
-- Usa información de autenticación estática.
-    
-
-#### **Protocolo de autenticación por desafío mutuo (CHAP)**
-
-- **Funcionamiento:** Implica la generación de una cadena aleatoria, autenticación hash cifrada y una respuesta.
-    
-- Puede autenticar sesiones PPP.
-    
-- Usa un proceso de establecimiento de comunicación de tres vías.
-    
-- La cadena aleatoria y el resultado hash de los nombres de usuario de los dispositivos garantizan una información de autenticación dinámica.
-    
-- La versión de Microsoft se llama MS-CHAP.
+- **Microsoft Active Directory (AD)** es el ejemplo más común de un directorio compatible con LDAP.
     
 
 ---
 
-### **Marco de autenticación 802.1x**
+## tacacs-y-comparativa-con-radius
 
-**Definición:** 802.1x es un estándar IEEE para el Control de acceso a la red basado en puertos (PNAC).
+### TACACS+
 
-**Componentes del Marco:**
+**Definición:** Similar a RADIUS, TACACS+ es un protocolo remoto de **Autenticación, Autorización y Registro (AAA)**.
+
+**Diferencias Técnicas 
+
+|**Característica**|**RADIUS**|**TACACS+**|
+|---|---|---|
+|**Cifrado**|Solo cifra las **contraseñas**.|Cifra **todos** los protocolos AAA (toda la carga útil).|
+|**Protocolo de Transporte**|Usa **UDP**.|Usa **TCP** (más fiable).|
+
+## métodos-de-autenticación-pap-y-chap
+
+Definen la manera en que se hace la autenticación y establecen las reglas de interacción y verificación que los endpoints usan para comunicarse.
+
+### Protocolo de autenticación de contraseña (PAP)
+
+- **Funcionamiento:** Envía el Nombre de usuario y contraseña; el servidor responde simplemente con "Aceptar" o "Rechazar".
+    
+- **Características:**
+    
+    - Usa un proceso de establecimiento de comunicación de **dos vías**.
+        
+    - Usa información de autenticación **estática**.
+        
+    - Puede autenticar sesiones PPP.
+        
+
+### Protocolo de autenticación por desafío mutuo (CHAP)
+
+- **Funcionamiento:** Implica la generación de una cadena aleatoria, autenticación hash cifrada y una respuesta.
+    
+- **Características:**
+    
+    - Usa un proceso de establecimiento de comunicación de **tres vías** (Desafío - Respuesta - Verificación).
+        
+    - La cadena aleatoria y el resultado hash garantizan información de autenticación **dinámica**.
+        
+    - Puede autenticar sesiones PPP.
+        
+    - **Nota:** La versión de Microsoft se llama **MS-CHAP**.
+        
+
+---
+
+## marco-de-autenticación-802-1x
+
+**Definición:** Es un estándar IEEE para el **Control de acceso a la red basado en puertos (PNAC)**.
+
+**Componentes del Marco (Los 3 Roles):**
 
 1. **Solicitante (Supplicant):**
     
-    - Es el dispositivo cliente.
+    - Es el dispositivo **cliente** (laptop, teléfono).
         
-    - Envía formularios de autenticación como: Nombre de usuario y Contraseña, o Certificado digital.
+    - Envía los formularios de autenticación (Nombre de usuario/Contraseña o Certificado digital).
         
 2. **Intermediario (Authenticator):**
     
-    - También conocido como Autenticador.
+    - También conocido como **Autenticador**.
         
-    - Es un dispositivo de red que proporciona un enlace de datos entre el cliente y la red.
+    - Es el dispositivo de red que proporciona el enlace físico entre el cliente y la red.
         
-    - Ejemplos: Switch de Ethernet, Punto de acceso inalámbrico.
+    - **Ejemplos:** Switch de Ethernet o Punto de Acceso Inalámbrico (AP).
         
 3. **Servidor de autenticación:**
     
-    - Un servidor de confianza que adjudica el proceso de autenticación.
+    - Es el servidor de confianza que adjudica y decide el proceso.
         
-    - Normalmente admite los protocolos RADIUS y EAP.
+    - Normalmente admite los protocolos **RADIUS** y **EAP**.
 
 
-![[Pasted image 20260129141336.png]]
+![[autenticacion_802.1x.png]]
+
+
+---
+
+# control_de_acceso_y_metodos
+
