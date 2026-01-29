@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Autenticacion_y_control_acceso.md",
+                "file": "Fortinet/Getting_Started_in_Cybersecurity/02_Control de acceso a la red (NAC).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Autenticacion_y_control_acceso"
+              "title": "02_Control de acceso a la red (NAC)"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -187,8 +186,8 @@
   },
   "active": "8586bc6f87aa3d69",
   "lastOpenFiles": [
-    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "Autenticacion_y_control_acceso.md",
+    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "autenticacion_802.1x.png",
     "RED/Hack The Box.md",
     "Technical_introduction_to_cybersecurity/Modulo 2_ Red segura/Red Segura.md",
