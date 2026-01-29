@@ -5,6 +5,9 @@
 
 [marco,protocolo_y_herramientas_de_auntenticación](#marco,protocolo_y_herramientas_de_auntenticación)
 
+[Control de acceso y metodos](#control_de_acceso_y_metodos)
+
+[Buenas prácticas de control de acceso](#buneas-practicas-de-control-de-acceso)
 
 ----
 
@@ -280,68 +283,82 @@ Definen la manera en que se hace la autenticación y establecen las reglas de in
 
 # control_de_acceso_y_metodos
 
-Control de acceso: restringe el acceso a lugar o recusos / autorizacion
-- lista
-- identificacion
+Restringe el acceso a un lugar o recursos (Autorización).
 
-
-Control de acceso obligatorio (MAC): no permite que ningun actor cambie los requisitos de seguridad.
-
-Control de acceso discrecional (DAC): permite que un factor externo modifique las restricciones de control de acceso.  el sujeto o mecanismo puede ajustar los permisos e incluso conceder nuevos accesos.
-
-Control de acceso basado en atributo (LBAC):  SEGUN su rol
-RSBAC: basao en una lista o algo asi
-RBAC: 
-ABAC
-
-### **Control de acceso basado en atributos (ABAC)**
-
-- Control de seguridad que involucra varios atributos (hora del día, identificación).
+- **Mecanismos:** Se basa en una **lista** o en la **identificación**.
     
-- Control de acceso dinámico (DAC) de Microsoft.
+## mac-control-de-acceso-obligatorio
+
+**Definición:** Es el modelo más estricto. **No permite que ningún actor cambie los requisitos de seguridad**. El sistema impone la política y el usuario no puede alterarla.
+
+**Ejemplos:**
+
+- Candado (Seguridad física estricta).
+    
+- Sistema operativo **SELinux** (Security-Enhanced Linux).
+    
+## dac-control-de-acceso-discrecional
+
+**Definición:** Permite que un factor externo modifique las restricciones de control de acceso. El sujeto (dueño del recurso) o mecanismo puede ajustar los permisos e incluso conceder nuevos accesos a otros.
+
+**Ejemplos:**
+
+- Guardia de seguridad de un edificio (Decide quién pasa).
+    
+- Control de cuentas de usuario (**UAC**) de Microsoft.
+    
+- Permisos del sistema de archivos **Linux** (chmod/chown).
+    
+
+## abac-control-de-acceso-basado-en-atributos
+
+**Definición:** Control de seguridad dinámico que involucra y evalúa **varios atributos** complejos para tomar una decisión (como la hora del día + la identificación + ubicación).
+
+**Ejemplos:**
+
+- Control de acceso dinámico (**DAC**) de Microsoft.
     
 - Modelos de seguridad de base de datos.
     
-- Políticas de Next-Generation Firewall.
+- Políticas de **Next-Generation Firewall** (NGFW).
     
+## rbac-control-de-acceso-basado-en-funciones
 
-### **Control de acceso basado en funciones (RBAC)**
+**Definición:** El acceso se otorga según el **rol** o puesto de trabajo del usuario dentro de la organización, no por su identidad individual.
 
-- Seguridad de grupo de Active Directory de Microsoft.
+**Ejemplos:**
+
+- Seguridad de grupo de **Active Directory** de Microsoft.
     
-- Funciones de administrador en muchos sistemas operativos y dispositivos de seguridad.
+- Funciones de **administrador** en muchos sistemas operativos y dispositivos de seguridad.
     
 - Políticas de seguridad de la empresa basadas en la función o el cargo.
     
+## rsbac-control-de-acceso-basado-en-reglas
 
-### **Control de acceso basado en reglas (RSBAC)**
+**Definición:** El acceso se basa en una lista de reglas estrictas (Si cumple X regla, pasa).
 
-- Conjuntos de reglas del enrutador.
+**Ejemplos:**
+
+- Conjuntos de reglas del enrutador (Router ACLs).
     
-- iptables.
+- **iptables** (Firewall de Linux).
     
 - Puertas de hotel con cerradura de tiempo.
     
 - Tarjetas de entrada a áreas restringidas.
     
+## lbac-control-de-acceso-basado-en-etiquetas
 
-### **Control de acceso discrecional (DAC)**
+**Definición:** Asigna etiquetas de seguridad a los usuarios y a los datos (Lattice-Based Access Control).
 
-- Guardia de seguridad de un edificio.
-    
-- Control de acceso de usuario (UAC) de Microsoft.
-    
-- Permisos del sistema de archivos Linux.
-    
+**Ejemplos:**
 
-### **Control de acceso basado en etiquetas (LBAC)**
+- Clasificación de documentos (Confidencial, Secreto, Top Secret).
 
-- Clasificación de documentos.
-    
+---
 
-### **Control de acceso obligatorio (MAC)**
+# buneas-practicas-de-control-de-acceso
 
-- Candado.
-    
-- Sistema operativo SELinux.
+## ciclo-de-vida-administracion-identidad-acceso
 
