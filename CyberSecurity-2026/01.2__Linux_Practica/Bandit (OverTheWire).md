@@ -167,7 +167,7 @@ La contraseña esta escondida dentro de `data.txt`, pero las letras tanto mayusc
 
 El comando `tr` nos puede servir para remplazar letras unas por otras.
 - la primera prueba que hice para ver como funciona fue hacer un `tr '1-9 'a-z'` para ver como se comportaba
-- 
+- en este caso el 1 se cambia por la a  ... 9 por la z ; entendiendo esto podemos hacer `'A-Za-z' 'N-ZA-M' ` 
 
 
 
