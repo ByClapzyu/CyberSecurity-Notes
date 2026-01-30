@@ -159,3 +159,14 @@ Password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 
 
 
+# Bandit 11
+
+La contraseña esta escondida dentro de `data.txt`, pero las letras tanto mayusculas como miuscula de la a-z estan rotadas 13 posiones:
+- problema: esta codificado en Rot13
+- solucion: decodificar
+
+El comando `tr` nos puede servir para remplazar letras unas por otras.
+
+
+
+Password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
