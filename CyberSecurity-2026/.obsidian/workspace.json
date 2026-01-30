@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f214f44b8fc56f4c",
+        "id": "0bc3df3a7dec67d5",
         "type": "tabs",
         "children": [
           {
-            "id": "894686e827b41ce3",
+            "id": "e2e2e233a108e715",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Acceso-remoto-seguro.md",
+                "file": "01.2__Linux_Practica/Bandit (OverTheWire).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Acceso-remoto-seguro"
+              "title": "Bandit (OverTheWire)"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -185,7 +184,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "894686e827b41ce3",
+  "active": "e2e2e233a108e715",
   "lastOpenFiles": [
     "Acceso-remoto-seguro.md",
     "Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso/Autenticacion_y_control_acceso.md",
