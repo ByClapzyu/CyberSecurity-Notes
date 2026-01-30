@@ -161,14 +161,43 @@ Password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 
 # Bandit 11
 
-La contraseña esta escondida dentro de `data.txt`, pero las letras tanto mayusculas como miuscula de la a-z estan rotadas 13 posiones:
-- problema: esta codificado en Rot13
-- solucion: decodificar
+**El Reto:** La contraseña está oculta en `data.txt`, pero el contenido parece ilegible. La pista indica que las letras (tanto mayúsculas como minúsculas) están "rotadas 13 posiciones".
 
-El comando `tr` nos puede servir para remplazar letras unas por otras.
-- la primera prueba que hice para ver como funciona fue hacer un `tr '1-9 'a-z'` para ver como se comportaba
-- en este caso el 1 se cambia por la a  ... 9 por la z ; entendiendo esto podemos hacer `'A-Za-z' 'N-ZA-M' ` 
+- **Diagnóstico:** El texto está cifrado con **ROT13**.
+    
+- **Objetivo:** Revertir el cambio (hacer un "shift" de las letras a su posición original).
+    
 
+**Herramienta: `tr` (Translate)** Este comando sirve para sustituir o eliminar caracteres. Funciona mapeando un grupo de caracteres de entrada (Input) con uno de salida (Output).
 
+### Mi proceso de prueba 
+
+Antes de aplicar la solución, hice una prueba rápida para entender cómo `tr` empareja los caracteres: `tr '1-9' 'a-i'` 
+
+Confirmé que `tr` trabaja **posición por posición**:
+
+- El 1er carácter del grupo 1 (`1`) se convierte en el 1er carácter del grupo 2 (`a`).
+    
+- El 2do carácter (`2`) se convierte en el 2do (`b`), y así sucesivamente.
+    
+
+### La Solución: Construyendo el ROT13
+
+Como el abecedario tiene 26 letras, moverlas 13 espacios significa moverlas exactamente a la mitad.
+
+- **Input:** El abecedario normal (`A-Z` y `a-z`).
+    
+- **Output:** Un abecedario que empieza en la mitad (`N`) y da la vuelta.
+    
+
+**La lógica de los grupos:** Para que la `A` se convierta en `N` (posición 13), el grupo de salida debe empezar así:
+
+1. **Primera mitad del output:** `N-Z` (De la N hasta el final).
+    
+2. **Segunda mitad del output:** `A-M` (Damos la vuelta y rellenamos con el principio).
+
+comando final: **cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'**
 
 Password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
+# Bandit 12

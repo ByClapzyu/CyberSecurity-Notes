@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0bc3df3a7dec67d5",
+        "id": "5d9ef1394a709bbe",
         "type": "tabs",
         "children": [
           {
-            "id": "e2e2e233a108e715",
+            "id": "26f8a2559b7506a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01.2__Linux_Practica/Bandit (OverTheWire).md",
+                "file": "Acceso-remoto-seguro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bandit (OverTheWire)"
+              "title": "Acceso-remoto-seguro"
             }
           }
         ]
@@ -184,14 +184,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e2e2e233a108e715",
+  "active": "3adad6a147defd8f",
   "lastOpenFiles": [
+    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "Acceso-remoto-seguro.md",
     "Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso/Autenticacion_y_control_acceso.md",
     "Modulo 4_Acceso_remoto",
     "Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso/autenticacion_802.1x.png",
     "Fortinet/Getting_Started_in_Cybersecurity/02_Control de acceso a la red (NAC).md",
-    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "RED/Hack The Box.md",
     "Technical_introduction_to_cybersecurity/Modulo 2_ Red segura/Red Segura.md",
     "Technical_introduction_to_cybersecurity",
