@@ -201,3 +201,11 @@ comando final: **cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'**
 Password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 
 # Bandit 12
+
+La contraseña esta en un archivo llamado `data.txt` que es un hexdump que fue comprimido.
+
+Pistas importantes:
+- podemos crear una carpeta en tmp con `mktemp -d`
+- copiar datafile `cp`
+- renombrar `mv`
+
