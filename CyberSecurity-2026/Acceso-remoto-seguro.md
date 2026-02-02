@@ -82,3 +82,120 @@ Definición:  Tecnologia que admite una sesion cifrada entre dos dispositivos in
 
 Requiere un cliente y un servidor, donde el clinete suele ser un servidor web, esta provve **privacidad, integridad, autenticacion y antirepeticion(evita manipulacion)**.
 
+### ipos de VPN SSL
+
+**1. Portal SSL o VPN web**
+
+- Es una sesión segura establecida directamente entre un navegador web y un servidor.
+    
+- **Ventaja:** Proporciona un acceso rápido y fácil a los recursos de la red.
+    
+
+**2. VPN de túnel SSL**
+
+- Es una sesión segura entre un cliente SSL VPN (software instalado) y un servidor.
+    
+- **Ventaja:** Permite enviar todo el tráfico a través del túnel, otorgando acceso a más recursos de la red (no solo web).
+    
+
+### Conexión mediante el Portal VPN SSL (Modo web)
+
+El proceso de conexión sigue estos pasos:
+
+1. Los usuarios se conectan a través del navegador web.
+    
+2. Los usuarios proporcionan credenciales para autenticarse.
+    
+3. El servidor muestra el portal SSL VPN.
+    
+
+### Servidor web SSL VPN
+
+- Las funciones de servicios web, VPN segura y seguridad de firewall pueden estar en servidores dedicados o unificados en uno solo.
+    
+- **Modelo Fortinet (FortiGate):** El dispositivo funciona simultáneamente como:
+    
+    - Servidor web frontend.
+        
+    - Servidor SSL VPN.
+        
+    - Firewall.
+        
+- Funciona como una puerta de enlace segura para el tráfico HTTPS y como un **proxy inverso**, reenviando las solicitudes desde los usuarios (endpoints) hacia los servidores web u otros servicios en el backend.
+    
+
+### Limitaciones de VPN SSL
+
+- **Navegador exclusivo:** Las aplicaciones de red externas que se ejecutan en el dispositivo del usuario (fuera del navegador) no pueden enviar datos a través de la VPN.
+    
+- **Número limitado de protocolos:** El modo web restringe los recursos de la red a los que el usuario puede acceder.
+
+## Conexion mediante modo de tunel SSL vpn
+
+1 Los usuarios se conectan a la puerta de enalce SSL vpn
+2 Autenticacion de usuariso
+3 el cliente crea un tunel
+4 los usuarios acceden a los recuross
+
+-----
+
+# VPN IPsec
+
+### ¿Qué es una IPsec VPN?
+
+- Es la tecnología que garantiza la privacidad y la integridad de los datos entre dos o más dispositivos informáticos.
+    
+- Proporciona seguridad en la capa de red del modelo OSI.
+    
+
+**Protocolos de seguridad:** La configuración determina cómo se protegen los paquetes mediante dos protocolos principales:
+
+- **AH (Encabezado de autenticación):** Garantiza la integridad de los datos, la autenticidad del origen y la protección frente a ataques de repetición.
+    
+- **ESP (Seguridad encapsulada de carga útil):** Garantiza la privacidad de los datos de un punto a otro.
+    
+
+### Conexión de usuarios
+
+1. El usuario inicia una conexión con el servidor VPN.
+    
+2. Inicia sesión en la aplicación de cliente de la VPN desde su dispositivo.
+    
+3. Generalmente se autentica con una contraseña, aunque existen otros medios de autenticación.
+    
+
+### Funcionamiento: Paso 1 (Intercambio de clave)
+
+**A. Asociación de seguridad (SA)** Implica un acuerdo sobre los atributos de seguridad entre el cliente y el servidor. Los atributos que se acuerdan incluyen:
+
+1. **Algoritmos criptográficos:**
+    
+    - Simétricos (ej. AES - Estándar de cifrado avanzado).
+        
+    - Asimétricos (ej. RSA).
+        
+    - Funciones Hash (ej. SHA - Algoritmo de hash seguro).
+        
+    - _Nota:_ Estos protocolos admiten cifrado, autenticación e integridad de los datos respectivamente.
+        
+2. **Modo IPsec:**
+    
+    - Existen dos modos disponibles: **Túnel** y **Transporte**.
+        
+    - **Diferencia clave:** El modo túnel cifra la carga útil _y_ el encabezado del paquete, mientras que el modo transporte _solo_ cifra la carga útil.
+        
+3. **Parámetros de red:**
+    
+    - Indican si se utilizará AH, ESP o ambos.
+        
+    - **AH:** Usa una función hash para integridad, garantiza el origen y usa números de secuencia para evitar ataques de repetición.
+        
+    - **ESP:** Protege la privacidad, enfocándose en la carga útil (la información real que se transmite, excluyendo los datos usados solo para la transmisión como las direcciones IP).
+        
+
+**B. Autenticación mutua**
+
+**C. Clave de sesión compartida**
+
+- Se establece mediante el Intercambio de clave por Internet (IKE).
+
