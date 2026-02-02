@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "0e2d5b57d58d5893",
+        "id": "cb9dc5b3ff4aeaa7",
         "type": "tabs",
         "children": [
           {
-            "id": "3390a2da730c8b35",
+            "id": "886f02ec0afdf5fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Acceso-remoto-seguro.md",
+                "file": "Seguridad-de-endpoints.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Acceso-remoto-seguro"
-            }
-          },
-          {
-            "id": "f283f9dbffc7570b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Acceso-remoto-seguro.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Acceso-remoto-seguro"
+              "title": "Seguridad-de-endpoints"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 200.5,
+    "collapsed": true
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -199,14 +185,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f283f9dbffc7570b",
+  "active": "886f02ec0afdf5fe",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Acceso-remoto-seguro.md",
+    "Seguridad-de-endpoints.md",
+    "Modulo 5_ Seguridad de endpoints",
+    "Technical_introduction_to_cybersecurity/Modulo 4_Acceso_remoto/Acceso-remoto-seguro.md",
     "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "01_Linux/01_Comandos_Basicos.md",
     "Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso/Autenticacion_y_control_acceso.md",
-    "Modulo 4_Acceso_remoto",
+    "Technical_introduction_to_cybersecurity/Modulo 4_Acceso_remoto",
     "Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso/autenticacion_802.1x.png",
     "Fortinet/Getting_Started_in_Cybersecurity/02_Control de acceso a la red (NAC).md",
     "RED/Hack The Box.md",
@@ -235,12 +222,10 @@
     "Fortinet/Getting_Started_in_Cybersecurity/09_ Monitoreo de endpoint.md",
     "Fortinet/Getting_Started_in_Cybersecurity/08_Tecnica endurecimiento de enpoints.md",
     "Fortinet/Getting_Started_in_Cybersecurity/05_Puerta de enlace de correo seguro.md",
-    "Fortinet/Getting_Started_in_Cybersecurity/06_filtrado de contenido.md",
     "Modulo1_Firewalls",
     "Fortinet/Getting_Started_in_Cybersecurity",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware",
-    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo3_Ing_Social",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",
     "01_Linux/passwd.png",
     "01_Linux/adduser.png",

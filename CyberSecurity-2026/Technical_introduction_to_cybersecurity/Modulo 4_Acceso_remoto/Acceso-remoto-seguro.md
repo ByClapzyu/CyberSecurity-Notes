@@ -1,3 +1,12 @@
+- [[#introducción-al-acceso-remoto-seguro]]
+    
+- [[#comparativa-ipsec-ssl-ztna]]
+    
+- [[#vpn-ssl-definición-y-tipos]]
+    
+- [[#vpn-ipsec-definición-y-funcionamiento]]
+    
+- [[#preguntas-clave-de-examen]]
 ## introducción-al-acceso-remoto-seguro
 
 **Definición:** Es una combinación de métodos y tecnologías que permiten a entidades externas conectarse a las redes sin comprometer los activos digitales ni exponer la red.
