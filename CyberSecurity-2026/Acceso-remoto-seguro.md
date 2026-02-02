@@ -76,126 +76,199 @@
 
 ---
 
-# VPN SSL
+## vpn-ssl-definición-y-conceptos
 
-Definición:  Tecnologia que admite una sesion cifrada entre dos dispositivos informaticos, **proporciona seguridad desde la capa de transporte** del modelo OSI al mismo tiempo **comunica datos en la capa de app**. Mientras que la **info se intercabia en la capa de app** entre el cliente y el servidor, la **info se encapsula en la capa de transporte** 
+**Definición:** Tecnología que admite una sesión cifrada entre dos dispositivos informáticos.
 
-Requiere un cliente y un servidor, donde el clinete suele ser un servidor web, esta provve **privacidad, integridad, autenticacion y antirepeticion(evita manipulacion)**.
+- Requiere un cliente y un servidor (donde el cliente suele ser un navegador web).
+    
+- Provee: Privacidad, Integridad, Autenticación y Antirepetición (evita manipulación).
+    
 
-### ipos de VPN SSL
+**Funcionamiento en el Modelo OSI:**
 
-**1. Portal SSL o VPN web**
+- Proporciona seguridad desde la **capa de transporte**.
+    
+- Comunica datos en la **capa de aplicación**.
+    
+- _Resumen:_ Mientras que la info se intercambia en la capa de app entre el cliente y el servidor, la info se encapsula en la capa de transporte.
+    
+
+---
+
+## tipos-de-vpn-ssl
+
+### 1. Portal SSL o VPN Web (Clientless)
 
 - Es una sesión segura establecida directamente entre un navegador web y un servidor.
     
-- **Ventaja:** Proporciona un acceso rápido y fácil a los recursos de la red.
+- **Ventaja:** Proporciona un acceso rápido y fácil a los recursos de la red sin instalar nada.
     
-
-**2. VPN de túnel SSL**
-
-- Es una sesión segura entre un cliente SSL VPN (software instalado) y un servidor.
+- **Limitaciones:**
     
-- **Ventaja:** Permite enviar todo el tráfico a través del túnel, otorgando acceso a más recursos de la red (no solo web).
-    
+    - **Navegador exclusivo:** Las aplicaciones externas al navegador no pueden enviar datos por la VPN.
+        
+    - **Número limitado de protocolos:** Restringe los recursos a los que se puede acceder (generalmente solo HTTP/HTTPS/FTP).
+        
 
-### Conexión mediante el Portal VPN SSL (Modo web)
-
-El proceso de conexión sigue estos pasos:
+**Proceso de conexión (Modo Web):**
 
 1. Los usuarios se conectan a través del navegador web.
     
-2. Los usuarios proporcionan credenciales para autenticarse.
+2. Proporcionan credenciales para autenticarse.
     
 3. El servidor muestra el portal SSL VPN.
     
 
-### Servidor web SSL VPN
+### 2. VPN de Túnel SSL (Tunnel Mode)
 
-- Las funciones de servicios web, VPN segura y seguridad de firewall pueden estar en servidores dedicados o unificados en uno solo.
+- Es una sesión segura entre un **cliente SSL VPN** (software instalado como FortiClient) y un servidor.
     
-- **Modelo Fortinet (FortiGate):** El dispositivo funciona simultáneamente como:
+- **Ventaja:** Permite enviar **todo el tráfico** a través del túnel, otorgando acceso a más recursos de la red (no solo web).
     
-    - Servidor web frontend.
+
+**Proceso de conexión (Modo Túnel):**
+
+1. Los usuarios se conectan a la puerta de enlace SSL VPN mediante el software.
+    
+2. Autenticación de usuarios.
+    
+3. El cliente crea un túnel virtual en el adaptador de red.
+    
+4. Los usuarios acceden a los recursos como si estuvieran en la red local.
+    
+
+---
+
+## arquitectura-del-servidor-ssl-vpn
+
+Las funciones de servicios web, VPN y firewall pueden estar en servidores dedicados o unificados.
+
+**Modelo Fortinet (FortiGate):** El dispositivo funciona simultáneamente como:
+
+- Servidor web frontend.
+    
+- Servidor SSL VPN.
+    
+- Firewall.
+    
+
+**Función de Proxy Inverso:** El FortiGate actúa como una puerta de enlace segura para el tráfico HTTPS y como un **proxy inverso**, reenviando las solicitudes desde los usuarios (endpoints) hacia los servidores web u otros servicios en el backend (servidores internos).
+
+---
+
+## vpn-ipsec-definición-y-protocolos
+
+**Definición:** Tecnología que garantiza la privacidad y la integridad de los datos entre dos o más dispositivos.
+
+- Proporciona seguridad en la **Capa de Red** (Capa 3) del modelo OSI.
+    
+
+**Conexión de Usuarios (General):**
+
+1. El usuario inicia conexión con el servidor VPN.
+    
+2. Inicia sesión en la aplicación cliente VPN (requiere software).
+    
+3. Se autentica (generalmente contraseña, token, etc.).
+    
+
+### Protocolos de Seguridad (AH y ESP)
+
+La configuración determina cómo se protegen los paquetes:
+
+**1. AH (Encabezado de Autenticación):**
+
+- Garantiza la **integridad** de los datos (vía hash).
+    
+- Garantiza la **autenticidad del origen**.
+    
+- Protección frente a ataques de repetición (usando números de secuencia).
+    
+- _Nota:_ No cifra los datos (no hay privacidad), solo firma.
+    
+
+**2. ESP (Seguridad Encapsulada de Carga Útil):**
+
+- Garantiza la **privacidad** (cifrado) de los datos de un punto a otro.
+    
+- Protege específicamente la carga útil.
+    
+
+---
+
+## funcionamiento-de-ipsec-paso-a-paso
+
+El establecimiento de una VPN IPsec es complejo y sigue estos pasos detallados:
+
+### Paso 1: Intercambio de clave (IKE)
+
+Se crea una **Asociación de Seguridad (SA)**, que es un acuerdo sobre los atributos de seguridad entre cliente y servidor.
+
+**A. Algoritmos Criptográficos:**
+
+- **Simétricos:** Para cifrado (ej. AES - Estándar de cifrado avanzado).
+    
+- **Asimétricos:** Para intercambio de claves (ej. RSA).
+    
+- **Funciones Hash:** Para integridad (ej. SHA - Algoritmo de hash seguro).
+    
+
+**B. Modos IPsec:**
+
+- **Modo Túnel:** Cifra la carga útil **y** el encabezado IP original. (Usado entre Sitios o Gateway-Gateway).
+    
+- **Modo Transporte:** Solo cifra la carga útil. (Usado de End-to-End).
+    
+
+**C. Parámetros de Red (AH vs ESP - Ejemplo de Carga Útil):**
+
+- _Concepto:_ **Carga Útil** son los datos reales, **Encabezado** son datos solo para transmisión.
+    
+- _Ejemplo:_ Si Alice envía "Hi Bob" a la IP 192.0.2.15:
+    
+    - **Carga útil:** "Hi Bob".
         
-    - Servidor SSL VPN.
-        
-    - Firewall.
-        
-- Funciona como una puerta de enlace segura para el tráfico HTTPS y como un **proxy inverso**, reenviando las solicitudes desde los usuarios (endpoints) hacia los servidores web u otros servicios en el backend.
-    
-
-### Limitaciones de VPN SSL
-
-- **Navegador exclusivo:** Las aplicaciones de red externas que se ejecutan en el dispositivo del usuario (fuera del navegador) no pueden enviar datos a través de la VPN.
-    
-- **Número limitado de protocolos:** El modo web restringe los recursos de la red a los que el usuario puede acceder.
-
-## Conexion mediante modo de tunel SSL vpn
-
-1 Los usuarios se conectan a la puerta de enalce SSL vpn
-2 Autenticacion de usuariso
-3 el cliente crea un tunel
-4 los usuarios acceden a los recuross
-
------
-
-# VPN IPsec
-
-### ¿Qué es una IPsec VPN?
-
-- Es la tecnología que garantiza la privacidad y la integridad de los datos entre dos o más dispositivos informáticos.
-    
-- Proporciona seguridad en la capa de red del modelo OSI.
-    
-
-**Protocolos de seguridad:** La configuración determina cómo se protegen los paquetes mediante dos protocolos principales:
-
-- **AH (Encabezado de autenticación):** Garantiza la integridad de los datos, la autenticidad del origen y la protección frente a ataques de repetición.
-    
-- **ESP (Seguridad encapsulada de carga útil):** Garantiza la privacidad de los datos de un punto a otro.
-    
-
-### Conexión de usuarios
-
-1. El usuario inicia una conexión con el servidor VPN.
-    
-2. Inicia sesión en la aplicación de cliente de la VPN desde su dispositivo.
-    
-3. Generalmente se autentica con una contraseña, aunque existen otros medios de autenticación.
-    
-
-### Funcionamiento: Paso 1 (Intercambio de clave)
-
-**A. Asociación de seguridad (SA)** Implica un acuerdo sobre los atributos de seguridad entre el cliente y el servidor. Los atributos que se acuerdan incluyen:
-
-1. **Algoritmos criptográficos:**
-    
-    - Simétricos (ej. AES - Estándar de cifrado avanzado).
-        
-    - Asimétricos (ej. RSA).
-        
-    - Funciones Hash (ej. SHA - Algoritmo de hash seguro).
-        
-    - _Nota:_ Estos protocolos admiten cifrado, autenticación e integridad de los datos respectivamente.
-        
-2. **Modo IPsec:**
-    
-    - Existen dos modos disponibles: **Túnel** y **Transporte**.
-        
-    - **Diferencia clave:** El modo túnel cifra la carga útil _y_ el encabezado del paquete, mientras que el modo transporte _solo_ cifra la carga útil.
-        
-3. **Parámetros de red:**
-    
-    - Indican si se utilizará AH, ESP o ambos.
-        
-    - **AH:** Usa una función hash para integridad, garantiza el origen y usa números de secuencia para evitar ataques de repetición.
-        
-    - **ESP:** Protege la privacidad, enfocándose en la carga útil (la información real que se transmite, excluyendo los datos usados solo para la transmisión como las direcciones IP).
+    - **Encabezado:** 192.0.2.15.
         
 
-**B. Autenticación mutua**
+**D. Autenticación Mutua y Clave Compartida:** Se realiza mediante IKE (Intercambio de clave por Internet).
 
-**C. Clave de sesión compartida**
+### Paso 2: Enlace de Datos (Estructura del Paquete)
 
-- Se establece mediante el Intercambio de clave por Internet (IKE).
+Antes de cifrar, el paquete tiene esta estructura:
 
+1. **Encabezados (IP y TCP/UDP):** Direcciones y puertos.
+    
+2. **Carga Útil:** Datos reales.
+    
+3. **Finalizador (Trailer):** Datos suplementarios para marcar el final o relleno.
+    
+
+### Paso 3: Autenticación
+
+Se realiza la autenticación sobre el conjunto del paquete (Encabezados + Datos + Finalizador) para asegurar que nada ha sido modificado.
+
+### Paso 4: Cifrado (Diferencia Crítica entre Modos)
+
+El alcance del cifrado depende del modo elegido en la SA:
+
+**A. Modo de Transporte (AH + ESP):**
+
+- **LO QUE SE CIFRA:** Encabezado TCP/UDP + Datos + Finalizador ESP.
+    
+- **LO QUE NO SE CIFRA:** Encabezado IP original + Encabezado AH + Encabezado ESP.
+    
+
+**B. Modo de Túnel (AH + ESP):**
+
+- **LO QUE SE CIFRA:** **Encabezado IP original** + Encabezado TCP/UDP + Datos + Finalizador ESP.
+    
+- **LO QUE NO SE CIFRA (Externos):** **Nuevo Encabezado IP** (el de la VPN) + Encabezado AH + Encabezado ESP.
+    
+
+### Paso 5: Transmisión
+
+- Implica el uso del **Protocolo de Datagramas de Usuario (UDP)** para el transporte del túnel debido a su baja latencia.
+    
+- Se realiza el descifrado y verificación en el destino.
