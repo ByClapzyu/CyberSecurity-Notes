@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5d9ef1394a709bbe",
+        "id": "0e2d5b57d58d5893",
         "type": "tabs",
         "children": [
           {
-            "id": "26f8a2559b7506a0",
+            "id": "3390a2da730c8b35",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01.2__Linux_Practica/Bandit (OverTheWire).md",
+                "file": "Acceso-remoto-seguro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bandit (OverTheWire)"
+              "title": "Acceso-remoto-seguro"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 200.5,
+    "collapsed": true
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -184,11 +185,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "26f8a2559b7506a0",
+  "active": "3390a2da730c8b35",
   "lastOpenFiles": [
+    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "01_Linux/01_Comandos_Basicos.md",
     "Acceso-remoto-seguro.md",
-    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso/Autenticacion_y_control_acceso.md",
     "Modulo 4_Acceso_remoto",
     "Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso/autenticacion_802.1x.png",

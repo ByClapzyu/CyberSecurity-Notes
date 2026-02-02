@@ -76,3 +76,9 @@
 
 ---
 
+# VPN SSL
+
+Definición:  Tecnologia que admite una sesion cifrada entre dos dispositivos informaticos, **proporciona seguridad desde la capa de transporte** del modelo OSI al mismo tiempo **comunica datos en la capa de app**. Mientras que la **info se intercabia en la capa de app** entre el cliente y el servidor, la **info se encapsula en la capa de transporte** 
+
+Requiere un cliente y un servidor, donde el clinete suele ser un servidor web, esta provve **privacidad, integridad, autenticacion y antirepeticion(evita manipulacion)**.
+
