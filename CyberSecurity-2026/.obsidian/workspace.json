@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "cb9dc5b3ff4aeaa7",
+        "id": "ca9930a27dd3acdc",
         "type": "tabs",
         "children": [
           {
-            "id": "886f02ec0afdf5fe",
+            "id": "042d929fa5b66329",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Modulo 5_ Seguridad de endpoints/Seguridad-de-endpoints.md",
+                "file": "Seguridad nube y virtualizacion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Seguridad-de-endpoints"
-            }
-          },
-          {
-            "id": "31a0765bd9cac5b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Datos y App seguras.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Datos y App seguras"
+              "title": "Seguridad nube y virtualizacion"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -200,10 +184,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "31a0765bd9cac5b9",
+  "active": "042d929fa5b66329",
   "lastOpenFiles": [
+    "Seguridad nube y virtualizacion.md",
+    "Modulo 7_ Seguridad en  nube y virtualizacion",
+    "Modulo 6_Datos y apps seguras/Datos y App seguras.md",
     "Modulo 5_ Seguridad de endpoints/Seguridad-de-endpoints.md",
-    "Datos y App seguras.md",
     "Modulo 6_Datos y apps seguras",
     "Modulo 5_ Seguridad de endpoints",
     "Technical_introduction_to_cybersecurity/Modulo 4_Acceso_remoto/Acceso-remoto-seguro.md",
@@ -238,10 +224,8 @@
     "Fortinet/Getting_Started_in_Cybersecurity/10_SOAR.md",
     "Fortinet/Getting_Started_in_Cybersecurity/09_ Monitoreo de endpoint.md",
     "Fortinet/Getting_Started_in_Cybersecurity/08_Tecnica endurecimiento de enpoints.md",
-    "Fortinet/Getting_Started_in_Cybersecurity/05_Puerta de enlace de correo seguro.md",
     "Modulo1_Firewalls",
     "Fortinet/Getting_Started_in_Cybersecurity",
-    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",
     "01_Linux/passwd.png",
     "01_Linux/adduser.png",
