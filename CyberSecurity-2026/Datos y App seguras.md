@@ -29,3 +29,26 @@ Seguridad de datos:
 
 ## riesgo
 
+- Exposicion accidental datos
+	- api sin accion usuario
+	- pueden dar acceso no autorizado
+- intercambio no intencional de datos.
+	- phising
+- Infeccio nsoft
+	- malware
+	- ransom
+	- dox: amenaza publicar info
+	- leak: recopila info y luego pide recopensa como ransom
+## Amenazas
+
+- Internas
+	- trasaladar info
+	- robo credencial
+	- robo intecional
+## Ciclo vida
+
+- creacion
+- almacenamiento
+- uso
+- archivo
+- destruccion
