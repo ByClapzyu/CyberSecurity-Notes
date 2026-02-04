@@ -52,3 +52,9 @@ Seguridad de datos:
 - uso
 - archivo
 - destruccion
+## Mejores practicas
+
+- DLP (Prevencion perdiad datos)
+
+# Privacidad de datos
+
