@@ -76,4 +76,27 @@ incluye:
 - protege integridad de la app y salvaguarda confide
 
 **tecnicas**
-- 
+- usar herramientas , capacitar
+- navegador web
+- cookies
+- complementos
+-  bloqueador de ventana de emergentes
+- contenido activo
+(actualizacion de parches)
+
+**comportamiento**
+- antivirus
+- lista blanca de app
+- eliminar app no utiliza
+- capacitar
+
+**ventajas**
+- empresa alto nivle confianza 
+- mejora rendimiento de app
+- cosos y esfuerzo 
+- proporciona entorno mas seguro
+
+## caracteristica de seguridad de firewall next generation
+
+- reputacion ip
+- DLp
