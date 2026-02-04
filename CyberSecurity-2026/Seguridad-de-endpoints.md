@@ -31,4 +31,11 @@ Ventaja:
 Desafio
 - numero de endponts
 - superficie de ataque mayor
-- 
+- dispositivos usan:
+	- cifrado deficiente
+	- tiene pswd default
+- botnet
+Proteccion
+- red islada personal
+- conocer prerfil, dividir grupos aislar (empresa)
+
