@@ -58,3 +58,22 @@ Seguridad de datos:
 
 # Privacidad de datos
 
+incluye:
+- expectativas de privacidad publico
+- derecho a controlar propios datos personales
+- niveles aceptables deriesg
+- cumplimineto normativa proteccion datos y legistacion...
+
+**leyes**:
+- PCI
+- GDPR
+
+# Tecnicas de endurecimiento de apps
+
+**Requisito de seguridad recomendado**
+- se define de acuerdo a variso normativas y esstandares de ciberseguridad
+- minimiza vulnerabilidades y superficie
+- protege integridad de la app y salvaguarda confide
+
+**tecnicas**
+- 
