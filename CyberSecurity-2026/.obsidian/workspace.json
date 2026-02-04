@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ca9930a27dd3acdc",
+        "id": "7b7659cff4d5e064",
         "type": "tabs",
         "children": [
           {
-            "id": "042d929fa5b66329",
+            "id": "b321224394a3c372",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Seguridad nube y virtualizacion.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Seguridad nube y virtualizacion"
+              "title": "New tab"
             }
           }
         ]
@@ -184,7 +180,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "042d929fa5b66329",
+  "active": "b321224394a3c372",
   "lastOpenFiles": [
     "Seguridad nube y virtualizacion.md",
     "Modulo 7_ Seguridad en  nube y virtualizacion",
