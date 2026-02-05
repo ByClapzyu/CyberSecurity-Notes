@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7b7659cff4d5e064",
+        "id": "9cb22e7c10161b3d",
         "type": "tabs",
         "children": [
           {
-            "id": "b321224394a3c372",
+            "id": "0581bf52cd79b803",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01.2__Linux_Practica/Bandit (OverTheWire).md",
+                "file": "Modulo 7_ Seguridad en  nube y virtualizacion/Seguridad nube y virtualizacion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bandit (OverTheWire)"
+              "title": "Seguridad nube y virtualizacion"
             }
           }
         ]
@@ -185,8 +185,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b321224394a3c372",
+  "active": "0581bf52cd79b803",
   "lastOpenFiles": [
+    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "Modulo 7_ Seguridad en  nube y virtualizacion/Seguridad nube y virtualizacion.md",
     "Modulo 7_ Seguridad en  nube y virtualizacion",
     "Modulo 6_Datos y apps seguras/Datos y App seguras.md",
@@ -194,7 +195,6 @@
     "Modulo 6_Datos y apps seguras",
     "Modulo 5_ Seguridad de endpoints",
     "Technical_introduction_to_cybersecurity/Modulo 4_Acceso_remoto/Acceso-remoto-seguro.md",
-    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "01_Linux/01_Comandos_Basicos.md",
     "Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso/Autenticacion_y_control_acceso.md",
     "Technical_introduction_to_cybersecurity/Modulo 4_Acceso_remoto",
