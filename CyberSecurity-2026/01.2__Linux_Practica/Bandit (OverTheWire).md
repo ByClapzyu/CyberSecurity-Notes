@@ -213,9 +213,10 @@ Pasos para resolver:
 - trabajar en la carpeta creada en `tmp`
 - paras de `hexadecimal` a `bytes` con **xxd -r**
 - comprobar tipo de file con **file**
-- si dice `gzip` debe tener extenxion `.gz` para poder descomprimir **gzip**
+- si dice `gzip` debe tener extenxion `.gz` para poder descomprimir **gzip -d**
 - se renombra el archivo para poner eextension con **mv**
-- si dice bzip2 debe tener extension `.bz2` para poder descomprimir **bzip2**
+- si dice bzip2 debe tener extension `.bz2` para poder descomprimir **bzip2 -d**
+- si dice tar archive debe tener extension `.tar` para poder descomprimir **tar -xf**
 - 
 
 # Bandit 13
