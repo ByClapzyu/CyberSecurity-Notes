@@ -30,7 +30,7 @@ De hardware fisico a crear instancias virutales
 Autenticacion y autorizacion: metodos modernos
 	**tipo**
 	- OAuth
-	- SAML
+	- SAML: Permite autenticacion de recursos tanto locales como basado en la nube a traves de una unica DB
 vm creep: auditoria frecuente
 almacenamiento: reglas, autenticacion, lista de contrl acceso
 	- politicas
@@ -41,3 +41,39 @@ conectividad: cifrar protocolos seguros
 registro monitore: SIEm centralizado.
 	 - 
 derecho propiedad: saber el propietario
+
+# Servicios seguridad alojado en la nube
+
+**escalabilidad**
+**cinfiabilidad**
+
+proporcionan:
+- alta diponibilidad
+- conformacion paquete
+- optimiza latencia
+- reduce costo, 
+
+tipo: 
+WAF,
+- balance carga
+- seguridad
+- escalabilidad
+CNF(firewall nube), 
+puerta enlace correo
+- escalar y verificar todo correo
+
+Servicios:
+Autneticacion: 
+- LDAP: acceso directorios
+- SAML
+- OAuth
+- proxy
+CASB (seguridad acceso nube): autentica, controla acceso 
+Navegador (RBI): 
+Antivirus y sandox : 
+
+SOC
+- dispsitivos de red
+- registro
+CNP: Presta servicio que necestie : forti,aws,azure,go
+- 
