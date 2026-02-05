@@ -20,4 +20,24 @@ De hardware fisico a crear instancias virutales
 
 **amenaza**
 - escape vm:
-- remanencia de datos: (destruccion segura de datos)
+- remanencia de datos: (destruccion segura de datos
+- escalabilidad: (privilegio minimo)
+- ataque de migracion
+
+# Amenaza comunes
+
+- error conf, implementacion
+Autenticacion y autorizacion: metodos modernos
+	**tipo**
+	- OAuth
+	- SAML
+vm creep: auditoria frecuente
+almacenamiento: reglas, autenticacion, lista de contrl acceso
+	- politicas
+	- IAM
+	- ACL
+perdida datos: dlp y administracion en cuanto derecho y propiedad
+conectividad: cifrar protocolos seguros
+registro monitore: SIEm centralizado.
+	 - 
+derecho propiedad: saber el propietario
