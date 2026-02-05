@@ -209,3 +209,10 @@ Pistas importantes:
 - copiar datafile `cp`
 - renombrar `mv`
 
+Pasos para resolver:
+- trabajar en la carpeta creada en `tmp`
+- paras de `hexadecimal` a `bytes` con **xxd -r**
+- 
+
+# Bandit 13
+
