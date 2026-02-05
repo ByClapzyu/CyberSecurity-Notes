@@ -76,4 +76,23 @@ SOC
 - dispsitivos de red
 - registro
 CNP: Presta servicio que necestie : forti,aws,azure,go
-- 
+- permitras: mas alla de local
+
+# Asegurar
+
+WAF, CNF: preveni perdida datos, intrusiones
+- regla politica
+- inspecin trafico
+- autentica
+DLp, monitoreo antivirus, sandbox:  
+Proxy: GRANTIza no coenxio ndirecta      malo: dificl usar mucha ubicacio nremoto y poca proteccion
+- permite granular trafico
+Proxy inverso: 
+- abilita equilibrio carga entre servidores             -malo: se debe implmentar delante cada app y dificil implementar en nube
+- permite ejecucion especifica app
+
+CASB: agente seguridad de acceso nube: (**protege autenticacion**)
+## APIS
+
+REST: Conf rapida monitoreo sencillo, solicita info serv
+SOAP: esque xml empaquetar como una http post, mas apps heredadas
