@@ -218,6 +218,6 @@ Pasos para resolver:
 - si dice bzip2 debe tener extension `.bz2` para poder descomprimir **bzip2 -d**
 - si dice tar archive debe tener extension `.tar` para poder descomprimir **tar -xf**
 - 
-
+password: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 # Bandit 13
 
