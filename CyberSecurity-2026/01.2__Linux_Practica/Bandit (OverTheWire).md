@@ -73,7 +73,7 @@ No es eficiente leer uno por uno. Para solucionar esto usaremos el comando **fil
 - ***** (wildcard) nos permite aplicar el comando a todos los archivos que coincidan con el patrón (ej. `-file0*`).
     
 El comando nos mostrará una lista; buscaremos el que diga "ASCII text".
-Comando final: **file ./-file0"*"**
+Comando final: ==**file ./-file0"*"**==
 
 password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 
@@ -89,7 +89,7 @@ Para solucionar esto usaremos el comando **find**. Consultando el manual (man fi
 - **-size** para filtrar el tamaño
 Para poder buscar el tamaño como indica en el manual se debe usar el sufijo c (character) en el tamaño de byte deseado en este caso es (1033c) ya que si se usa b byte estariamos haciendo referencia a 512 bytes. Al final de comando vamos a redireccionar las salida de los errores a la papelera para ocultarlos **2>/dev/null**. Si ejecutamos el comando nos saldra solo un resultado que es la ruta **./bandit5/inhere/maybehere07/.file2**
 
-comando final: **find . -type f -size 1033c**
+comando final: ==**find . -type f -size 1033c**==
 
 Password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 
@@ -106,7 +106,7 @@ Dato que debemos tener encuenta que el dueño es el bandit 7, pero el grupo si e
 - **-group** gname buscamos por grupo
 Entonces el comando final que con la bandera anterior de `-size` y con las nuvas.
 
-comando final: **find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null**
+comando final: ==**find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null**==
 
 Password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 
@@ -114,7 +114,7 @@ Password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 
 En este bandit 7 nos dicen que el archivo es data.txt y la flag esta despues de la palabra millionth. Para este caso usaremos **grep** para buscar la palabra `millionth` dentro del archivo.
 
-Comando final: **grep millionth data.txt**
+Comando final: ==**grep millionth data.txt**==
 
 Password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 
@@ -122,7 +122,7 @@ Password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 
 En este bandit 8 tambien la flag esta guardada en el file data.txt y nos dice que es la unica que no se repite. Para esto se usara `sort` para dar orden y `uniq` para filtrar, con la bandera `-u` para filtrar los que se repiten solo una vez. 
 
-comando final : **sort data.txt | uniq -u**
+comando final : ==**sort data.txt | uniq -u**==
 
 *dato importante*
 Siempre que se use **uniq** se necesita usar **sort** ya que solo nos elimina las repeticiones seguidas.
@@ -138,7 +138,7 @@ La contraseña está escondida dentro de `data.txt`, pero este es un **archivo b
 
 comando: **strings** : Escanea un archivo binario y extrae solo las secuencias de caracteres **legibles** (humanos/ASCII). Ignora todo lo demás.
 
-comando final: **strings data.txt | grep =**
+comando final: ==**strings data.txt | grep =**==
 
 password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 
@@ -153,7 +153,7 @@ Si usamos `base64 --help` , podremos ver las diferentes flags que hay, la que us
 
 - **base64 -d** : para decodificar 
 
-comando final: **bae64 -d data.txt**
+comando final: ==**bae64 -d data.txt**==
 
 Password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 
@@ -196,7 +196,7 @@ Como el abecedario tiene 26 letras, moverlas 13 espacios significa moverlas exac
     
 2. **Segunda mitad del output:** `A-M` (Damos la vuelta y rellenamos con el principio).
 
-comando final: **cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'**
+comando final: ==**cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'**==
 
 Password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 
@@ -211,12 +211,12 @@ Pistas importantes:
 
 Pasos para resolver:
 - trabajar en la carpeta creada en `tmp`
-- paras de `hexadecimal` a `bytes` con **xxd -r**
+- paras de `hexadecimal` a `bytes` con ==**xxd -r**==
 - comprobar tipo de file con **file**
-- si dice `gzip` debe tener extenxion `.gz` para poder descomprimir **gzip -d**
+- si dice `gzip` debe tener extenxion `.gz` para poder descomprimir ==**gzip -d**==
 - se renombra el archivo para poner eextension con **mv**
-- si dice bzip2 debe tener extension `.bz2` para poder descomprimir **bzip2 -d**
-- si dice tar archive debe tener extension `.tar` para poder descomprimir **tar -xf**
+- si dice bzip2 debe tener extension `.bz2` para poder descomprimir ==**bzip2 -d**==
+- si dice tar archive debe tener extension `.tar` para poder descomprimir ==**tar -xf**==
 - 
 password: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 # Bandit 13
