@@ -221,8 +221,15 @@ Pasos para resolver:
 password: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 # Bandit 13
 
+En este bandit nos dicen unas pistas importantes:
+-  a contraseña está en `/etc/bandit_pass/bandit14`, pero **no tenemos permisos de lectura**. Solo el usuario `bandit14` puede leerla.
+    
+- **El Recurso:** En el directorio _home_ encontramos una llave privada (`sshkey.private`). No tenemos la contraseña, pero esta llave nos permite autenticarnos como el siguiente usuario.
 
+De los comandos que podemos utilizar nos quedamos con **scp** que es para copiar files entre host atraves de la red.
+si hacemos un `man scp` veremos un ejemplo que nos dan para saber usarlo **scp://[user@]host[:port][/path].**
 
+Al tener el sshkey.private tenemos dos opciones 
 **opcion de descargar archivo:**
 Se ejecuta el siguiente comando en la maquina anfitrion y no la victima.
 scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private .
