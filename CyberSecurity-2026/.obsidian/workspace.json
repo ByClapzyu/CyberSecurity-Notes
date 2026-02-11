@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -187,11 +186,14 @@
   },
   "active": "ea361b385b7e90a1",
   "lastOpenFiles": [
+    "01.2__Linux_Practica/Datos utiles CTF.md",
+    "00_SO/04_Archivos.md",
+    "01_Linux/03_Dueños_Permisos.md",
+    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "Untitled.md",
     "Technical_introduction_to_cybersecurity/Modulo 4_Acceso_remoto/Acceso-remoto-seguro.md",
     "Technical_introduction_to_cybersecurity/Modulo 5_ Seguridad de endpoints/Seguridad-de-endpoints.md",
     "Technical_introduction_to_cybersecurity/Modulo 7_ Seguridad en  nube y virtualizacion/Seguridad nube y virtualizacion.md",
-    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "Technical_introduction_to_cybersecurity/Modulo 7_ Seguridad en  nube y virtualizacion",
     "Technical_introduction_to_cybersecurity/Modulo 6_Datos y apps seguras/Datos y App seguras.md",
     "Technical_introduction_to_cybersecurity/Modulo 6_Datos y apps seguras",
@@ -222,9 +224,6 @@
     "01.2__Linux_Practica/Nuevo usuarios_practica.md",
     "Fortinet/Getting_Started_in_Cybersecurity/11_SIEM (Administración de información y eventos de seguridad ).md",
     "Fortinet/Getting_Started_in_Cybersecurity/14_Seguridad en la nube.md",
-    "Fortinet/Getting_Started_in_Cybersecurity/07_Wi-Fi segura.md",
-    "Fortinet/Getting_Started_in_Cybersecurity/10_SOAR.md",
-    "Fortinet/Getting_Started_in_Cybersecurity/09_ Monitoreo de endpoint.md",
     "Modulo1_Firewalls",
     "Fortinet/Getting_Started_in_Cybersecurity",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",

@@ -226,13 +226,19 @@ En este bandit nos dicen unas pistas importantes:
     
 - **El Recurso:** En el directorio _home_ encontramos una llave privada (`sshkey.private`). No tenemos la contraseña, pero esta llave nos permite autenticarnos como el siguiente usuario.
 
-De los comandos que podemos utilizar nos quedamos con **scp** que es para copiar files entre host atraves de la red.
-si hacemos un `man scp` veremos un ejemplo que nos dan para saber usarlo **scp://[user@]host[:port][/path].**
+De los comandos que podemos utilizar nos quedamos con:
+- **scp** **(Secure Copy)** Comando utilizado para transferir archivos entre hosts a través de la red usando el protocolo SSH.
+	si hacemos un `man scp` veremos un ejemplo que nos dan para saber usarlo **scp://[user@]host[:port][/path].**
+	**scp -P puerto usuario@remoto:archivo destino_local**
 
-Al tener el sshkey.private tenemos dos opciones 
+#### Al tener el sshkey.private a la mano tenemos dos opciones:
+
 **opcion de descargar archivo:**
-Se ejecuta el siguiente comando en la maquina anfitrion y no la victima.
-scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private .
+
+Esta opción trae el archivo desde el servidor de Bandit nuestra computadora personal, se ejecuta el siguiente comando en la maquina anfitrion (y no la victima.)
+- ==scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private== .
+Una vez en nuestra maquina le damos permiso: **chmod 600 sshkey.private** (recodando que lo mas critico vale menos R 4  W 2 X 1)
+Hacemos login: **ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220**
 
 **opcion de hacer login directo:**
 ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
