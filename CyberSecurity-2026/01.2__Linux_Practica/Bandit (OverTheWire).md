@@ -221,3 +221,11 @@ Pasos para resolver:
 password: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 # Bandit 13
 
+
+
+**opcion de descargar archivo:**
+Se ejecuta el siguiente comando en la maquina anfitrion y no la victima.
+scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private .
+
+**opcion de hacer login directo:**
+ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
