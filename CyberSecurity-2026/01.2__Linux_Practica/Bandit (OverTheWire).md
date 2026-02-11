@@ -242,3 +242,5 @@ Hacemos login: **ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2
 
 **opcion de hacer login directo:**
 ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+
+Password: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
