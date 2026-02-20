@@ -9,7 +9,10 @@ Filtro busquedas (SPLUNK)
 
 ****List of Affected Entities:**** h.harris@thetrydaily.thm   `personas afectadas`
 
+op1 :
 ****Reason for Classifying as True Positive:**** Clear phishing attempt. Email uses social engineering (urgency) and a suspicious sender domain (amazon.biz) to trick the user into clicking a shortened malicious URL
+op2: 
+Clear phishing attempt using social engineering (fake login alert) and a **typosquatted** domain (m1crosoft instead of microsoft) to distribute a malicious URL
 
 ****Reason for Escalating the Alert:**** "Confirmed malicious email bypassed initial filters and reached the user's inbox. Immediate investigation required to determine if the user clicked the link.  
 
