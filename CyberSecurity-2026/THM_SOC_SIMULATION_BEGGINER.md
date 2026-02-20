@@ -1,5 +1,8 @@
 ejemplos de como llenar reportes #gemini : 
 
+
+Filtro busquedas (SPLUNK)
+- *| spath URL | search URL="https://m1crosoftsupport.co/login"
 ## Opción 1
 
 ****Time of activity:**** `02/20/2026 20:16:29.614`
@@ -18,3 +21,4 @@ ejemplos de como llenar reportes #gemini :
 ****List of Attack Indicators:****
 - ****Sender:**** `urgents@amazon.biz`
 - ****URL:**** `http://bit.ly/3sHkX3da12340`
+---------
