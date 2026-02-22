@@ -23,3 +23,8 @@ Resultados posibles:
 ## Smart Home
 
 El puerto **10001** es muy común en dispositivos de casa inteligente de Google para configuración inicial.
+
+Lista de puertos clave:
+- 8008
+- 8009
+- 10001
