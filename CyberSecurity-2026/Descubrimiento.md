@@ -22,9 +22,15 @@ Resultados posibles:
 -----
 ## Smart Home
 
+Enumeracion de servicios de Red, identificar el nombre
+**nmap -sU -p 5353 --script dns-service-discovery ip**
+
 El puerto **10001** es muy común en dispositivos de casa inteligente de Google para configuración inicial.
 
 Lista de puertos clave:
 - 8008
 - 8009
 - 10001
+MAC:  ....... (Google)  ##indicio de que es smart home
+-----
+
