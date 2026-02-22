@@ -6,3 +6,17 @@ Para indentificar que el SO se puede hace ping
 TTL = 64 **Linux/Android**
 TTL = 128 Windows
 
+Para reconocimiento se usa  **nmap -sV --script nbstat IP**
+- **`-sV` (Service Version Detection):** No se limita a ver si el puerto está abierto; intenta determinar qué software y versión exacta están corriendo (como cuando detectó el driver de Chromecast en tu Xiaomi).
+    
+- **`--script nbstat`:** Es el motor de búsqueda de **NetBIOS**. NetBIOS es un protocolo que los dispositivos (especialmente Windows y Android) usan para "gritar" su nombre en la red local.
+    
+- **El objetivo:** Su función principal es extraer el **Nombre del Host**, el **Nombre del Grupo de Trabajo** y, lo más importante, la **Dirección MAC** de forma remota.
+
+Resultados posibles:
+- **Capa de Aplicación:** Presencia del servicio `castv2` en el puerto **8009**, indicando funciones de Google Chromecast integradas.
+    
+- **Capa de Enlace (MAC):** El OUI pertenece a _China Dragon Technology_, proveedor habitual de hardware para Xiaomi.
+    
+- **Capa de Transporte:** El uso sistemático de SSL/TLS en puertos de control (8009, 8443, 9000) es consistente con las políticas de seguridad de Android 9 para servicios de ecosistema.
+-----
