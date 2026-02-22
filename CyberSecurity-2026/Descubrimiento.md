@@ -20,3 +20,6 @@ Resultados posibles:
     
 - **Capa de Transporte:** El uso sistemático de SSL/TLS en puertos de control (8009, 8443, 9000) es consistente con las políticas de seguridad de Android 9 para servicios de ecosistema.
 -----
+## Smart Home
+
+El puerto **10001** es muy común en dispositivos de casa inteligente de Google para configuración inicial.
