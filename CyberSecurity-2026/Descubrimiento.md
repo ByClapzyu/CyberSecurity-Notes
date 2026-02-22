@@ -34,3 +34,14 @@ Lista de puertos clave:
 MAC:  ....... (Google)  ##indicio de que es smart home
 -----
 
+
+
+
+
+
+----
+
+# enumeracion red
+
+**identificar dispositvo**
+nmap -sU -p 5353 --script dns-service-discovery ip
