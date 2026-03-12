@@ -48,6 +48,7 @@ Este se usa para ver el trafico. Para no volvernos loco con tantos datos, se pue
 
  **Ettercap:** Herramienta de intercepción activa. Se utiliza para realizar el **envenenamiento de tablas ARP** (ARP Poisoning) y **forzar que el tráfico de la red fluya a través de nuestra máquina**. A diferencia de Wireshark (que es pasivo), Ettercap es **activo**: puede capturar credenciales en tiempo real y manipular paquetes.
 
+- `sudo ettercap -T -S -i wlan0 -M arp:remote /ip// /ip//` : ip1: router ip2: objetivo  **o segunda ip // (todo los dispostivios)**
 # A packets
 
 Reporte o data estructurada para entender mejor, aqui se sube pcap files
