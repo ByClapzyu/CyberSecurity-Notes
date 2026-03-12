@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Descubrimiento"
             }
+          },
+          {
+            "id": "de0cc64e99a23493",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,7 +198,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bd2ddc9fc51c5c4d",
+  "active": "de0cc64e99a23493",
   "lastOpenFiles": [
     "Descubrimiento.md",
     "THM_SOC_SIMULATION_BEGGINER.md",
