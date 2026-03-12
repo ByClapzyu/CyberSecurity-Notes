@@ -22,15 +22,17 @@
             }
           },
           {
-            "id": "de0cc64e99a23493",
+            "id": "cbe1b5e1e0205b02",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.12.4"
+                "file": "WhireSharck.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.4"
+              "icon": "lucide-file",
+              "title": "WhireSharck"
             }
           }
         ],
@@ -91,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "97277cdb67fe348f",
@@ -198,8 +199,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "de0cc64e99a23493",
+  "active": "cbe1b5e1e0205b02",
   "lastOpenFiles": [
+    "escenario_MITM_Chuck.png",
+    "WhireSharck.md",
     "Descubrimiento.md",
     "THM_SOC_SIMULATION_BEGGINER.md",
     "THM_SOC",
@@ -237,8 +240,6 @@
     "Technical_introduction_to_cybersecurity/Modulo 1_ cipto y infres clave pub/Libreta de un solo uso.png",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/04_Inteligencia frente a amenaza.md",
-    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/03_Amenazas a la ciberseguridad.md",
-    "01.2__Linux_Practica/Nuevo usuarios_practica.md",
     "Modulo1_Firewalls",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",
     "01_Linux/passwd.png",
