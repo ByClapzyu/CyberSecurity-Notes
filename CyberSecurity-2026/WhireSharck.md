@@ -6,7 +6,7 @@
 
 La base de Man In The Middle es el ARP spoofing donde uno debe mentir sobre la Mac, si lo vemos desde un escenario donde hay 3 dispostivos:
 
-- router -->ip: 10.0.0.1  MAC: AA:AA
+- router $\rightarrow$$ip: 10.0.0.1  MAC: AA:AA
 - phone -->ip 10.0.0.3 MAC: BB:BB
 - hacker´s pc --> 10.0.0.4 MAC: CC:CC
 
@@ -14,9 +14,19 @@ El objetivo de ARP spoofing es hacer que el **router crea que nuestra MAC CC:CC 
 
 Esto para una persona normal no es evidente pero para alguien que sabe se puede traducir como un retraso ya que el paquete hace una parada que no deberia hacer.
 
-Exite el TTL (**Time To Live**) que es el tiempo de vida de un paquete en el cual no esta mal recordar que:
-- **$TTL = 64$:** Linux / Android / Mac.
-- **$TTL = 128$:** Windows.
-En donde ese numero es restado 1 por cada vez que es reenviado(**Hop**)/ o **atraviesa un dispositivo de capa 3**. 
+El **TTL** es un valor en el encabezado IP que indica cuántos "saltos" (**hops**) puede dar un paquete antes de ser descartado. Es clave para detectar intermediarios no autorizados.
 
-Ejemplo: Si un paquete nace con 64 y es enviado al router este llega 64, pero el valor que queda al final despues de que sale al internet es 63. Si este sale a internet con un numero mas bajo es que hubo intermediarios/ paradas en otros endpoint.
+**Valores Iniciales Estándar:**
+
+- **64:** Linux / Android / Mac / iOS.
+    
+- **128:** Windows.
+    
+
+**Comportamiento en la Red:**
+
+- El valor se **resta en 1** cada vez que el paquete es procesado y reenviado por un dispositivo de Capa 3 (Router, Gateway o Atacante).
+    
+- **Escenario Normal:** Dispositivo (64) $\rightarrow$ Router lo recibe (64) $\rightarrow$ Router lo envía a Internet (**63**).
+    
+- **Escenario MITM:** Dispositivo (64) $\rightarrow$ Atacante (lo recibe 64 y resta 1) $\rightarrow$ Router (lo recibe **63**).
