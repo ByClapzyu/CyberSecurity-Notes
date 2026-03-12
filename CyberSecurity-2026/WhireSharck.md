@@ -30,3 +30,13 @@ El **TTL** es un valor en el encabezado IP que indica cuántos "saltos" (**hops*
 - **Escenario Normal:** Dispositivo (64) $\rightarrow$ Router lo recibe (64) $\rightarrow$ Router lo envía a Internet (**63**).
     
 - **Escenario MITM:** Dispositivo (64) $\rightarrow$ Atacante (lo recibe 64 y resta 1) $\rightarrow$ Router (lo recibe **63**).
+
+
+# Nmap
+
+Reconocimiento de dispositivos  `nmap -sn 192.168.50.0/24`
+
+
+# Wiresharck
+
+Analisis te
