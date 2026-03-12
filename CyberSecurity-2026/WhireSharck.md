@@ -14,3 +14,9 @@ El objetivo de ARP spoofing es hacer que el **router crea que nuestra MAC CC:CC 
 
 Esto para una persona normal no es evidente pero para alguien que sabe se puede traducir como un retraso ya que el paquete hace una parada que no deberia hacer.
 
+Exite el TTL (**Time To Live**) que es el tiempo de vida de un paquete en el cual no esta mal recordar que:
+- **$TTL = 64$:** Linux / Android / Mac.
+- **$TTL = 128$:** Windows.
+En donde ese numero es restado 1 por cada vez que es reenviado(**Hop**)/ o **atraviesa un dispositivo de capa 3**. 
+
+Ejemplo: Si un paquete nace con 64 y es enviado al router este llega 64, pero el valor que queda al final despues de que sale al internet es 63. Si este sale a internet con un numero mas bajo es que hubo intermediarios/ paradas en otros endpoint.
