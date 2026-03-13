@@ -53,3 +53,6 @@ Este se usa para ver el trafico. Para no volvernos loco con tantos datos, se pue
 
 Reporte o data estructurada para entender mejor, aqui se sube pcap files
 
+## Despues 
+
+DE capturar un htpp

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01.2__Linux_Practica/Bandit (OverTheWire).md",
+                "file": "WhireSharck.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bandit (OverTheWire)"
+              "title": "WhireSharck"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "find",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -187,6 +187,7 @@
   },
   "active": "bd2ddc9fc51c5c4d",
   "lastOpenFiles": [
+    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "00_SO/04_Archivos.md",
     "Descubrimiento.md",
     "01_Linux/00_Conceptos_Clave_Linux.md",
@@ -198,7 +199,6 @@
     "escenario_MITM_Chuck.png",
     "THM_SOC_SIMULATION_BEGGINER.md",
     "THM_SOC",
-    "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "01.2__Linux_Practica/Datos utiles CTF.md",
     "Untitled.md",
     "Technical_introduction_to_cybersecurity/Modulo 4_Acceso_remoto/Acceso-remoto-seguro.md",
