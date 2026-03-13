@@ -55,4 +55,4 @@ Reporte o data estructurada para entender mejor, aqui se sube pcap files
 
 ## Despues 
 
-DE capturar un htpp
+Despues de caputar uno con Protocolo **DNS** Podemos ver en Answer se puede ver la ip del destino que tiene la url en la que ingreso.
