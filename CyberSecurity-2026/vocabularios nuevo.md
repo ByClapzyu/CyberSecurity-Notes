@@ -11,4 +11,4 @@
 - **persistencia**: capacidad de mantenerse sin cambios.
 - **vincular**: unir o relacionar dos o mas elementos.
 - **limite definitivo o frontera (log o fis)**: "limite maximo"
-- 
+- **esquemas**: la estructura de la base de datos.
