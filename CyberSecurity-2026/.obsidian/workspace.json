@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6249764d45616eb8",
+        "id": "99a9e6e42478b428",
         "type": "tabs",
         "children": [
           {
-            "id": "bd2ddc9fc51c5c4d",
+            "id": "298423243cdeb1a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WhireSharck.md",
+                "file": "Implementar AD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WhireSharck"
+              "title": "Implementar AD"
             }
           }
         ]
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -185,50 +184,49 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bd2ddc9fc51c5c4d",
+  "active": "298423243cdeb1a5",
   "lastOpenFiles": [
+    "Implementar AD.md",
+    "AD",
+    "Untitled.md",
+    "THM_SOC/THM_SOC_SIMULATION_BEGGINER.md",
+    "RED/escenario_MITM_Chuck.png",
+    "RED/Descubrimiento.md",
+    "RED/WhireSharck.md",
     "01.2__Linux_Practica/Bandit (OverTheWire).md",
     "00_SO/04_Archivos.md",
-    "Descubrimiento.md",
     "01_Linux/00_Conceptos_Clave_Linux.md",
     "01_Linux/01_Comandos_Basicos.md",
     "01_Linux/02_Linux_File_System.md",
     "01_Linux/03_Dueños_Permisos.md",
     "01_Linux/adduser.png",
-    "WhireSharck.md",
-    "escenario_MITM_Chuck.png",
-    "THM_SOC_SIMULATION_BEGGINER.md",
     "THM_SOC",
     "01.2__Linux_Practica/Datos utiles CTF.md",
-    "Untitled.md",
-    "Technical_introduction_to_cybersecurity/Modulo 4_Acceso_remoto/Acceso-remoto-seguro.md",
-    "Technical_introduction_to_cybersecurity/Modulo 5_ Seguridad de endpoints/Seguridad-de-endpoints.md",
-    "Technical_introduction_to_cybersecurity/Modulo 7_ Seguridad en  nube y virtualizacion/Seguridad nube y virtualizacion.md",
-    "Technical_introduction_to_cybersecurity/Modulo 7_ Seguridad en  nube y virtualizacion",
-    "Technical_introduction_to_cybersecurity/Modulo 6_Datos y apps seguras/Datos y App seguras.md",
-    "Technical_introduction_to_cybersecurity/Modulo 6_Datos y apps seguras",
-    "Technical_introduction_to_cybersecurity/Modulo 5_ Seguridad de endpoints",
-    "Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso/Autenticacion_y_control_acceso.md",
-    "Technical_introduction_to_cybersecurity/Modulo 4_Acceso_remoto",
-    "Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso/autenticacion_802.1x.png",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 4_Acceso_remoto/Acceso-remoto-seguro.md",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 5_ Seguridad de endpoints/Seguridad-de-endpoints.md",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 7_ Seguridad en  nube y virtualizacion/Seguridad nube y virtualizacion.md",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 7_ Seguridad en  nube y virtualizacion",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 6_Datos y apps seguras/Datos y App seguras.md",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 6_Datos y apps seguras",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 5_ Seguridad de endpoints",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso/Autenticacion_y_control_acceso.md",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 4_Acceso_remoto",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso/autenticacion_802.1x.png",
     "Fortinet/Getting_Started_in_Cybersecurity/02_Control de acceso a la red (NAC).md",
     "RED/Hack The Box.md",
-    "Technical_introduction_to_cybersecurity/Modulo 2_ Red segura/Red Segura.md",
-    "Technical_introduction_to_cybersecurity",
-    "Technical_introduction_to_cybersecurity/Modulo 2_ Red segura/Red segura_sin estructura.md",
-    "Technical_introduction_to_cybersecurity/Modulo 2_ Red segura/FortiGate.md",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 2_ Red segura/Red Segura.md",
+    "Fortinet/Technical_introduction_to_cybersecurity",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 2_ Red segura/Red segura_sin estructura.md",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 2_ Red segura/FortiGate.md",
     "Fortinet/Getting_Started_in_Cybersecurity/13_ZTNA (Acceso a la red de confianza cero).md",
     "Fortinet/Getting_Started_in_Cybersecurity/15_ SASE (Borde de servicio de acceso seguro).md",
     "Fortinet/Getting_Started_in_Cybersecurity/12_SD-WAN.md",
-    "Technical_introduction_to_cybersecurity/Modulo 1_ cipto y infres clave pub/combinasion asimetrico y simetrico.png",
-    "Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso",
-    "Technical_introduction_to_cybersecurity/Modulo 2_ Red segura",
-    "Technical_introduction_to_cybersecurity/Modulo 1_ cipto y infres clave pub",
-    "Technical_introduction_to_cybersecurity/Modulo 1_ cipto y infres clave pub/01_Criptografía e infrestructura de clave pública. (PKI).md",
-    "Technical_introduction_to_cybersecurity/Modulo 1_ cipto y infres clave pub/paradoja cumpleaños.png",
-    "Technical_introduction_to_cybersecurity/Modulo 1_ cipto y infres clave pub/Libreta de un solo uso.png",
-    "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo4 _Malware/01_Malware y Vecores de Ataque.md",
-    "Modulo1_Firewalls",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 1_ cipto y infres clave pub/combinasion asimetrico y simetrico.png",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 2_ Red segura",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 1_ cipto y infres clave pub",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 1_ cipto y infres clave pub/paradoja cumpleaños.png",
+    "Fortinet/Technical_introduction_to_cybersecurity/Modulo 1_ cipto y infres clave pub/Libreta de un solo uso.png",
     "Fortinet/Fortinet_Introduction_to_the_Threat_Landscape/Modulo2_Panorama_de_amenazas/Colonial_Pipeline.png",
     "01_Linux/passwd.png",
     "00_SO/Pasted image 20260116170550.png",
