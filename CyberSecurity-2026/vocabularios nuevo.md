@@ -11,4 +11,6 @@
 - **persistencia**: capacidad de mantenerse sin cambios.
 - **vincular**: unir o relacionar dos o mas elementos.
 - **limite definitivo o frontera (log o fis)**: "limite maximo"
-- **esquemas**: la estructura de la base de datos.
+- **esquemas**: la estructura de la base de datos. **Directica/GPOs:** lo que permite o prohibe. *AD*
+- **Gobernanza**: conjunto de reglas, procesos y poiticas que asegura que funcione.
+- **centralizar**: reunir en un solo punto.
