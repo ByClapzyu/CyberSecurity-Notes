@@ -10,3 +10,5 @@
 - **se requiere o es imperativo**: en lugar de "se debe".
 - **persistencia**: capacidad de mantenerse sin cambios.
 - **vincular**: unir o relacionar dos o mas elementos.
+- **limite definitivo o frontera (log o fis)**: "limite maximo"
+- 

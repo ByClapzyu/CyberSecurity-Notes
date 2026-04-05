@@ -1,8 +1,8 @@
 # bases_ad
 
 - **Forest**: Configuración globa, donde se establecen las reglas. Ademas, es el maximo limite maximo de seguridad, controla todo.
-- **Dominio**: Donde se establacen los datos de la infrestructura.
-- **DC (Controlador de Dominio)**: Servidor donde se f
+- **Dominio**: Donde se establacen los datos de la infrestructura. Cada dominio tiene su grupo de datos.
+- **DC (Controlador de Dominio)**: Servidor donde se guarda la informacion.
 
 
 

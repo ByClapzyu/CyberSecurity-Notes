@@ -35,7 +35,8 @@
               "title": "vocabularios nuevo"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,12 +199,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "372eea87ef7fa933",
+  "active": "5709fd16a2eb9861",
   "lastOpenFiles": [
-    "vocabularios nuevo.md",
     "Implementar AD.md",
-    "AD",
+    "vocabularios nuevo.md",
     "Untitled.md",
+    "AD",
     "THM_SOC/THM_SOC_SIMULATION_BEGGINER.md",
     "RED/escenario_MITM_Chuck.png",
     "RED/Descubrimiento.md",
