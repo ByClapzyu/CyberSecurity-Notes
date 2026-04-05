@@ -1,12 +1,14 @@
 # bases_ad
 
  - **Forest:** Es la frontera de seguridad (security boundary) definitiva. Define el **esquema** único y la configuración de configuración para todos los dominios contenidos.
-- **Dominio:** Unidad lógica de particionamiento del directorio que facilita la replicación de objetos y la aplicación de Directivas de Grupo (GPO). "laboratorio.local"
+- **Dominio:** Unidad lógica de particionamiento del directorio que facilita la replicación de objetos y la aplicación de Directivas de Grupo (GPO). 
+	- "laboratorio.local"
 - **Controlador de Dominio (DC):** Servidor crítico encargado de centralizar la gestión de identidades y la seguridad del entorno.
 - **DSRM (Directory Services Restore Mode)**: Es la llave de emergencia.Si la base de datos de AD se corrompe y el servidor no arranca, usas esta clave para entrar en un modo de reparación y tratar de salvar los datos.
-- **NetBIOS Name**: Nombre que vincula a un usuario con el dominio. `/` que se visualiza cuando uno se loguea ""
+- **NetBIOS Name**: Nombre que vincula a un usuario con el dominio. `/` que se visualiza cuando uno se loguea 
+	- "pruebas o laboratorio o sucursal"
 
-
+- **OU** (Unidad Organizativa): 
 
 
 # configuracion_de_red_vm
