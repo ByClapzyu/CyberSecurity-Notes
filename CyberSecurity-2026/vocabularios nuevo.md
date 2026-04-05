@@ -1,0 +1,3 @@
+- **Subsanar:** resolucion definitiva de una deficiencia o problema tecnico.
+- **inherente**: característica natural no se puede eliminar por completo, solo se puede gestionar, mitigar o aceptar.
+- 
