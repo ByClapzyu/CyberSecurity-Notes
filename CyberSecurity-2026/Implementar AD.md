@@ -8,7 +8,7 @@
 - **NetBIOS Name**: Nombre que vincula a un usuario con el dominio. `/` que se visualiza cuando uno se loguea 
 	- "pruebas o laboratorio o sucursal"
 
-- **OU** (Unidad Organizativa): 
+- **OU** (Unidad Organizativa): es un objeto contenedor dentro de un dominio que permi
 
 
 # configuracion_de_red_vm
