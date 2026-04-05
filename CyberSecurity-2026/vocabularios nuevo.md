@@ -6,3 +6,7 @@
 - **discrecional**: depende de la eleccion o decision de alguien, pero basada en criterios tecnicos. "si queremos".
 - **segmentación**: dividir una red.
 - **propagar**: extension o difusion.
+- **garantizar o asegurar**: indica que sin esto, puede fallar.
+- **se requiere o es imperativo**: en lugar de "se debe".
+- **persistencia**: capacidad de mantenerse sin cambios.
+- **vincular**: unir o relacionar dos o mas elementos.
