@@ -1,6 +1,8 @@
 
 # vm_conf_red
 
+- La arquitectura de red de la maquina virutal 
+
 - NAT (**Network Address Translation**): Permite que el servidor se pueda conectarse a internet para realizar actualizaciones. (esto si queremos )
 
     
