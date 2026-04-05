@@ -1,3 +1,8 @@
 - **Subsanar:** resolucion definitiva de una deficiencia o problema tecnico.
 - **inherente**: característica natural no se puede eliminar por completo, solo se puede gestionar, mitigar o aceptar.
-- 
+- **sujeto a requisitos o discrecional**: hay una decisión técnica detrás.
+- **emplear o proporcionar o facilitar**: usar o permitir.
+- **aprovisionar**: poner a disposición los recursos necesarios para que algo funcione.
+- **discrecional**: depende de la eleccion o decision de alguien, pero basada en criterios tecnicos. "si queremos".
+- **segmentación**: dividir una red.
+- **propagar**: extension o difusion.
