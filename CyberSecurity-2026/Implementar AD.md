@@ -8,7 +8,7 @@
 - **NetBIOS Name**: Nombre que vincula a un usuario con el dominio. `/` que se visualiza cuando uno se loguea 
 	- "pruebas o laboratorio o sucursal"
 
-- **OU** (Unidad Organizativa): es un objeto contenedor dentro de un dominio que permi
+- **OU** (Unidad Organizativa): es un objeto contenedor dentro de un dominio que permite agrupar cuentas de usuarios, equipos y grupos en una estructura jerárquica. Su función es servir como unidad minima para la vinculación de Objetos de Directiva de Gruppo/GPO y la delegación de autoridad administrativa.
 
 
 # configuracion_de_red_vm
