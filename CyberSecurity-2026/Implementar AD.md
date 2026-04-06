@@ -23,13 +23,14 @@ Tras la implementación de AD, se inicia la fase de validación de servicios. Se
 # nueva-ou
 
 Se inicia la creacion de unidad organizativa (OU) con el fin de optimizar la estructura jerárquica del dominio. 
-- 1) desde la consola de **Active Directory Users and Computers**
--  2) Localice el nombre de dominio.
--  3) Despliegue el menu contextual (click derecho) y selecciona la opcion **new -> organizational unit**
--  4) Localice la OU creada y acceda a ella.
+
+1) inicie la consola **Active Directory Users and Computers**.
+2) Identifique el nodo raíz del dominio, despliegue el **menú contextual** y seleccione **New** > **Organizational Unit**.
+
+Dentro de la OU se hace la creación de sub-unidades organizativas:
 	- Users
 	- Groups
 	- Computers
-	- *Para poder aplicar las GPo de forma eficiente*
+	objetivo: *Preparar el entorno para una aplicación eficiente de GPOs.*
 
 #
