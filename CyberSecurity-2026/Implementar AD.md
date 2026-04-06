@@ -22,4 +22,4 @@
 - `nslookup laboratorio.local`
 	- *Si el resultado mostrado es el nombre del dominio y su ip correspondiente, significa que todo esta funcionando de forma correcta.*
 # nuevo-ou
-- 
+- Para crear una nueva unidad organizacional debemos accader atraves **`Tools->Active Directory Users and Computers`** 
