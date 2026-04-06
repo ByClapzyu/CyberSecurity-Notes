@@ -19,11 +19,11 @@
 
 ### dns
 
-- Una vez que se implementa el AD, procedo a realizar pruebas para checar que el DNS funcione de manera efectiva.
-- `nslookup laboratorio.local`
-	- *Si el resultado mostrado es el nombre del dominio y su ip correspondiente, significa que todo esta funcionando de forma correcta.*
+Tras la implementación de AD, se inicia la fase de validación de servicios. Se verificará que la resolución de nombres DNS sea consistente mediante la utilidad **`nslookup "laboratorio.local"`**. El éxito de esta prueba confirma la integridad de la zona de búsqueda directa y la disponibilidad del controlador de dominio.
 # nuevo-ou
 
+
+- 
 - Para la creación de una OU procedo a acceder a  **`Tools->Active Directory Users and Computers`**, de ahi hago click derecho `new -> organizational unit`. Para fines practicos el nombre de mi OU sera `FelixSec_Corp` y siempre se debe marcar la casilla de **proteger contenedor ante eliminación accidental**.. Dentro de esta OU se crea:
 	- Users
 	- Groups
