@@ -8,6 +8,8 @@
 - **Nombre NetBIOS:** Identificador simplificado del dominio utilizado para asegurar la compatibilidad con sistemas legados y facilitar el inicio de sesión en entornos de red específicos.
 	- "pruebas o laboratorio o sucursal"
 
+	NetBIOS es un protocolo antiguo de Windows que permite que las computadoras en una misma red local se encuentren por su 'nombre corto' en lugar de usar direcciones IP o el DNS del dominio.
+
 - **OU** (Unidad Organizativa): es un objeto contenedor dentro de un dominio que permite agrupar cuentas de usuarios, equipos y grupos en una estructura jerárquica. Su función es servir como unidad minima para la vinculación de Objetos de Directiva de Gruppo/GPO y la delegación de autoridad administrativa.
 
 # configuracion_de_red_vm
@@ -33,5 +35,4 @@ Dentro de la OU se hace la creación de sub-unidades organizativas con los sigui
 	- Groups
 	- Computers
 	objetivo: *Preparar el entorno para una aplicación eficiente de GPOs.*
-
-#
+## Nue
