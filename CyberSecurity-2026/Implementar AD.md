@@ -27,7 +27,8 @@ Se inicia la creacion de unidad organizativa (OU) con el fin de optimizar la est
 1) inicie la consola **Active Directory Users and Computers**.
 2) Identifique el nodo raíz del dominio, despliegue el **menú contextual** y seleccione **New** > **Organizational Unit**.
 
-Dentro de la OU se hace la creación de sub-unidades organizativas:
+Dentro de la OU se hace la creación de sub-unidades organizativas con los siguiente nombres:
+- **New** > **Organizational Unit**
 	- Users
 	- Groups
 	- Computers
