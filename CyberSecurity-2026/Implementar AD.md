@@ -35,4 +35,8 @@ Dentro de la OU se hace la creación de sub-unidades organizativas con los sigui
 	- Groups
 	- Computers
 	objetivo: *Preparar el entorno para una aplicación eficiente de GPOs.*
-## Nue
+## new-user
+Dentro de la sub-unidad organizativa "Users" se hace lo siguiente:
+
+1) Identifique el nodo de Users, despliegue el **menú contextual** y seleccione **New** > **User**
+2) registre datos del usuer
