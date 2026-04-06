@@ -39,4 +39,7 @@ Dentro de la OU se hace la creación de sub-unidades organizativas con los sigui
 Dentro de la sub-unidad organizativa "Users" se hace lo siguiente:
 
 1) Identifique el nodo de Users, despliegue el **menú contextual** y seleccione **New** > **User**
-2) registre datos del usuer
+2) registre datos del usuario  e implementa una contraseña que cumpla con la politicas.
+
+
+VK7JG-NPHTM-C97JM-9MPGT-3V66T
