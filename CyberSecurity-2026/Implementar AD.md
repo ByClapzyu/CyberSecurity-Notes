@@ -17,3 +17,7 @@
 
 # configuracion_implementacion_ad
 
+### dns
+- Una vez que este implementado el AD, se realiza una prueba para checar que el DNS funcione de manera efectiva.
+- `nslookup laboratorio.local`
+	- *Si el resultado mostrado es el nombre del dominio y su ip correspondiente, significa que todo esta funcionando de forma correcta.*
