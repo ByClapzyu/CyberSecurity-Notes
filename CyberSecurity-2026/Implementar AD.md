@@ -22,9 +22,11 @@
 Tras la implementación de AD, se inicia la fase de validación de servicios. Se verificará que la resolución de nombres DNS sea consistente mediante la utilidad **`nslookup "laboratorio.local"`**. El éxito de esta prueba confirma la integridad de la zona de búsqueda directa y la disponibilidad del controlador de dominio.
 # nueva-ou
 
-Se inicia la creacion de unidad organizativa (OU) con el fin de optimizar la estructura jerárquica del dominio. Desde la consola de Administración de Usuarios y Equipos de Acti
-
-- Para la creación de una OU procedo a acceder a  **`Tools->Active Directory Users and Computers`**, de ahi hago click derecho `new -> organizational unit`. Para fines practicos el nombre de mi OU sera `FelixSec_Corp` y siempre se debe marcar la casilla de **proteger contenedor ante eliminación accidental**.. Dentro de esta OU se crea:
+Se inicia la creacion de unidad organizativa (OU) con el fin de optimizar la estructura jerárquica del dominio. 
+- 1) desde la consola de **Active Directory Users and Computers**
+-  2) Localice el nombre de dominio.
+-  3) Despliegue el menu contextual (click derecho) y selecciona la opcion **new -> organizational unit**
+-  4) Localice la OU creada y acceda a ella.
 	- Users
 	- Groups
 	- Computers
