@@ -41,5 +41,17 @@ Dentro de la sub-unidad organizativa "Users" se hace lo siguiente:
 1) Identifique el nodo de Users, despliegue el **menú contextual** y seleccione **New** > **User**
 2) registre datos del usuario  e implementa una contraseña que cumpla con la politicas.
 
+# new-group
+
+Dentro de la sub-unidad organizativa "Groups" se hace lo siguiente:
+
+1) Identifique el nodo de Users, despliegue el **menú contextual** y seleccione **New** > **Group**
+2) registre el nombre del grupo.
+3) despliegue el **menú contextual** y seleccione **properties** > **members** > **add**
+
+gruopo-permisos-especiales
+
+1) Identifique el grupo
+2) 
 
 VK7JG-NPHTM-C97JM-9MPGT-3V66T
