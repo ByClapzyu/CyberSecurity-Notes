@@ -45,13 +45,14 @@ Dentro de la sub-unidad organizativa "Users" se hace lo siguiente:
 
 Dentro de la sub-unidad organizativa "Groups" se hace lo siguiente:
 
-1) Identifique el nodo de Users, despliegue el **menú contextual** y seleccione **New** > **Group**
+1) Identifique el nodo de Group, despliegue el **menú contextual** y seleccione **New** > **Group**
 2) registre el nombre del grupo.
 3) despliegue el **menú contextual** y seleccione **properties** > **members** > **add**
 
 gruopo-permisos-especiales
 
 1) Identifique el grupo
-2) 
+2)  Identifique el nodo raiz de dominio, despliegue el **menú contextual** y seleccione **Delegate Control
+3) Agregue el grupo, **custom task** > **only the following objects in the folder** >**computer object** > marcar 2 casillas "created y delete" (para borrar rastro viejo, para volver a )> 
 
 VK7JG-NPHTM-C97JM-9MPGT-3V66T
