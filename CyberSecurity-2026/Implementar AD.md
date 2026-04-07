@@ -29,7 +29,7 @@ Se inicia la creacion de unidad organizativa (OU) con el fin de optimizar la est
 1) inicie la consola **Active Directory Users and Computers**.
 2) Identifique el nodo raíz del dominio, despliegue el **menú contextual** y seleccione **New** > **Organizational Unit**.
 
-Dentro de la OU se hace la creación de sub-unidades organizativas con los siguiente nombres:
+ Dentro de la OU se hace la creación de sub-unidades organizativas con los siguiente nombres:
 - **New** > **Organizational Unit**
 	- Users
 	- Groups
@@ -53,6 +53,16 @@ gruopo-permisos-especiales
 
 1) Identifique el grupo
 2)  Identifique el nodo raiz de dominio, despliegue el **menú contextual** y seleccione **Delegate Control
-3) Agregue el grupo, **custom task** > **only the following objects in the folder** >**computer object** > marcar 2 casillas "created y delete" (para borrar rastro viejo, para volver a )> 
+3) Agregue el grupo, **custom task** > **only the following objects in the folder** >**computer object** > marcar 2 casillas "created y delete" (para borrar rastro viejo, para volver a unir) >next
+4) **general, property-specific** > **reset password** > **read and write account restrictions** > **validate wr to DNS h name** > **validate w to service...**
+- objetivo: dar permisos para unir dominio-host.
+
+
+
+# union-host-dominio
+
+1) tener ip estatica, DNS preferido ip del server.
+2) about pc >**cambiar nombre (avanzado)** > **dominio**
+3) ingresar credenciales.
 
 VK7JG-NPHTM-C97JM-9MPGT-3V66T
