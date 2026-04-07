@@ -68,4 +68,8 @@ VK7JG-NPHTM-C97JM-9MPGT-3V66T
 # gpos
 
 Se implementan GPO **Group Policy Managemenet**:
-1) Inicie la consola 
+1) Inicie la consola  **Group Policy Managemenet** 
+2) identifique el nodo del forest de raiz del dominio, despliegue domains, dominio
+3) ubicado en nuestro dominio despliegue el **menú contextual** y seleccione **Create a GPO in this domain, and Link it here**, *asigne nombre*.
+
+
