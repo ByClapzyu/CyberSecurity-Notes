@@ -56,13 +56,16 @@ gruopo-permisos-especiales
 3) Agregue el grupo, **custom task** > **only the following objects in the folder** >**computer object** > marcar 2 casillas "created y delete" (para borrar rastro viejo, para volver a unir) >next
 4) **general, property-specific** > **reset password** > **read and write account restrictions** > **validate wr to DNS h name** > **validate w to service...**
 - objetivo: dar permisos para unir dominio-host.
-
-
-
 # union-host-dominio
 
 1) tener ip estatica, DNS preferido ip del server.
 2) about pc >**cambiar nombre (avanzado)** > **dominio**
 3) ingresar credenciales.
+4) Reinicio, acceder con usuario creado en AD normal
 
 VK7JG-NPHTM-C97JM-9MPGT-3V66T
+
+# gpos
+
+Se implementan GPO **Group Policy Managemenet**:
+1) Inicie la consola 
