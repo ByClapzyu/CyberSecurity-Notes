@@ -91,5 +91,12 @@ Se implementan GPO **Group Policy Managemenet**:
 - 4634 **logoff** (evento finalizado)
 - 5379 **lecura credenciales**
 
-# permisos-dir
+# mejores-practicas-permisos
 
+- **user** > **group global** > **group local**
+- *permisos a una carpeta* --> **agregar el local**
+- obejetivo: si baja user, solo saca global. (escalabilidad)
+
+- **carpeta > sharing > advanced > permisos** 
+- ***recomandable borrar everyone*** > 
+- 
