@@ -65,11 +65,21 @@ gruopo-permisos-especiales
 
 VK7JG-NPHTM-C97JM-9MPGT-3V66T
 
-# gpos
+# gpos-grl
 
 Se implementan GPO **Group Policy Managemenet**:
 1) Inicie la consola  **Group Policy Managemenet** 
 2) identifique el nodo del forest de raiz del dominio, despliegue domains, dominio
 3) ubicado en nuestro dominio despliegue el **menú contextual** y seleccione **Create a GPO in this domain, and Link it here**, *asigne nombre*.
+4) despliegue el **menú contextual** y seleccione edit
+5) seleccione de acuerdo a la politica requerida.
 
+
+# gpos-control-panel
+
+ Inicie la consola  **Group Policy Managemenet** 
+1) identifique el nodo del forest de raiz del dominio, despliegue domains, dominio
+2) ubicado en nuestro dominio despliegue el **menú contextual** y seleccione la que se creo.
+3) despliegue el **menú contextual** y seleccione edit
+4) **User configuration** > **Polices** > **Administrative Templates** >**Control Panel** > **Prohibit acces to Control Panel and PC settings**
 
