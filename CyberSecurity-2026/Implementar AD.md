@@ -83,6 +83,11 @@ Se implementan GPO **Group Policy Managemenet**:
 3) despliegue el **menú contextual** y seleccione edit
 4) **User configuration** > **Polices** > **Administrative Templates** >**Control Panel** > **Prohibit acces to Control Panel and PC settings**
 
+# gpos-mapeo
+
+1) Identifique OU de "USER" donde esta el usuario
+2) despliegue el **menu contextual** y seleccione **create a GPO
+
 # event-viewer
 
 #### codes 
@@ -93,10 +98,18 @@ Se implementan GPO **Group Policy Managemenet**:
 
 # mejores-practicas-permisos
 
+
+   Mejores practicas
 - **user** > **group global** > **group local**
 - *permisos a una carpeta* --> **agregar el local**
 - obejetivo: si baja user, solo saca global. (escalabilidad)
 
+	Sharing Carpetas
 - **carpeta > sharing > advanced > permisos** 
-- ***recomandable borrar everyone*** > 
-- 
+- ***recomandable borrar everyone*** > **agregar el grupo deseado**
+- **full control**
+
+	Seguridad NTFS (seguridad definitiva)
+- **security > edit > add > grupo local >permisos indespensable**
+
+
