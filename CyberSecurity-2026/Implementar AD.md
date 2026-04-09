@@ -87,6 +87,6 @@ Se implementan GPO **Group Policy Managemenet**:
 
 #### codes 
 - 4624 **inicio sesión exitoso**
-- 4625 **inicio sesión fallido**
-- 4634 **evento finalizado**
+- 4625 **nicio sesión fallido**
+- 4634 **logoff** (evento finalizado)
 - 5379 **lecura credenciales**
