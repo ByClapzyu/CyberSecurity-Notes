@@ -83,10 +83,17 @@ Se implementan GPO **Group Policy Managemenet**:
 3) despliegue el **menú contextual** y seleccione edit
 4) **User configuration** > **Polices** > **Administrative Templates** >**Control Panel** > **Prohibit acces to Control Panel and PC settings**
 
-# gpos-mapeo
+# gpos-mapeo (pendiente antes de fisico)
 
 1) Identifique OU de "USER" donde esta el usuario
-2) despliegue el **menu contextual** y seleccione **create a GPO
+2) despliegue el **menu contextual** y seleccione **create a GPO in ...** 
+3) Nombré la GPO_ ,  despliegue el **menu contextual** y seleccione **edit**
+4) **User Conf > Preferences > Windows Settings > Drive Maps**
+5)  despliegue el **menu contextual** y seleccione **New > Mapped Drive**
+6) **Action > Update > location : se escribe path (192,168.10.10\Ventas_corp) , > label: nombre/etiqueta**
+7) **Drive Letter: (se selecciona) >common > "Remove this item..."**
+8) **Item-level-targeting > targeting > new item > security group (grupo global) > ok**
+9) 
 
 # event-viewer
 
