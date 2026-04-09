@@ -83,3 +83,9 @@ Se implementan GPO **Group Policy Managemenet**:
 3) despliegue el **menú contextual** y seleccione edit
 4) **User configuration** > **Polices** > **Administrative Templates** >**Control Panel** > **Prohibit acces to Control Panel and PC settings**
 
+# event-viewer
+
+#### codes 
+- 4624 **inicio sesión exitoso**
+- 4625 **inicio sesión fallido**
+- 
