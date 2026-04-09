@@ -90,3 +90,6 @@ Se implementan GPO **Group Policy Managemenet**:
 - 4625 **nicio sesión fallido**
 - 4634 **logoff** (evento finalizado)
 - 5379 **lecura credenciales**
+
+# permisos-dir
+
