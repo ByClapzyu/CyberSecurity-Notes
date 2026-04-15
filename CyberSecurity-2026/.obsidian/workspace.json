@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "5ec4138537cd7af3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "malware-analisis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "malware-analisis"
+            }
+          },
+          {
             "id": "bb3f1e12a74a81c0",
             "type": "leaf",
             "state": {
@@ -35,7 +49,8 @@
               "title": "vocabularios nuevo"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,10 +213,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1299cc96e13d94d8",
+  "active": "5ec4138537cd7af3",
   "lastOpenFiles": [
-    "vocabularios nuevo.md",
     "Implementar AD.md",
+    "malware-analisis.md",
+    "vocabularios nuevo.md",
     "Untitled.md",
     "AD",
     "THM_SOC/THM_SOC_SIMULATION_BEGGINER.md",
@@ -235,7 +251,6 @@
     "Fortinet/Technical_introduction_to_cybersecurity/Modulo 2_ Red segura/FortiGate.md",
     "Fortinet/Getting_Started_in_Cybersecurity/13_ZTNA (Acceso a la red de confianza cero).md",
     "Fortinet/Getting_Started_in_Cybersecurity/15_ SASE (Borde de servicio de acceso seguro).md",
-    "Fortinet/Getting_Started_in_Cybersecurity/12_SD-WAN.md",
     "Fortinet/Technical_introduction_to_cybersecurity/Modulo 1_ cipto y infres clave pub/combinasion asimetrico y simetrico.png",
     "Fortinet/Technical_introduction_to_cybersecurity/Modulo 3_Autenticación y control de acceso",
     "Fortinet/Technical_introduction_to_cybersecurity/Modulo 2_ Red segura",
